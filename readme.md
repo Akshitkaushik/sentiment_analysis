@@ -17,5 +17,8 @@ classification using machine learning algorithms to separate different sentiment
 user= admin	
 pass=admin
 
+./ngrok authtoken 1vymgk9FVmLYTRYSArU89Oekoy0_63Sg1inN969EEWfh7hHQ9
+
+
 
 
