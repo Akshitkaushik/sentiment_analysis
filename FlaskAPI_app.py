@@ -5,6 +5,11 @@ import requests
 from twilio.twiml.messaging_response import MessagingResponse
 import os
 from twilio.rest import Client
+import smtplib
+from email.message import EmailMessage
+
+
+import email, smtplib, ssl
 
 import time
 import json
@@ -29,6 +34,15 @@ def bot():
 
 		message = client.messages .create(body="Here's that picture of an owl you requested.",media_url=['https://demo.twilio.com/owl.png'],from_='whatsapp:+14155238886',to='whatsapp:+919990724477')
 		print(message.sid)
+
+		mailserver = smtplib.SMTP('outlook.com', 587)
+		mailserver.ehlo()
+		mailserver.starttls()
+		mailserver.login('akshit.kaushik@in2ittech.com', 'Admin@2022')
+		mailserver.sendmail('akshit.kaushik@in2ittech.com', 'akshit.kaushik@in2ittech.com', user_msg)
+		mailserver.quit()
+
+		print('done')
 
 	# creating object of MessagingResponse
 	response = MessagingResponse()
@@ -57,11 +71,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-
-
-#
