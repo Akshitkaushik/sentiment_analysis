@@ -18,18 +18,17 @@ def bot():
 
 	# user input
 	user_msg = request.values.get('Body', '').lower()
-	a =request.values.get('From')
-
+	a = request.values.get('status', '').lower()
 	print(a)
 	user_mssg=list(user_msg)
 	if len(user_mssg)!=0:
+
 		account_sid = "ACf8ac8e01c12aff52a39b2ae886051e2f"
-		auth_token = "e55c8289c8d8f3edc9ebd3f831e7c68a"
+		auth_token = "604d57948cf9884186c6a31c2bc5db4f"
 		client = Client(account_sid, auth_token)
 
-		message = client.messages .create(body="Here's that picture of an owl you requested.",media_url=['https://demo.twilio.com/owl.png'],from_='whatsapp:+14155238886',to=a)
-		print(message)
-		print(request)
+		message = client.messages .create(body="Here's that picture of an owl you requested.",media_url=['https://demo.twilio.com/owl.png'],from_='whatsapp:+14155238886',to='whatsapp:+919990724477')
+		print(message.sid)
 
 	# creating object of MessagingResponse
 	response = MessagingResponse()
@@ -51,6 +50,13 @@ def bot():
 
 if __name__ == "__main__":
 	app.run(debug=True)
+
+
+
+
+
+
+
 
 
 
