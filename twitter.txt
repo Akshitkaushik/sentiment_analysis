@@ -1,5 +1,34 @@
-Hi Akshit,
+Sure! Here’s the revised email with your additional details included:
 
-Thank you for the test cases. I ran the HDQ bot using them, and I believe you also received an email about this. Please check your inbox and let me know your feedback. If everything looks good, I will proceed to the next step.
+---
+
+Subject: Clarification on Recent Email Updates
+
+Hi Jyothi,
+
+I hope this message finds you well. I wanted to address the points you mentioned in your previous email regarding the updates I've made.
+
+1. **Email Sending Action**: I understand your concern about error handling. I replaced the DLL command with the email send action, and given that this is a single send email action, I opted not to include error handling. In my experience, it’s common practice not to block this action within a try-catch block when it’s used singularly.
+
+2. **Email Session**: I will certainly work on the adjustments you suggested and ensure they are implemented accordingly.
+
+3. **Hardcoded Value for Image Source Path**: I understand that we cannot use a configuration path for the image, as this would result in the end user not receiving the image. Therefore, I converted the image into a base64 string and saved that value directly in the code. If you have any other approaches in mind that would allow us to use the configuration file instead of a hardcoded value, please let me know.
+
+4. **Variables and Conditions**: As Harish mentioned, I do not need to rewrite the code. I only disabled the Cirrus task and updated the email template. I haven’t worked on a complete code redesign, as Harish emphasized that we need to prioritize deployment for this task.
+
+5. **Array Variables**: I acknowledge that some array variables are still present in the code, as I only replaced the DLL part and retained the original logic for other sections.
+
+Please note that I have thoroughly tested the bot multiple times and shared the results with the user, who is satisfied with the outcomes.
+
+Harish, if you believe a full redesign of the code is necessary or if there are any other specific changes you would like me to make, please let me know. Your feedback is greatly appreciated.
 
 Thank you!
+
+Best regards,  
+[Your Name]  
+[Your Job Title]  
+[Your Contact Information]  
+
+--- 
+
+Feel free to fill in your name, job title, and contact information before sending!
