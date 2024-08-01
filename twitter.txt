@@ -1,11 +1,5 @@
-Subject: Summary of Changes to HDQ Bot Tasks
+Hi Akshit,
 
-Dear [Recipient's Name],
+Thank you for the test cases. I ran the HDQ bot using them, and I believe you also received an email about this. Please check your inbox and let me know your feedback. If everything looks good, I will proceed to the next step.
 
-As discussed during our code review call, I have implemented the following changes to the HDQ bot tasks:
-
-HDQ Master: No changes made, except for the removal of the DLL and legacy commands.
-HDQ Folder: Removed the legacy variable section.
-HDQ_SENDEmail: Eliminated the DLL Outlook command and added the AA360 Outlook action.
-HDQ_Read_SendEmail: Disabled the Cirrus part and replaced the DLL Outlook command with AA360 Outlook.
-Additionally, I have updated the current email template with the new version provided by the business.
+Thank you!
