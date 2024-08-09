@@ -1,15 +1,1 @@
-Hi Harish,
-
-I’ve checked the font and image, and I’ve already shown this template to Cheryl. She’s okay with the font and size
-
-
-Hi Jyothi,
-
-I’ve completed the testing using your test data, covering both positive and negative scenarios. Additionally, I’ve incorporated the new files you mentioned last time.
-
-If the bot fails, the failure notification will be sent only to our team and not to the user. I’ve added this update as well.
-Please review the attached email for all these scenarios and provide your approval for the deployment.
-
-Hi Harish,
-
-I wanted to let you know that I’ve completed all the testing, including both positive and negative scenarios, and everything is ready for deployment. As discussed earlier, Cheryl was mentioned as the final approver once she returns from her holiday. My plan remains the same: once she is back, I’ll share the testing results with her, obtain her approval, and proceed with the deployment. She had already given her approval based on the last round of testing.
+I attached two files in the email: one shows the bot's success, with everything remaining the same. The second one is for when the bot fails. As you mentioned, if the bot fails, we only need to send the email to our team, so please check the recipients on the failed email. Everything else is the same
