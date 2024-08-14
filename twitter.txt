@@ -1,4 +1,57 @@
+Umm you'll need help with.
+Khan, Taufique 1 minute 12 seconds
+So basically, Long story short, the state of Iowa wants to offer online enrollment to their three plans.
+Khan, Taufique 1 minute 21 seconds
+There be identified with a couple of indicators or event types will go through that, but really the gist of it is participants will enroll online with a plan.
+Khan, Taufique 1 minute 35 seconds
+Enrollment code will identify those participants with the population criteria below that, we can go through.
+Khan, Taufique 1 minute 44 seconds
+The report will get generated.
+Khan, Taufique 1 minute 46 seconds
+It'll go to RPA and then RPA will auto enroll or like a link a participant advisor to that participant record in a quipa or chpa.
+Khan, Taufique 1 minute 59 seconds
+One of those I've got it in the screens but and then once the advisor is attached to the participant and their own kind of chip equipped with screen, then the email notification will go out and we can go over that too.
+But let me just show you where you needed help.
+Khan, Taufique 2 minutes 18 seconds
+So they'll get identified in this easy screen right here, and these two, these two types event types right here, IWEB or PWEB is what we're looking for.
 
+
+Khan, Taufique
+2 minutes 34 seconds2:34
+Khan, Taufique 2 minutes 34 seconds
+Umm, so any participant that enrolls the previous day will get identified with IWEB or PWEB.
+Khan, Taufique 2 minutes 41 seconds
+If that's the case, then we know that participant has enrolled the previous day online.
+Khan, Taufique 2 minutes 48 seconds
+Using the plan enrollment code, then the advisors that are the.
+Khan, Taufique 2 minutes 56 seconds
+So the CSM has agreed to keep a file of.
+Khan, Taufique 3 minutes 2 seconds
+Part advisors or commac codes in a shared drive that we can all access.
+Khan, Taufique 3 minutes 8 seconds
+So this is the link to the rotating advisors.
+Khan, Taufique 5 minutes 58 seconds
+They'll tie it to that participant and then really once the once that ADV subset or commac number is tied to the participant, then the email notification can go out to the participant in an email and an email is a required field when they enroll.
+Khan, Taufique 6 minutes 22 seconds
+So they should all have emails tied to them or listed in their record.
+Khan, Taufique 6 minutes 28 seconds
+Ohm.
+Khan, Taufique 6 minutes 29 seconds
+Let me see.
+Khan, Taufique 6 minutes 31 seconds
+And this is uh ashka.
+Khan, Taufique 6 minutes 33 seconds
+This is just a like the descriptions and the screenshots, it's just a I just gave you a description of how they're adding the Comex and the advisor currently.
+Khan, Taufique 6 minutes 43 seconds
+So it's just a step by step shows you the click path of how they're adding it now, and yeah, it does not really what you'll need for that, but it does show you how they do it manually, but again, you won't need that just because we'll have the the rotating advisor list and the chair drive for the bot, right?
+Khan, Taufique 7 minutes 7 seconds
+This last page, Akshit was kind of a a follow up from the business when we had our original intake they they had a few takeaways for us and we kind of had to like a 5 questions that we needed to get answered.
+Khan, Taufique 7 minutes 24 seconds
+There's three plan numbers for the state of Iowa.
+Khan, Taufique 7 minutes 29 seconds
+They were just asking if you know, if there's no emails provided or anything like that, but they're all required fields.
+Khan, Taufique 7 minutes 37 seconds
+Umm, audit logs for later two people get those right now.
 Khan, Taufique 7 minutes 43 seconds
 I guess that comes later, but yeah, that's uh, just this last page, just a couple of extra little criterias or the little extra requirements, but nothing too crazy.
 Khan, Taufique 7 minutes 57 seconds
@@ -31,91 +84,8 @@ Khan, Taufique 8 minutes 18 seconds
 This.
 KA
 kaushik, Akshit
-8 minutes 19 seconds8:19
-kaushik, Akshit 8 minutes 19 seconds
-The uh.
 
-Khan, Taufique
-8 minutes 19 seconds8:19
-Khan, Taufique 8 minutes 19 seconds
-Here we go. Yep.
-KA
-kaushik, Akshit
-8 minutes 20 seconds8:20
-kaushik, Akshit 8 minutes 20 seconds
-This one?
-kaushik, Akshit 8 minutes 20 seconds
-Yeah, every time I receive this file right and at the end call at the end of this column we have this acct number right?
-kaushik, Akshit 8 minutes 28 seconds
-So I need to go through this number in the easy application.
 
-Khan, Taufique
-8 minutes 28 seconds8:28
-Khan, Taufique 8 minutes 28 seconds
-Yep.
-Khan, Taufique 8 minutes 31 seconds
-Umm.
-Khan, Taufique 8 minutes 34 seconds
-In the what? Sorry.
-KA
-kaushik, Akshit
-8 minutes 35 seconds8:35
-kaushik, Akshit 8 minutes 35 seconds
-In the easy application where using the easy application right?
-
-Khan, Taufique
-8 minutes 40 seconds8:40
-Khan, Taufique 8 minutes 40 seconds
-Etc.
-Khan, Taufique 8 minutes 40 seconds
-Application I'm not from.
-KA
-kaushik, Akshit
-8 minutes 41 seconds8:41
-kaushik, Akshit 8 minutes 41 seconds
-Not cheap, but cheaper, cheaper.
-
-Khan, Taufique
-8 minutes 44 seconds8:44
-Khan, Taufique 8 minutes 44 seconds
-Ohh.
-Khan, Taufique 8 minutes 44 seconds
-Chipper. Yeah.
-Khan, Taufique 8 minutes 45 seconds
-So I mean, you shouldn't, you shouldn't really have to go through chpa really, because the CSM will keep this rotating advisors spreadsheet up to date and current.
-KA
-kaushik, Akshit
-8 minutes 45 seconds8:45
-kaushik, Akshit 8 minutes 45 seconds
-Yeah, yeah.
-
-Khan, Taufique
-9 minutes 1 second9:01
-Khan, Taufique 9 minutes 1 second
-So it'll be listed in a chpa, correct?
-Khan, Taufique 9 minutes 6 seconds
-Yeah, like it will be listed right here for the participant, but you should just pull it from the rotating advisors external spreadsheet from this link.
-Khan, Taufique 9 minutes 19 seconds
-You shouldn't have to query chpa.
-Khan, Taufique 9 minutes 22 seconds
-You shouldn't have to go through the list.
-Khan, Taufique 9 minutes 24 seconds
-It's all it's.
-Khan, Taufique 9 minutes 26 seconds
-It's all right here.
-Khan, Taufique 9 minutes 27 seconds
-There's there's just four different ones.
-Khan, Taufique 9 minutes 29 seconds
-Whoever is listed for that quarter, that's what we'll go into chpa.
-KA
-kaushik, Akshit
-9 minutes 35 seconds9:35
-kaushik, Akshit 9 minutes 35 seconds
-OK.
-
-Khan, Taufique
-9 minutes 36 seconds9:36
-Khan, Taufique 9 minutes 36 seconds
 Yeah, it should.
 Khan, Taufique 9 minutes 37 seconds
 You shouldn't have to query.
@@ -191,3 +161,183 @@ I think we're gonna need to like like create a like a request or an Sr.
 
 Khan, Taufique
 10 minutes 50 seconds10:50
+Khan, Taufique 10 minutes 50 seconds
+OK.
+
+Presley, Rob
+10 minutes 51 seconds10:51
+Presley, Rob 10 minutes 51 seconds
+OK, umm and actually I think I think Jyothiswar can help you navigate that and you guys have just it's a request for for for drive access for network drive access.
+
+Khan, Taufique
+11 minutes 3 seconds11:03
+Khan, Taufique 11 minutes 3 seconds
+Yeah.
+KA
+kaushik, Akshit
+11 minutes 4 seconds11:04
+kaushik, Akshit 11 minutes 4 seconds
+OK, but it should room and signature.
+
+Presley, Rob
+11 minutes 8 seconds11:08
+Presley, Rob 11 minutes 8 seconds
+OK.
+Presley, Rob 11 minutes 11 seconds
+Hey, Jodie.
+
+Chinnikrishna, Jyothiswar
+11 minutes 11 seconds11:11
+Chinnikrishna, Jyothiswar 11 minutes 11 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 12 seconds
+Hello.
+Chinnikrishna, Jyothiswar 11 minutes 12 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 13 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 13 seconds
+We will increase the request to the concert team, get the access.
+
+Khan, Taufique
+11 minutes 20 seconds11:20
+Khan, Taufique 11 minutes 20 seconds
+Yeah.
+Khan, Taufique 11 minutes 21 seconds
+Well, actually it though.
+Khan, Taufique 11 minutes 23 seconds
+If you have any questions, please.
+Khan, Taufique 11 minutes 25 seconds
+Reach out to me.
+Khan, Taufique 11 minutes 26 seconds
+Umm.
+Khan, Taufique 11 minutes 26 seconds
+If you'd like, I can kind of maybe set up a a weekly or biweekly or just if you have questions, just give me a call or reach out to me and and we can address it.
+
+Yeah, it should.
+Khan, Taufique 9 minutes 37 seconds
+You shouldn't have to query.
+Khan, Taufique 9 minutes 37 seconds
+You shouldn't have to look for anything.
+Khan, Taufique 9 minutes 39 seconds
+They're gonna tell us exactly who or which commac to put in that participants account for all participants that enroll within that timeframe.
+KA
+kaushik, Akshit
+9 minutes 45 seconds9:45
+kaushik, Akshit 9 minutes 45 seconds
+OK.
+kaushik, Akshit 9 minutes 46 seconds
+Yeah, I can talk.
+kaushik, Akshit 9 minutes 51 seconds
+OK.
+
+Khan, Taufique
+9 minutes 52 seconds9:52
+Khan, Taufique 9 minutes 52 seconds
+Yep.
+Khan, Taufique 9 minutes 55 seconds
+OK.
+Khan, Taufique 10 minutes
+Any questions?
+Khan, Taufique 10 minutes 1 second
+Yes.
+KA
+kaushik, Akshit
+10 minutes 4 seconds10:04
+kaushik, Akshit 10 minutes 4 seconds
+We no major question.
+kaushik, Akshit 10 minutes 5 seconds
+Topic right now after the school I just raised for the both Creation ID then.
+kaushik, Akshit 10 minutes 12 seconds
+I go through this document once and any pending question is there, so I'll ask you again.
+
+Khan, Taufique
+10 minutes 17 seconds10:17
+Khan, Taufique 10 minutes 17 seconds
+You got it.
+KA
+kaushik, Akshit
+10 minutes 17 seconds10:17
+kaushik, Akshit 10 minutes 17 seconds
+So right now for this link whom I need to connect, I don't have the access right now.
+
+Khan, Taufique
+10 minutes 24 seconds10:24
+Khan, Taufique 10 minutes 24 seconds
+Ohh for the for the for the share drive.
+KA
+kaushik, Akshit
+10 minutes 27 seconds10:27
+kaushik, Akshit 10 minutes 27 seconds
+This link, yes, yes.
+
+Khan, Taufique
+10 minutes 29 seconds10:29
+Khan, Taufique 10 minutes 29 seconds
+Ah, that to get access to that, I think EBSI should be able to.
+Khan, Taufique 10 minutes 36 seconds
+Nancy's team should be able to get you access to this.
+Khan, Taufique 10 minutes 42 seconds
+Umm yeah, no.
+
+Presley, Rob
+10 minutes 43 seconds10:43
+Presley, Rob 10 minutes 43 seconds
+I don't think I'm gonna permission that Taufique.
+Presley, Rob 10 minutes 45 seconds
+I think we're gonna need to like like create a like a request or an Sr.
+
+Khan, Taufique
+10 minutes 50 seconds10:50
+Khan, Taufique 10 minutes 50 seconds
+OK.
+
+Presley, Rob
+10 minutes 51 seconds10:51
+Presley, Rob 10 minutes 51 seconds
+OK, umm and actually I think I think Jyothiswar can help you navigate that and you guys have just it's a request for for for drive access for network drive access.
+
+Khan, Taufique
+11 minutes 3 seconds11:03
+Khan, Taufique 11 minutes 3 seconds
+Yeah.
+KA
+kaushik, Akshit
+11 minutes 4 seconds11:04
+kaushik, Akshit 11 minutes 4 seconds
+OK, but it should room and signature.
+
+Presley, Rob
+11 minutes 8 seconds11:08
+Presley, Rob 11 minutes 8 seconds
+OK.
+Presley, Rob 11 minutes 11 seconds
+Hey, Jodie.
+
+Chinnikrishna, Jyothiswar
+11 minutes 11 seconds11:11
+Chinnikrishna, Jyothiswar 11 minutes 11 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 12 seconds
+Hello.
+Chinnikrishna, Jyothiswar 11 minutes 12 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 13 seconds
+Yeah.
+Chinnikrishna, Jyothiswar 11 minutes 13 seconds
+We will increase the request to the concert team, get the access.
+
+Khan, Taufique
+11 minutes 20 seconds11:20
+Khan, Taufique 11 minutes 20 seconds
+Yeah.
+Khan, Taufique 11 minutes 21 seconds
+Well, actually it though.
+Khan, Taufique 11 minutes 23 seconds
+If you have any questions, please.
+Khan, Taufique 11 minutes 25 seconds
+Reach out to me.
+Khan, Taufique 11 minutes 26 seconds
+Umm.
+Khan, Taufique 11 minutes 26 seconds
+If you'd like, I can kind of maybe set up a a weekly or biweekly or just if you have questions, just give me a call or reach out to me and and we can address it.
