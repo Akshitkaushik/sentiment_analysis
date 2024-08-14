@@ -1,233 +1,193 @@
-KA
 
+Khan, Taufique 7 minutes 43 seconds
+I guess that comes later, but yeah, that's uh, just this last page, just a couple of extra little criterias or the little extra requirements, but nothing too crazy.
+Khan, Taufique 7 minutes 57 seconds
+So yeah, Akshit any any questions.
+KA
 kaushik, Akshit
-0 minutes 8 seconds0:08
-kaushik, Akshit 0 minutes 8 seconds
-OK.
+8 minutes 5 seconds8:05
+kaushik, Akshit 8 minutes 5 seconds
+Umm.
+kaushik, Akshit 8 minutes 6 seconds
+A moment your question I already go through this document only one question I have.
+kaushik, Akshit 8 minutes 12 seconds
+I received one input file from the EBSI team right?
 
 Khan, Taufique
-0 minutes 8 seconds0:08
-Khan, Taufique 0 minutes 8 seconds
-You're the one that doing the stuff right now.
-KA
-
-kaushik, Akshit
-0 minutes 10 seconds0:10
-kaushik, Akshit 0 minutes 10 seconds
-Umm not only me and you actually another developer is busy with another call.
-
-Khan, Taufique
-0 minutes 12 seconds0:12
-Khan, Taufique 0 minutes 12 seconds
-Alright, let me.
-KA
-
-kaushik, Akshit
-0 minutes 16 seconds0:16
-kaushik, Akshit 0 minutes 16 seconds
-So yeah, so you already started the recording.
-
-Khan, Taufique
-0 minutes 17 seconds0:17
-Khan, Taufique 0 minutes 17 seconds
-OK, no problem.
-KA
-
-kaushik, Akshit
-0 minutes 19 seconds0:19
-kaushik, Akshit 0 minutes 19 seconds
-So we they yeah, Apple recording.
-
-Khan, Taufique
-0 minutes 20 seconds0:20
-Khan, Taufique 0 minutes 20 seconds
-Yep.
-Khan, Taufique 0 minutes 22 seconds
-Alright, so did you get a chance to go through the requirements?
-KA
-
-kaushik, Akshit
-0 minutes 26 seconds0:26
-kaushik, Akshit 0 minutes 26 seconds
+8 minutes 12 seconds8:12
+Khan, Taufique 8 minutes 12 seconds
 Yeah.
-
-Presley, Rob
-17 minutes 39 seconds17:39
-Presley, Rob 17 minutes 39 seconds
-OK.
-Presley, Rob 17 minutes 42 seconds
-I guess I'm just saying like like we don't, we don't get the like the URL that you're fighting right now.
-Presley, Rob 17 minutes 46 seconds
-That's not gonna be provided to us in the EBSI file.
-Presley, Rob 17 minutes 49 seconds
-It's always going to be this.
+KA
+kaushik, Akshit
+8 minutes 15 seconds8:15
+kaushik, Akshit 8 minutes 15 seconds
+So I need to refer that file.
+kaushik, Akshit 8 minutes 18 seconds
+Yeah, this one.
 
 Khan, Taufique
-17 minutes 50 seconds17:50
-Khan, Taufique 17 minutes 50 seconds
-On this template, Yep.
-
-Presley, Rob
-17 minutes 52 seconds17:52
-Presley, Rob 17 minutes 52 seconds
-OK.
-Presley, Rob 17 minutes 52 seconds
-And that's the case for the four others that are listed there too, always going to be OK.
+8 minutes 18 seconds8:18
+Khan, Taufique 8 minutes 18 seconds
+This.
+KA
+kaushik, Akshit
+8 minutes 19 seconds8:19
+kaushik, Akshit 8 minutes 19 seconds
+The uh.
 
 Khan, Taufique
-17 minutes 56 seconds17:56
-Khan, Taufique 17 minutes 56 seconds
+8 minutes 19 seconds8:19
+Khan, Taufique 8 minutes 19 seconds
+Here we go. Yep.
+KA
+kaushik, Akshit
+8 minutes 20 seconds8:20
+kaushik, Akshit 8 minutes 20 seconds
+This one?
+kaushik, Akshit 8 minutes 20 seconds
+Yeah, every time I receive this file right and at the end call at the end of this column we have this acct number right?
+kaushik, Akshit 8 minutes 28 seconds
+So I need to go through this number in the easy application.
+
+Khan, Taufique
+8 minutes 28 seconds8:28
+Khan, Taufique 8 minutes 28 seconds
+Yep.
+Khan, Taufique 8 minutes 31 seconds
+Umm.
+Khan, Taufique 8 minutes 34 seconds
+In the what? Sorry.
+KA
+kaushik, Akshit
+8 minutes 35 seconds8:35
+kaushik, Akshit 8 minutes 35 seconds
+In the easy application where using the easy application right?
+
+Khan, Taufique
+8 minutes 40 seconds8:40
+Khan, Taufique 8 minutes 40 seconds
+Etc.
+Khan, Taufique 8 minutes 40 seconds
+Application I'm not from.
+KA
+kaushik, Akshit
+8 minutes 41 seconds8:41
+kaushik, Akshit 8 minutes 41 seconds
+Not cheap, but cheaper, cheaper.
+
+Khan, Taufique
+8 minutes 44 seconds8:44
+Khan, Taufique 8 minutes 44 seconds
+Ohh.
+Khan, Taufique 8 minutes 44 seconds
+Chipper. Yeah.
+Khan, Taufique 8 minutes 45 seconds
+So I mean, you shouldn't, you shouldn't really have to go through chpa really, because the CSM will keep this rotating advisors spreadsheet up to date and current.
+KA
+kaushik, Akshit
+8 minutes 45 seconds8:45
+kaushik, Akshit 8 minutes 45 seconds
+Yeah, yeah.
+
+Khan, Taufique
+9 minutes 1 second9:01
+Khan, Taufique 9 minutes 1 second
+So it'll be listed in a chpa, correct?
+Khan, Taufique 9 minutes 6 seconds
+Yeah, like it will be listed right here for the participant, but you should just pull it from the rotating advisors external spreadsheet from this link.
+Khan, Taufique 9 minutes 19 seconds
+You shouldn't have to query chpa.
+Khan, Taufique 9 minutes 22 seconds
+You shouldn't have to go through the list.
+Khan, Taufique 9 minutes 24 seconds
+It's all it's.
+Khan, Taufique 9 minutes 26 seconds
+It's all right here.
+Khan, Taufique 9 minutes 27 seconds
+There's there's just four different ones.
+Khan, Taufique 9 minutes 29 seconds
+Whoever is listed for that quarter, that's what we'll go into chpa.
+KA
+kaushik, Akshit
+9 minutes 35 seconds9:35
+kaushik, Akshit 9 minutes 35 seconds
+OK.
+
+Khan, Taufique
+9 minutes 36 seconds9:36
+Khan, Taufique 9 minutes 36 seconds
+Yeah, it should.
+Khan, Taufique 9 minutes 37 seconds
+You shouldn't have to query.
+Khan, Taufique 9 minutes 37 seconds
+You shouldn't have to look for anything.
+Khan, Taufique 9 minutes 39 seconds
+They're gonna tell us exactly who or which commac to put in that participants account for all participants that enroll within that timeframe.
+KA
+kaushik, Akshit
+9 minutes 45 seconds9:45
+kaushik, Akshit 9 minutes 45 seconds
+OK.
+kaushik, Akshit 9 minutes 46 seconds
+Yeah, I can talk.
+kaushik, Akshit 9 minutes 51 seconds
+OK.
+
+Khan, Taufique
+9 minutes 52 seconds9:52
+Khan, Taufique 9 minutes 52 seconds
+Yep.
+Khan, Taufique 9 minutes 55 seconds
+OK.
+Khan, Taufique 10 minutes
+Any questions?
+Khan, Taufique 10 minutes 1 second
+Yes.
+KA
+kaushik, Akshit
+10 minutes 4 seconds10:04
+kaushik, Akshit 10 minutes 4 seconds
+We no major question.
+kaushik, Akshit 10 minutes 5 seconds
+Topic right now after the school I just raised for the both Creation ID then.
+kaushik, Akshit 10 minutes 12 seconds
+I go through this document once and any pending question is there, so I'll ask you again.
+
+Khan, Taufique
+10 minutes 17 seconds10:17
+Khan, Taufique 10 minutes 17 seconds
 You got it.
-Khan, Taufique 17 minutes 58 seconds
-Yep, and it just it.
-Khan, Taufique 18 minutes
-Yeah, it's.
-Khan, Taufique 18 minutes 1 second
-There's just for their like login screens or the state of Iowa.
-Khan, Taufique 18 minutes 8 seconds
-Yeah, just takes them to their to their logins.
-
-Presley, Rob
-18 minutes 13 seconds18:13
-Presley, Rob 18 minutes 13 seconds
-OK.
-
-Khan, Taufique
-18 minutes 17 seconds18:17
-Khan, Taufique 18 minutes 17 seconds
-Now 2345, which one I miss?
-Khan, Taufique 18 minutes 25 seconds
-You know.
-
-Presley, Rob
-18 minutes 29 seconds18:29
-Presley, Rob 18 minutes 29 seconds
-Great.
-Presley, Rob 18 minutes 30 seconds
-That makes it.
-Presley, Rob 18 minutes 30 seconds
-It should make it easier, right?
-Presley, Rob 18 minutes 39 seconds
-That's all I've got for now.
-
-Khan, Taufique
-18 minutes 40 seconds18:40
-Khan, Taufique 18 minutes 40 seconds
-Yeah. OK.
-Khan, Taufique 18 minutes 43 seconds
-Alright guys.
-Khan, Taufique 18 minutes 44 seconds
-Well, umm yeah, this is recorded.
-Khan, Taufique 18 minutes 47 seconds
-If you guys need it, but again, Akshit the Jewish hit me.
-Khan, Taufique 18 minutes 50 seconds
-Let me know or reach out. Ping me.
-Khan, Taufique 18 minutes 52 seconds
-Call me if you need anything, all right.
 KA
 kaushik, Akshit
-18 minutes 57 seconds18:57
-kaushik, Akshit 18 minutes 57 seconds
-Sure to figure.
+10 minutes 17 seconds10:17
+kaushik, Akshit 10 minutes 17 seconds
+So right now for this link whom I need to connect, I don't have the access right now.
 
 Khan, Taufique
-18 minutes 58 seconds18:58
-Khan, Taufique 18 minutes 58 seconds
-Alright.
-Khan, Taufique 18 minutes 59 seconds
-Thanks guys.
-Khan, Taufique 18 minutes 59 seconds
-Ohh Rob you Nancy, do you have Rob was asking if somebody got assigned to it on your team for the EBSI part.
-Khan, Taufique 19 minutes 15 seconds
-Maybe Nancy.
-Khan, Taufique 19 minutes 18 seconds
-Might be on mute.
-Khan, Taufique 19 minutes 24 seconds
-Alright, well Rob, hopefully hopefully hey.
-
-Hlavaty, Nancy
-19 minutes 26 seconds19:26
-Hlavaty, Nancy 19 minutes 26 seconds
-We can.
-Hlavaty, Nancy 19 minutes 27 seconds
-We can just we can just include Sinto going forward and then.
-
-Presley, Rob
-19 minutes 27 seconds19:27
-Presley, Rob 19 minutes 27 seconds
-There we go.
-
-Hlavaty, Nancy
-19 minutes 33 seconds19:33
-Hlavaty, Nancy 19 minutes 33 seconds
-Sinto will hand it off after a while, but I believe Sinto is out of the office today because he's sick.
-
-Khan, Taufique
-19 minutes 37 seconds19:37
-Khan, Taufique 19 minutes 37 seconds
-OK.
-Khan, Taufique 19 minutes 43 seconds
-Got it.
-
-Hlavaty, Nancy
-19 minutes 44 seconds19:44
-Hlavaty, Nancy 19 minutes 44 seconds
-OK.
-
-Khan, Taufique
-19 minutes 44 seconds19:44
-Khan, Taufique 19 minutes 44 seconds
-OK.
-Khan, Taufique 19 minutes 46 seconds
-Well, thank you, guys.
-Khan, Taufique 19 minutes 49 seconds
-Yeah, let me know if you have any questions.
-
-Presley, Rob
-19 minutes 53 seconds19:53
-Presley, Rob 19 minutes 53 seconds
-Wonderful.
-
-Khan, Taufique
-19 minutes 54 seconds19:54
-Khan, Taufique 19 minutes 54 seconds
-All right.
-
-Presley, Rob
-19 minutes 54 seconds19:54
-Presley, Rob 19 minutes 54 seconds
-Thanks very much.
-
-Khan, Taufique
-19 minutes 54 seconds19:54
-Khan, Taufique 19 minutes 54 seconds
-Thanks guys.
-Khan, Taufique 19 minutes 56 seconds
-Thanks by.
-
-Mulvihill, Harrison
-19 minutes 56 seconds19:56
-Mulvihill, Harrison 19 minutes 56 seconds
-Like everyone.
-
-Chinnikrishna, Jyothiswar
-19 minutes 57 seconds19:57
-Chinnikrishna, Jyothiswar 19 minutes 57 seconds
-Thank you.
+10 minutes 24 seconds10:24
+Khan, Taufique 10 minutes 24 seconds
+Ohh for the for the for the share drive.
 KA
 kaushik, Akshit
-19 minutes 59 seconds19:59
-kaushik, Akshit 19 minutes 59 seconds
-Thank you.
-
-Presley, Rob
-20 minutes 1 second20:01
-Presley, Rob 20 minutes 1 second
-Thanks guys.
+10 minutes 27 seconds10:27
+kaushik, Akshit 10 minutes 27 seconds
+This link, yes, yes.
 
 Khan, Taufique
-20 minutes 2 seconds20:02
-Khan, Taufique 20 minutes 2 seconds
-OK.
-
-Khan, Taufique stopped transcription
+10 minutes 29 seconds10:29
+Khan, Taufique 10 minutes 29 seconds
+Ah, that to get access to that, I think EBSI should be able to.
+Khan, Taufique 10 minutes 36 seconds
+Nancy's team should be able to get you access to this.
+Khan, Taufique 10 minutes 42 seconds
+Umm yeah, no.
+
+Presley, Rob
+10 minutes 43 seconds10:43
+Presley, Rob 10 minutes 43 seconds
+I don't think I'm gonna permission that Taufique.
+Presley, Rob 10 minutes 45 seconds
+I think we're gonna need to like like create a like a request or an Sr.
+
+Khan, Taufique
+10 minutes 50 seconds10:50
