@@ -1,20 +1,16 @@
-Email Draft:
+Hi Karthik,
 
-Subject: State of Iowa Solution Document – Review and Feedback Requested
+Yes, I connected with Jyothi before submitting the bot creation request. He told me some steps to follow, which I did. I also mentioned the easy application screen codes, but I think I need to attach the screenshot with the ticket. Sorry, I forgot to attach it. This won't happen again. I'll connect with Jyothi again and attach the requirement document to the ticket.
 
-Dear [Recipient's Name],
 
-I hope this email finds you well.
 
-Following our discussion last Friday and the walkthrough of the requirements, I have prepared the State of Iowa solution document. I have attached the document to this email for your review.
 
-The document outlines the steps that the RPA bot will perform in the future. I kindly request you to review the attached solution and let me know if there are any changes or additional steps that should be incorporated.
+As I informed you yesterday, the RPA code is ready for production with the new changes. I am just waiting for your feedback. Please let me know when we can deploy the new RPA code into production.
 
-Your feedback will be greatly appreciated. Please feel free to reach out if you have any questions or need further clarification.
 
-Thank you for your time and consideration.
 
-Best regards,
-Akshit KaushikHere's the corrected sentence:
+Thank you, Rob. Yes, I received the recording. I will go through the recording to understand the flow
 
-"Can we connect again on Friday for a quick call? By that day, I will have the CHPA application ready, so I'll have a better understanding of the flow."
+
+
+I have already discussed this with Cheryl, and she told me she will check the updates with the EBSI team first. Then, she can set the deployment date for the RPA."
