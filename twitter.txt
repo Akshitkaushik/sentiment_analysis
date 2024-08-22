@@ -1,1 +1,6 @@
-I successfully added the space. Also, I shared the email template with you. Please check it. The plan name is empty because, in the input sheet, the plan name column value is missing for that record. We intentionally left it empty for testing purposes
+I wanted to inform you that I have attached the process document along with the ticket request. Could you please review it at your earliest convenience and let me know if any additional information or documentation is required?
+
+Thank you for your attention to this matter. I look forward to your feedback.
+
+Best regards,
+Akshit Kaushik
