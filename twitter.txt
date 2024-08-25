@@ -1,98 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retirement Investors' Club</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .logo {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .logo img {
-            height: 50px;
-        }
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .content p, .content li {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .content ul {
-            margin-left: 20px;
-            list-style-type: disc;
-        }
-        .content a {
-            color: blue;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            font-size: 12px;
-            color: #555;
-            margin-top: 20px;
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="logo">
-        <img src="empower-logo.png" alt="Empower Logo">
-    </div>
-
-    <div class="title">
-        Welcome to the Iowa Retirement Investors' Club!
-    </div>
-
-    <div class="content">
-        <p>Your enrollment may require one final step. If you have not already done so, you must initiate your payroll contributions.</p>
-        
-        <ul>
-            <li>State of Iowa Employees - please follow the instructions detailed on <a href="https://das.iowa.gov/state-employees/human-resources/employees/ric-state-employees/457-payroll-deductions">DAS/RIC website</a> to elect your paycheck contribution amount.</li>
-            <li>Public Sector Employees (e.g., public hospital, city) - please complete your employer’s RIC Account Form found at <a href="https://das.iowa.gov/ric/pse/your-employer-plan-details-pse">RIC website</a>.</li>
-        </ul>
-        
-        <p>Once this is complete and your first contribution is deposited into your account, you will receive a confirmation document.</p>
-        
-        <p>First time logging in? Register your Empower accounts at <a href="http://empower.com/iowaric">http://empower.com/iowaric</a>.</p>
-        
-        <p>Designate your beneficiary – Please keep your beneficiaries updated by completing a beneficiary form. Go to <a href="http://empower.com/iowaric">http://empower.com/iowaric</a> (click on “About your plan” at the top of the page) to download the form.</p>
-        
-        <p>Local advisors are available in your area to provide the guidance you want. They can help you understand plan details, investment offerings, and much more. For a list of available advisors in your area, go to <a href="http://empower.com/iowaric">http://empower.com/iowaric</a> (click on “About your plan” at the top of the page).</p>
-        
-        <p>Need help? Call our Customer Care Center at 833-999-IOWA (4692) weekdays from 7 a.m. to 7 p.m. Central time.</p>
-    </div>
-
-    <div class="footer">
-        <p>Securities, when presented, are offered and/or distributed by Empower Financial Services, Inc., Member FINRA/SIPC. EFSI is an affiliate of Empower Retirement, LLC; Empower Funds, Inc.; and registered investment adviser, Empower Advisory Group, LLC. This material is for informational purposes only and is not intended to provide investment, legal, or tax recommendations or advice.</p>
-        
-        <p>“EMPOWER” and all associated logos and product names are trademarks of Empower Annuity Insurance Company of America.</p>
-        
-        <p>©2024 Empower Annuity Insurance Company of America. All rights reserved. RO3478697-0424</p>
-    </div>
-</div>
-
-</body>
-</html>
+Welcome to the Iowa Retirement Investors’ Club!
+Your enrollment may require one final step. If you have not already done so, you must initiate your 
+payroll contributions. 
+• State of Iowa Employees - please follow the instructions detailed on DAS/RIC website
+(https://das.iowa.gov/state-employees/human-resources/employees/ric-stateemployees/457-payroll-deductions) to elect your paycheck contribution amount.
+• Public Sector Employees (e.g. public hospital, city) - please complete your employer’s RIC
+Account Form found at https://das.iowa.gov/ric/pse/your-employer-plan-details-pse.
+Once this is complete and your first contribution is deposited into your account, you will receive a
+confirmation document.
+First time logging in? Register your Empower accounts at http://empower.com/iowaric.
+Designate your beneficiary – Please keep your beneficiaries updated by completing a beneficiary 
+form. Go to http://empower.com/iowaric (click on “About your plan” at the top of the page) to 
+download the form.
+Local advisors are available in your area to provide the guidance you want. They can help you
+understand plan details, investment offerings, and much more. For a list of available advisors in 
+your area, go to http://empower.com/iowaric (click on “About your plan” at the top of the page).
+Need help? Call our Customer Care Center at 833-999-IOWA (4692) weekdays from 7 a.m. to 7
+p.m. Central time.
+Securities, when presented, are offered and/or distributed by Empower Financial Services, Inc., Member
+FINRA/SIPC. EFSI is an affiliate of Empower Retirement, LLC; Empower Funds, Inc.; and registered investment adviser,
+Empower Advisory Group, LLC. This material is for informational purposes only and is not intended to provide investment,
+legal or tax recommendations or advice.
+“EMPOWER” and all associated logos and product names are trademarks of Empower Annuity InsuranceCompany of
+America.
+©2024 Empower Annuity Insurance Company of America. All rights reserved. RO3478697-0424
