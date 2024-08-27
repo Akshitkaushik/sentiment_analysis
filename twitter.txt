@@ -1,13 +1,16 @@
+Hi Team,
+
 I hope you're doing well.
 
-Today, we successfully deployed the latest code. Could you please confirm the schedule date? As per the email below, we need to run this bot biweekly starting now. Just to confirm, the next biweekly run is scheduled for Tuesday, September 10th, correct? So, moving forward, we will run the bot every other Tuesday.
+I need your assistance in updating the HDQ bot schedule. The business team has requested a change in the current schedule. Currently, the bot is running every Wednesday, but they would like it to be scheduled every other Tuesday, on a bi-weekly basis.
 
-For your reference, before this deployment, the bot was running every Wednesday.
+Please update the bot schedule accordingly, as business and Harish have already confirmed the change. You can refer to the email below for confirmation.
 
-Please confirm this so we can finalize the bot's schedule.
+Additionally, I shared the latest code with Nithin today, and he has successfully deployed it into production. We need to run the bot today once the new ESBSI input file is uploaded by the team. I will notify you as soon as the input file is ready so we can proceed with today's run.
 
+Please also ensure that the current Wednesday schedule is stopped.
 
-The bot has been successfully deployed with the new changes. I have attached the change request file to this email. The changes in this latest code include:
+Thank you for your support.
 
-Removal of the Cirrus part
-Update to the email
+Best regards,
+Akshit
