@@ -1,11 +1,13 @@
-Hi Jyothi,
+I hope you're doing well.
 
-As we discussed during the last code review call, Cheryl has given her approval. You can check the approval in the email chain below. Please provide your approval as well, as I need to update the code into production by tomorrow.
+Today, we successfully deployed the latest code. Could you please confirm the schedule date? As per the email below, we need to run this bot biweekly starting now. Just to confirm, the next biweekly run is scheduled for Tuesday, September 10th, correct? So, moving forward, we will run the bot every other Tuesday.
+
+For your reference, before this deployment, the bot was running every Wednesday.
+
+Please confirm this so we can finalize the bot's schedule.
 
 
-Hi Harish,
+The bot has been successfully deployed with the new changes. I have attached the change request file to this email. The changes in this latest code include:
 
-Please give me your approval to push the code into production. Jyothi and Cheryl have already given their approval, so I just need yours to proceed.
-
-
-Please give me your approval for this email template. I used the email PDF you shared last time to create this template. If everything looks good, please give me your approval so I can attach this template to the RPA code
+Removal of the Cirrus part
+Update to the email
