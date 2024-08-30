@@ -1,8 +1,16 @@
-I wanted to let you know that there is currently no input file in the directory, as you can see from the attached screenshot.
+Subject: Clarification Needed Regarding Audit Log Changes
 
-As discussed, we have scheduled the bot to run bi-weekly on Tuesdays. If we don't run it today, the next run will be on September 10th, since the old schedule has already been stopped.
+Dear Jyothi,
 
-I’m currently waiting for the input file and will keep you updated.
+I hope this email finds you well.
 
-Thank you,
-Akshit
+I received an email from Cheyl regarding the recent changes made to the audit file. She is seeking clarification on why these changes were implemented. As per your previous guidance, I removed the audit log code and ensured that the input file now functions as the audit log, containing only the status information. These changes have been applied to the latest version of the code.
+
+Since you have a deeper understanding of the reasons behind these changes, could you kindly respond to Cheyl's email to provide the necessary explanation?
+
+I have attached the original email for your reference.
+
+Thank you for your support.
+
+Best regards,
+Akshit Kaushik
