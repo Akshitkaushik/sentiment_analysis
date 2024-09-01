@@ -1,16 +1,1 @@
-Subject: Clarification Needed Regarding Audit Log Changes
-
-Dear Jyothi,
-
-I hope this email finds you well.
-
-I received an email from Cheyl regarding the recent changes made to the audit file. She is seeking clarification on why these changes were implemented. As per your previous guidance, I removed the audit log code and ensured that the input file now functions as the audit log, containing only the status information. These changes have been applied to the latest version of the code.
-
-Since you have a deeper understanding of the reasons behind these changes, could you kindly respond to Cheyl's email to provide the necessary explanation?
-
-I have attached the original email for your reference.
-
-Thank you for your support.
-
-Best regards,
-Akshit Kaushik
+No, I did not share the audit file with Cheryl during the testing phase because we were using our group email ID. I only shared the email template with Cheryl, and all the other code is working fine. I shared the test results with you only. Now, almost all the columns are the same in the input file, and Cheryl is asking why we changed the audit log format. Could you please reply to that email since you have a good understanding of why we made these changes?
