@@ -13,3 +13,23 @@ Thank you for your guidance and support.
 
 Best regards,
 Akshit Kaushik
+
+
+Here's a more polished and polite version of your email:
+
+---
+
+**Subject:** Optimization of "Commanc Find" Step and Clarification on ACCT Column
+
+Dear Khan,
+
+I hope this email finds you well.
+
+Following our recent discussion, I have been reviewing the "Commanc find" step with my team. You mentioned that the team is manually searching for the "Commanc" line by line, and I will check if this process can be optimized by using a query. I will update you accordingly on our findings.
+
+Additionally, as per our conversation, you mentioned that in real-time scenarios, the ACCT column always contains a value and is never blank. Could you kindly confirm this for me at your convenience?
+
+Thank you for your time, and I look forward to your response.
+
+Best regards,  
+Akshit Kaushik  
