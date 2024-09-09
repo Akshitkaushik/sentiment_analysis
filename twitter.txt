@@ -1,7 +1,15 @@
-Just wanted to give you a quick update. During our last call, Khan explained what we're doing with RPA, mainly updating the Comm/Acct number on the CHPA screen. I’ve created the solution document based on his requirements, and he has approved it. I’ve attached the approval email for your reference.
+Dear Khan,
 
-One thing is still pending: Khan is checking with the EBSI team if they can use another Comm/Acct file directly in their process. If they can, we can skip that file in our RPA setup. I’m just waiting for an update on this. You can check the attached email for more details.
+I hope this email finds you well.
 
-Once everything is sorted and the EBSI file is ready, I’ll set up a call with Khan to go over the solution again.
+As per our recent discussion on the call, I have been reviewing the "Commanc find" step with my team.
 
-I’ll confirm the dates as soon as I have the final requirements. Also, could you let me know if I should set up the call with Khan or the EBSI team?
+You mentioned that, in real-time scenarios, the ACCT column always contains a value and is never left blank. Could you please confirm this for me?
+Additionally, as advised, I will be pausing the development of my current project until I receive further updates from you. I understand that you are coordinating with the EBSI team regarding the data part, and once you have the necessary information, I will resume development as required.
+
+Currently, as you mentioned, I am working with my team to verify if the "Commanc find" step can be executed via a query. You mentioned that the team is manually searching for the Commanc line by line, so I will check if it can be optimized using a query and update you accordingly.
+
+Thank you for your guidance and support.
+
+Best regards,
+Akshit Kaushik
