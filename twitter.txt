@@ -1,11 +1,15 @@
-Hi @D R, jyothilakshmi@Hlavaty, Nancy and all,
+Subject: Pausing Development of Current Project
 
-I spoke to Automation and my team after our call. We have a much better recommendation that Danette and Shannon just signed off on:
+Dear [Recipient's Name],
 
-We are going to turn on Online Enrollment for the 457 plan (744906-01) with a Plan Enrollment Code (PEC) and add a “dummy ppt” account to make sure the Event Type: NPDI ENRL is pulling in. Rather than using the UAT environment, having a “live” record for our Automation Teams is the best route to take.
+I hope this message finds you well.
 
-@D R, jyothilakshmi, once we have the dummy account, you should be able to run the population criteria as is and pull in the record.
+As per our recent discussion, I will be pausing the development of my current project until I receive further updates from you. I understand that you are coordinating with the EBSI team regarding the data aspects of the project.
 
-More to come in the next couple days. I will keep everyone updated as we move forward.
+Once you have the necessary information and are able to provide an update, I will promptly resume development as required. Please let me know if there are any additional steps I should take in the meantime or if there is any other information you need from my side.
 
-Thank you,
+Thank you for your attention to this matter. I look forward to your update.
+
+Best regards,
+
+Akshit Kaushik
