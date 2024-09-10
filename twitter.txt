@@ -1,15 +1,13 @@
-Subject: Pausing Development of Current Project
 
-Dear [Recipient's Name],
+Here’s the updated version with "command number" replaced by "COMMAC":
 
-I hope this message finds you well.
+Hi Anand and Vikram,
 
-As per our recent discussion, I will be pausing the development of my current project until I receive further updates from you. I understand that you are coordinating with the EBSI team regarding the data aspects of the project.
+The business user has a question, and I need your assistance to check and update me. On the GQ19SSCP screen, we have an "Acct" column with multiple records in the first column. Currently, to search for a specific COMMAC, I am going through the records line by line.
 
-Once you have the necessary information and are able to provide an update, I will promptly resume development as required. Please let me know if there are any additional steps I should take in the meantime or if there is any other information you need from my side.
+Is there an alternative way to search for that specific COMMAC using a query or keystroke, instead of going through the lines manually? I have attached a screenshot for your reference. Please let me know if there is any other method to search directly for the particular COMMAC.
 
-Thank you for your attention to this matter. I look forward to your update.
+Thank you.
 
 Best regards,
-
-Akshit Kaushik
+[Your Name]
