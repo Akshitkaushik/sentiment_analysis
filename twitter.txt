@@ -1,130 +1,69 @@
-\Here is the corrected procedure, with numbered steps for clarity:
-
----
-
-### Steps for AFREALLOC Rule Not on Plan:
+Here’s the corrected version of your points with numbering:
 
 1. RPA will receive the Input report from ---- [TBD].
-2. Login to EASY and select the database as given in the input report.
-3. Enter code "CHGR" and press [Enter].
-4. Insert Plan Number -> Press [Enter], then press F12.
-5. Check if a pop-up exists, then click on the OK button.
-6. Select "Change Group Account Recovery Information" -> Press [Enter].
-7. Since the rule is not on plan:
-    - Search Rule ID row by row in the RULE ID column.
-    - If Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
-    - Check if a pop-up appears, then click the OK button.
-    - Insert the Rule ID from the spreadsheet in the [RULE ID column] and press [Enter].
-    - Select the rule ID from the below screen, then click OK.
-8. Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
-9. Press Tab 4 times to reach the Statement Label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
-10. Press F6 to save.
-11. Press F12 once to bring up the next screen.
-12. Press F12 to go to the description screen, then insert the DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
-13. Press F12 twice.
-14. Insert the plan number, then press [Enter] 6 times to insert the FUND TYPE from the spreadsheet [CALC = Y column].
-    - Split the value with a comma, then enter the first value, press [Enter], and insert Y.
-15. Press the down arrow key.
-    - Insert the plan number -> Press [Enter] 6 times to insert the second FUND TYPE from the spreadsheet.
-    - Press [Enter], insert Y, then repeat the process for the third value.
-16. If a pop-up appears, click the OK button.
-17. Press F12 to reach the % of BASIS.
-18. Insert 0 -> Press [Enter], then press F6 to save.
-19. If a pop-up appears, click the OK button.
-20. Press F11 four times to return to the previous screen.
-21. Press the down arrow key to go to "Maintain Debit Method Order Rules" and press F12 three times to land here.
-22. Insert the plan number -> Press [Enter], then insert the sequence number (start with 1 and increment by 1 each time).
-23. Press [Enter] 6 times to reach the FUND TYPE column.
-24. Insert STK from the spreadsheet [DMO = Y column, split the value with a comma, then enter the first value].
-25. Press [Enter], then insert Y.
-26. Press the down arrow key, and if a pop-up appears, press [Enter] to go through it.
-27. Repeat steps 23-26 for the second and third STK values.
-28. Press F6 to save, then press Ctrl+F9.
-29. Insert the Begin Date, End Date, and Schedule Date from the spreadsheet [BEGIN, END, SCHE Date columns].
-    - Ensure the schedule date ends with "00:00".
-30. Hit [Enter] to move to the REQUESTED AMOUNT (the system should insert a date into the EFFECTIVE column).
-31. Insert the amount from the spreadsheet [Requested Amount column].
-32. Press F6 to save -> Press F3 twice to return to CHGR.
-33. Continue to the next record.
-34. Note: If any column value is already filled in, the bot will overwrite that value.
 
----
+2. Login to EASY and select the Database as given in the input report.
 
-### Steps for AFREALLOC Rule on Plan:
+3. Enter code as “CHGR” and hit “Enter.”
 
-1. RPA will receive the Input report from ---- [TBD].
-2. Login to EASY and select the database as given in the input report.
-3. Enter code "CHGR" and press [Enter].
-4. Insert Plan Number -> Press [Enter], then press F12.
-5. Check if a pop-up exists, then click the OK button.
-6. Select "Change Group Account Recovery Information" -> Press [Enter].
-7. Since the rule is on the plan:
-    - If the rule appears twice or more, DO NOT use a rule with a term date.
-8. Press F12 to bring up the selection screen.
-9. Press F12 to go into "Maintain Combo Details."
-10. Ensure the description is displayed as expected.
-11. Press F12 twice to check for the standard three exclusions.
-    - If not present, they need to be added.
-12. Press F12 once to reach the % of BASIS section.
-13. Use the down arrow key until a clean row with no data appears.
-14. Insert 0 and press F6 to save.
-15. Press F11 four times to return to the previous screen.
-16. Use the down arrow key to reach "Maintain Debit Method Order Rules" and press F12.
-17. Press F12 to go to the data insert columns.
-    - Ensure the three standard entries are there; if not, add them.
-18. Press Ctrl+F9 to go to the assessment row, then insert a new row using Ctrl+F12.
-19. Insert the Begin Date, End Date, and Schedule Date from the spreadsheet [BEGIN, END, SCHE Date columns].
-    - Ensure the schedule date ends with "00:00".
-20. Hit [Enter] again to move to the REQUESTED AMOUNT.
-    - The system should insert a date into the EFFECTIVE column.
-21. Insert the amount from the spreadsheet.
-22. Press F6 to save -> Press F3 twice to return to CHGR.
-23. Continue to the next record.
-24. We then click OK and press F3 twice to exit the plan and return to CHGR to begin the next plan in the list.
+4. Insert Plan Number -> Press [Enter] then Press F12.
+   - Check if a pop-up appears, then click on the OK button.
 
----
+5. Select "Change group account recovery information," then press Enter.
 
-### Steps for AFREALLOCR Rule Not on Plan:
+6. Since the Rule is not on the plan:
+   - Search for the Rule ID row by row in the RULE ID column. 
+   - If the Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
+   - Check if a pop-up appears, then click OK.
+   - Insert the Rule ID from the spreadsheet in the [RULE ID column], then hit Enter.
+   - Select the Rule ID from the below screen, then click OK.
 
-1. RPA will receive the Input report from ---- [TBD].
-2. Login to EASY and select the database as given in the input report.
-3. Enter code "CHGR" and press [Enter].
-4. Insert Plan Number -> Press [Enter], then press F12.
-5. Check if a pop-up exists, then click the OK button.
-6. Select "Change Group Account Recovery Information" -> Press [Enter].
-7. Since the rule is not on the plan:
-    - Search Rule ID row by row in the RULE ID column.
-    - If Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
-    - Check if a pop-up appears, then click OK.
-    - Insert the Rule ID from the spreadsheet in the [RULE ID column] and press [Enter].
-    - Select the Rule ID from the below screen, then click OK.
-8. Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
-9. Press Tab 4 times to reach the Statement Label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
-10. Press F6 to save.
-11. Press F12 once to bring up the next screen.
-12. Press F12 to go to the description screen and insert the DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
-13. Press F12 three times to reach the amount of the fee.
-14. Insert the amount from the sheet [FEE AMOUNT column], then press F6 to save.
-15. Note: If CALC = Y on the spreadsheet, the bot will perform the same actions as in the AFREALLOC rule not on plan process.
+7. Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
 
----
+8. Press Tab [4 times] to reach the statement label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
 
-### Steps for AFREALLOCR Rule on Plan:
+9. Press F6 to save.
 
-1. RPA will receive the Input report from ---- [TBD].
-2. Login to EASY and select the database as given in the input report.
-3. Enter code "CHGR" and press [Enter].
-4. Insert the group number -> Press [Enter], then press F12.
-5. Select "Change Group Account Recovery Information" -> Press [Enter].
-6. Since the rule is on the plan:
-    - If the rule appears twice or more, DO NOT use a rule with a term date.
-7. Press F12 to bring up the selection screen.
-8. Press F12 to enter "Maintain Combo Details."
-9. Ensure the description is displayed as expected.
-10. Press F12 three times to reach the amount of the fee.
-11. Use the down arrow key to the last amount and add a term date that is one day prior to the EFT date on the sheet.
-12. Use the down arrow key until a clean row with no data appears, then insert the amount from the sheet.
-13. Press F6 to save; a new date will appear since the old fee was termed.
-14. Press F11 four times to return to the previous screen.
-15. Use the down arrow key to reach "View Payee Account Information," then press F12.
-16. TBD (further steps depend on additional information).
+10. Press F12 once to bring up the next screen.
+
+11. Press F12 again to bring you to the next screen, which lands you on the description screen.
+    - Insert DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
+
+12. Press F12 three times to bring you to the amount of Fee.
+    - Insert the amount from the spreadsheet in the [FEE AMOUNT column].
+    - Press F6 to save.
+
+13. If the CALC Y value exists in the spreadsheet, the bot will perform the same action as filling the CALC Y value on the [AFREALLOC rule not on plan].
+
+14. Press F11 four times to bring you back to this screen, then press the down arrow key once to VIEW PAYEE ACCOUNT INFO, then press F12.
+
+15. On the payment receiver type, press SHIFT+F1 to bring up a drop-down, pick "Plan holding account," and hit Enter.
+
+16. Hit Enter again to move to the share PCT and enter 100.
+
+17. Enter the effective date by inserting the date from the spreadsheet in the [EFT DATE (if new rule added) column].
+
+18. Press Enter twice to land on the Money Type.
+
+19. Press SHIFT+F1 to bring up a drop-down menu. At this point, pick the UPA2 option.
+
+20. If there are more than one UPA2 choices, take a screenshot and press F3 to go to the next record.
+
+21. If there is only one UPA2 choice, select it.
+
+22. Hit Enter, and it will fill in the information from the choice you made.
+
+23. Press Enter five times to reach ARS NAME. You may get a pop-up; press Enter to bypass it.
+
+24. Once on ARS NAME, press SHIFT+F1 and pick "FEE_REPORT_TRF," hit Enter, then press F6 to save.
+
+25. Press F11, then press Ctrl+F9 to bring you to the assessment row section.
+
+26. Insert the begin, end, and schedule dates from the spreadsheet [BEGIN, END, SCHE DATE columns]. The schedule date must end with 00:00.
+
+27. Hit Enter to move to REQUESTED AMOUNT (the system at this point should insert a date into the EFFECTIVE column—nothing to insert here).
+    - Press F6 to save, then press F3 twice to return to CHGR.
+
+28. Click OK and press F3 twice to exit the plan and return to CHGR to start on the next plan in the list.
+
+Let me know if you need further adjustments!
