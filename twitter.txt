@@ -1,13 +1,508 @@
+CAFR BOT PROCEDURE
 
-Here’s the updated version with "command number" replaced by "COMMAC":
+Steps AFREALLOC rule not on plan
 
-Hi Anand and Vikram,
 
-The business user has a question, and I need your assistance to check and update me. On the GQ19SSCP screen, we have an "Acct" column with multiple records in the first column. Currently, to search for a specific COMMAC, I am going through the records line by line.
+•	RPA will receive Input report  from ----   [TBD]
+•	Login to EASY and select the Database as given in the input report
+•	Enter code as “CHGR” and hit “Enter”
 
-Is there an alternative way to search for that specific COMMAC using a query or keystroke, instead of going through the lines manually? I have attached a screenshot for your reference. Please let me know if there is any other method to search directly for the particular COMMAC.
+ 
+•	Insert Plan Number-> Press [Enter] then Press F12
+	check if pop exists so click on the ok Button 
+•	Select change group account recovery information
+	press Enter
 
-Thank you.
+ 
 
-Best regards,
-[Your Name]
+ 
+•	Since the Rule is not on plan, 
+	Search Rule ID row by row on the RULE id coloumn if Rule id not found so insert the new row using ctrl+f12 or down arrow key
+	check if pop is open so click ok button 
+	then we need to insert the Rule ID  from the spreadsheet in the [RULE ID coloumn] then hit enter 
+	then sleect the rule id fro m the below screen then click ok 
+	
+•	Tab over to effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added ) coloumn]
+
+
+
+
+•	press Tab [4times] to statement label column and insert STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL coloumn] 
+•	Press F6 to save
+ 
+
+•	press F12 once to bring up the below screen 
+
+
+•	pressF12 to bring you to the next screen which lands you on description screen
+	insert DESCRIPTION from spreadsheet in the [DESCRIPTION coloumn]
+ 
+
+•	press F12 2 times
+	insert plan number- then press enter 6times to insert FUND TYPE-from the spreadheet[CALC =Y coloumn split the value with , then enter the first value ] then press enter then insert Y.
+ 
+
+•	press down  arrow key again 
+	insert plan number- then press enter 6times to insert FUND TYPE-from the spreadheet[CALC =Y coloumn, enter the second value ] then press enter then insert Y.
+	press down  arrow key again
+	insert plan number- then press enter 6times to insert FUND TYPE-from the spreadheet[CALC =Y coloumn, enter the third value ] then press enter then insert Y.
+	
+	if any pop is open so click ok button
+
+	
+
+
+ 
+
+•	then press F12 to % of BASIS
+•	insert a 0-enter then prss F6 to save
+	if pop is open  clck ok button
+
+
+ 
+ 
+
+•	press F11 4times to get this screen, press arrow key down go to Maintain debit method order rules
+ 
+•	press F12  3times to land you here
+ 
+	insert plan number press enter then insert the seq number [start with 1 and every time increment with 1] 
+•	press enter 6times got to fund type coloumn-
+	insert STK from the spreadsheet [DMO = Y coloumn split the value with , then enter the first value]-   hit enter then insert Y-  press arrow key down if pop-up enter thru it
+ 	insert plan number press enter then insert the seq number
+•	press enter 6times got to fund type coloumn-
+	insert STK from the spreadsheet [DMO = Y coloumn split the value with , then enter the second value]-   hit enter then insert Y-  press arrow key down if pop-up enter thru it
+ 	insert plan number press enter then insert the seq number
+•	press enter 6times got to fund type coloumn-
+	insert STK from the spreadsheet [DMO = Y coloumn split the value with , then enter the third value]-   hit enter then insert Y- 
+
+
+ 
+
+•	
+	press F6 to save and then press CONTROL F9 
+
+•	Insert begin date, end date  and sche date from spreedsheet [BEGIN	END 	SCHE Date coloumns ]-sche date must end with 00:00
+
+•	Hit enter to move to REQUESTED AMOUNT (the system at that time should insert a date into the EFFECTIVE column), insert amount from spreadsheet [Requested amount coloumn]
+
+ 
+ 
+
+•	Once amount is inserted hit F6 to SAVE-> press F3 2times to return to CHGR
+•	Continue to next record
+
+note. By any change if any coloumn value already filed there so bot will overwrite that value 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps AFREALLOC rule on plan
+•	RPA will receive Input report  from ----   [TBD]
+•	Login to EASY and select the Database as given in the input report
+•	Enter code as “CHGR” and hit “Enter”
+
+ 
+•	insert group number-> Enter then F12
+•	Select change group account recovery information-> then Enter
+
+ 
+
+ 
+•	Since the rule is on the plan, we need to update a few points of the rule-if the rule is on the plan twice or more-DO NOT use a rule with a term date
+ 
+
+
+•	F12 to bring up the seclection screen-f12 into Maintain Combo Details
+ 
+•	Description should show as below
+ 
+
+•	F 12 x2: Standard three exclusions should be there-if not they need to be added
+ 
+
+•	F12 x1 to bring us % of basis section
+•	arrow key down until a new clean row appears with no data
+•	Insert a 0 here and F6 to save
+ 
+
+
+•	F11 x 4 brings you back to this screen-arrow key down once to maintain Debit Method Order Rules and F12
+ 
+
+•	F12 to bring you to the data insert columns-make sure the three standard are there-if not add them 
+
+
+
+
+
+
+
+
+
+
+•	Control F9 to go to the assessment row and insert a new row using Control F12
+•	Insert begin, end and sche date from sheet-sche date must end with 00:00  
+  
+
+•	Hit enter again to move to REQUESTED AMOUNT (the system at that time should insert a date into the EFFECTIVE column), insert amount from spreadsheet 
+•	Once amount is inserted hit F6 to SAVE->Enter-> F3 x2 to return to CHGR
+•	We then click ok and F3 twice to take us out of the plan and back to CHGR to start on the next plan in the list
+
+
+
+
+
+
+
+
+
+Steps AFREALLOCR rule not on plan
+•	RPA will receive Input report  from ----   [TBD]
+•	Login to EASY and select the Database as given in the input report
+•	Enter code as “CHGR” and hit “Enter”
+
+ 
+•	Insert Plan Number-> Press [Enter] then Press F12
+	check if pop exists so click on the ok Button 
+•	Select change group account recovery information
+	press Enter
+
+ 
+
+ 
+•	Since the Rule is not on plan, 
+	Search Rule ID row by row on the RULE id coloumn if Rule id not found so insert the new row using ctrl+f12 or down arrow key
+	check if pop is open so click ok button 
+	then we need to insert the Rule ID  from the spreadsheet in the [RULE ID coloumn] then hit enter 
+	then sleect the rule id fro m the below screen then click ok 
+	
+•	Tab over to effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added ) coloumn]
+
+
+
+
+•	press Tab [4times] to statement label column and insert STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL coloumn] 
+•	Press F6 to save
+ 
+
+•	press F12 once to bring up the below screen 
+
+
+•	pressF12 to bring you to the next screen which lands you on description screen
+	insert DESCRIPTION from spreadsheet in the [DESCRIPTION coloumn]
+ 				
+				
+													
+													
+													
+													
+•	press F12 3times   to bring you to amount of Fee-
+	insert amount from sheet [FEE AMOUNT coloumn] pressF6 to save
+
+NOte . if we have the CALC y vlaue on the spreadsheet so bot will perporm the same action which bot was performing on filling the calc y value on the [AFREALLOC rule not on plan]							
+
+			
+													
+													
+													
+•	press F11  4times  to bring you back to this screen then press arrow key down once to VIEW PAYEE ACCOUNT INFO then  press F12				
+								
+•	Takes you to this screen: 											
+																				
+													
+													
+•	On payment receiver type-SHIFT F1 to bring up a drop down-pick plan holding account and hit enter				
+													
+						
+						
+													
+													
+•	Hit enter again to move to share PCT enter 100									
+													
+						
+													
+													
+													
+•	Enter to Effective date-insert date from sheet [EFT DATE (if new rule added ) coloumn]								
+													
+
+						
+													
+													
+													
+													
+•	press Enter 2times to land on Money Type											
+
+
+							
+													
+													
+													
+•	press SHIFT F1 to bring up a drop down menu-at this point we need to pick the UPA2 option 	
+													
+
+						
+													
+													
+													
+•	what if there are more then one UPA2 choice?)
+
+1.	take the screenshot and click F3 and go to next record.
+
+
+•	If only one UAP2  -   Select 													
+													
+				
+													
+													
+													
+•	Hit Enter and it fills in the info from the choice you made above 								
+													
+					
+													
+													
+•	Enter 5times  to ARS NAME-may get a pop up but enter past it								
+
+					
+													
+													
+													
+•	Once on ARS name shift F1 and pick FEE_REPORT_TRF hit enter, then F6 to save						
+													
+
+
+				
+													
+													
+													
+													
+													
+•	press F11 then press control F9-bring you to the assessment row section 								
+				
+•	Insert begin, end and sche date from sheet[BEGIN	,END 	,SCHE Date coloumns ]-sche date must end with 00:00							
+
+
+													
+													
+
+												
+													
+													
+													
+													
+•	Hit enter to move to REQUESTED AMOUNT (the system at that time should insert a date into the EFFECTIVE Column nothing to insert here-F6 to save->F3 2 times  to return to CHGR
+
+ 
+
+•	We then click ok and F3 twice to take us out of the plan and back to CHGR to start on the next plan in the list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps AFREALLOCR rule on plan
+
+•	RPA will receive Input report  from ----   [TBD]
+•	Login to EASY and select the Database as given in the input report
+•	Enter code as “CHGR” and hit “Enter”
+
+ 
+•	insert group number-> Enter then F12
+•	Select change group account recovery information-> then Enter
+
+ 
+
+ 
+
+
+				
+														
+														
+														
+														
+•	Since the rule is on the plan, we need to update a few points of the rule-if the rule is on the plan twice or
+ moe-DO NOT use a rule with a term date	
+														
+
+
+														
+														
+														
+														
+														
+•	F12 to bring up the seclection screen-f12 into Maintain Combo Details								
+														
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+•	Description should show as below											
+														
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+														
+•	F12 x3 to bring us to amount of fee-arrow down to the last amount and add a term date that is one
+ day prior to the EFT date on the sheet		
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+•	then arrow key down until a new clean row appears with no data and insert amount from sheet F6 to 
+              save-new date will appear since old FEE was termed	
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+•	F11 x 4 brings you back to this screen-arrow key down once to View payee account information and F12
+
+•	TBD														
+							
+ 	 	 	 	 	 	 	 	 	 	 				
+ 	 	 	 	 	 	 	 	 	 				
+														
+														
+														
+														
+														
+														
+•	Insert begin, end and sche date from sheet-sche date must end with 00:00								
+
+
+														
+														
+														
+														
+														
+														
+														
+														
+•	Hit enter to move to REQUESTED AMOUNT (the system at that time should insert a date into the EFFECTIVE
+nothing to insert here-F6 to save->F3 x 2 to return to CHGR
+
+
+•	We then click ok and F3 twice to take us out of the plan and back to CHGR to start on the next plan in the list
+
+
+
+
+
