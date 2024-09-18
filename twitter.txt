@@ -1,69 +1,17 @@
-Here’s the corrected version of your points with numbering:
-
-1. RPA will receive the Input report from ---- [TBD].
-
-2. Login to EASY and select the Database as given in the input report.
-
-3. Enter code as “CHGR” and hit “Enter.”
-
-4. Insert Plan Number -> Press [Enter] then Press F12.
-   - Check if a pop-up appears, then click on the OK button.
-
-5. Select "Change group account recovery information," then press Enter.
-
-6. Since the Rule is not on the plan:
-   - Search for the Rule ID row by row in the RULE ID column. 
-   - If the Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
-   - Check if a pop-up appears, then click OK.
-   - Insert the Rule ID from the spreadsheet in the [RULE ID column], then hit Enter.
-   - Select the Rule ID from the below screen, then click OK.
-
-7. Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
-
-8. Press Tab [4 times] to reach the statement label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
-
-9. Press F6 to save.
-
-10. Press F12 once to bring up the next screen.
-
-11. Press F12 again to bring you to the next screen, which lands you on the description screen.
-    - Insert DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
-
-12. Press F12 three times to bring you to the amount of Fee.
-    - Insert the amount from the spreadsheet in the [FEE AMOUNT column].
-    - Press F6 to save.
-
-13. If the CALC Y value exists in the spreadsheet, the bot will perform the same action as filling the CALC Y value on the [AFREALLOC rule not on plan].
-
-14. Press F11 four times to bring you back to this screen, then press the down arrow key once to VIEW PAYEE ACCOUNT INFO, then press F12.
-
-15. On the payment receiver type, press SHIFT+F1 to bring up a drop-down, pick "Plan holding account," and hit Enter.
-
-16. Hit Enter again to move to the share PCT and enter 100.
-
-17. Enter the effective date by inserting the date from the spreadsheet in the [EFT DATE (if new rule added) column].
-
-18. Press Enter twice to land on the Money Type.
-
-19. Press SHIFT+F1 to bring up a drop-down menu. At this point, pick the UPA2 option.
-
-20. If there are more than one UPA2 choices, take a screenshot and press F3 to go to the next record.
-
-21. If there is only one UPA2 choice, select it.
-
-22. Hit Enter, and it will fill in the information from the choice you made.
-
-23. Press Enter five times to reach ARS NAME. You may get a pop-up; press Enter to bypass it.
-
-24. Once on ARS NAME, press SHIFT+F1 and pick "FEE_REPORT_TRF," hit Enter, then press F6 to save.
-
-25. Press F11, then press Ctrl+F9 to bring you to the assessment row section.
-
-26. Insert the begin, end, and schedule dates from the spreadsheet [BEGIN, END, SCHE DATE columns]. The schedule date must end with 00:00.
-
-27. Hit Enter to move to REQUESTED AMOUNT (the system at this point should insert a date into the EFFECTIVE column—nothing to insert here).
-    - Press F6 to save, then press F3 twice to return to CHGR.
-
-28. Click OK and press F3 twice to exit the plan and return to CHGR to start on the next plan in the list.
-
-Let me know if you need further adjustments!
+RPA will receive the Input report from ---- [TBD].
+Login to EASY and select the database as given in the input report.
+Enter code "CHGR" and press [Enter].
+Insert the group number -> Press [Enter], then press F12.
+Select "Change Group Account Recovery Information" -> Press [Enter].
+Since the rule is on the plan:
+If the rule appears twice or more, DO NOT use a rule with a term date.
+Press F12 to bring up the selection screen.
+Press F12 to enter "Maintain Combo Details."
+Ensure the description is displayed as expected.
+Press F12 three times to reach the amount of the fee.
+Use the down arrow key to the last amount and add a term date that is one day prior to the EFT date on the sheet.
+Use the down arrow key until a clean row with no data appears, then insert the amount from the sheet.
+Press F6 to save; a new date will appear since the old fee was termed.
+Press F11 four times to return to the previous screen.
+Use the down arrow key to reach "View Payee Account Information," then press F12.
+TBD (further steps depend on additional information).
