@@ -1,42 +1,61 @@
 flowchart TD
     A[Start] --> B{Check if RPA or Input File is Received}
     B -- No --> C[Stop bot and send email]
-    B -- Yes --> D[Login to Easy Application]
-    D --> E[Select Database]
+    B -- Yes --> D[Login to EASY Application]
+    D --> E[Select Database as given in Input Report]
     E --> F{Database Column Empty?}
     F -- Yes --> G[Stop bot and send email]
-    F -- No --> H[Enter Code CHGR]
+    F -- No --> H[Enter Code CHGR and press Enter]
     H --> I{Plan Number Blank?}
     I -- Yes --> J[Stop bot and send email]
     I -- No --> K[Insert Plan Number]
     K --> L[Press F12]
-    L --> M{Check if pop-up exists}
+    L --> M{Pop-up appears?}
     M -- Exists --> N[Click OK]
     M -- No Pop-up --> O[Select Change Group Account Recovery Information, Press Enter]
-    O --> P{Rule Appears Twice or More?}
-    P -- Yes --> Q[Do not use rule with term date]
-    P -- No --> R[Press F12 to bring up selection screen]
-    R --> S[Press F12 to go into Maintain Combo Details]
-    S --> T[Ensure description is displayed as expected]
-    T --> U[Press F12 twice to check for exclusions]
-    U --> V{Exclusions Present?}
-    V -- No --> W[Add the exclusions]
-    V -- Yes --> X[Press F12 to reach % of BASIS section]
-    X --> Y[Use down arrow to find a clean row]
-    Y --> Z[Insert 0, then press F6 to save]
-    Z --> AA[Press F11 four times to return to the previous screen]
-    AA --> AB[Use down arrow to reach Debit Method Order Rules, Press F12]
-    AB --> AC[Press F12 to go to data insert columns]
-    AC --> AD{Are the three standard entries there?}
-    AD -- No --> AE[Add missing entries]
-    AD -- Yes --> AF[Press Ctrl+F9 to go to assessment row]
-    AF --> AG[Insert a new row using Ctrl+F12]
-    AG --> AH[Insert Begin Date, End Date, Schedule Date]
-    AH --> AI[Ensure schedule date ends with 00:00]
-    AI --> AJ[Press Enter to move to Requested Amount]
-    AJ --> AK[System should insert date into Effective column]
-    AK --> AL[Insert amount from spreadsheet]
-    AL --> AM[Press F6 to save]
-    AM --> AN[Press F3 twice to return to CHGR]
-    AN --> AO[Continue to next record]
-    AO --> AP[End]
+    O --> P{Rule on the Plan?}
+    P -- No --> Q[Search for Rule ID row by row]
+    Q --> R{Rule ID found?}
+    R -- No --> S[Insert a new row using Ctrl+F12 or down arrow]
+    S --> T{Pop-up appears?}
+    T -- Yes --> U[Click OK]
+    T -- No --> V[Insert Rule ID from Spreadsheet and press Enter]
+    V --> W[Select Rule ID from the screen and click OK]
+    W --> X[Tab to Effective Date and insert from Spreadsheet]
+    X --> Y[Tab 4 times to reach Statement Label]
+    Y --> Z[Insert Statement Label from Spreadsheet]
+    Z --> AA[Press F6 to save]
+    AA --> AB[Press F12 to bring up next screen]
+    AB --> AC[Press F12 again to land on Description Screen]
+    AC --> AD[Insert Description from Spreadsheet]
+    AD --> AE[Press F12 three times to reach Amount of Fee]
+    AE --> AF[Insert Fee Amount from Spreadsheet]
+    AF --> AG[Press F6 to save]
+    AG --> AH{CALC Y value exists?}
+    AH -- Yes --> AI[Perform same action for CALC Y value]
+    AI --> AJ[Press F11 four times, down arrow once to VIEW PAYEE ACCOUNT INFO, press F12]
+    AH -- No --> AJ
+    AJ --> AK[On Payment Receiver Type, press Shift+F1, pick Plan Holding Account, and press Enter]
+    AK --> AL[Press Enter again to move to Share PCT, insert 100]
+    AL --> AM[Insert Effective Date from Spreadsheet in EFT Date column]
+    AM --> AN[Press Enter twice to land on Money Type]
+    AN --> AO[Press Shift+F1 to bring up drop-down, pick UPA2]
+    AO --> AP{More than one UPA2 choice?}
+    AP -- Yes --> AQ[Take screenshot, press F3 to go to next record]
+    AP -- No --> AR[Select UPA2 option]
+    AR --> AS[Press Enter to fill information]
+    AS --> AT[Press Enter five times to reach ARS NAME]
+    AT --> AU{Pop-up appears?}
+    AU -- Yes --> AV[Press Enter to bypass]
+    AU -- No --> AW
+    AV --> AW[On ARS NAME, press Shift+F1, pick FEE_REPORT_TRF, press Enter, then press F6 to save]
+    AW --> AX[Press F11, then Ctrl+F9 to bring up Assessment Row Section]
+    AX --> AY[Insert Begin, End, and Schedule Dates from Spreadsheet]
+    AY --> AZ[Ensure Schedule Date ends with 00:00]
+    AZ --> BA[Press Enter to move to Requested Amount]
+    BA --> BB[System inserts date into Effective column]
+    BB --> BC[Press F6 to save]
+    BC --> BD[Press F3 twice to return to CHGR]
+    BD --> BE[Click OK, press F3 twice to exit plan and return to CHGR]
+    BE --> BF[Start next plan in the list]
+    BF --> BG[End]
