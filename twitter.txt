@@ -1,1 +1,1 @@
-testing
+The CAFR BOT project automates the management and updating of financial rules (AFREALLOC and AFREALLOCR) in the EASY system for group plan accounts. It inserts or updates plan rules, effective dates, statement labels, and fees based on input reports, handling system interactions like pop-ups and screen navigation.
