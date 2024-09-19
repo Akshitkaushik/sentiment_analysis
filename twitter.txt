@@ -1,17 +1,206 @@
+flowchart TD
+    A[Start] --> B{Check if RPA or Input File is Received}
+    B -- No --> C[Stop bot and send email]
+    B -- Yes --> D[Login to Easy Application]
+    D --> E[Select Database]
+    E --> F{Database Column Empty?}
+    F -- Yes --> G[Stop bot and send email]
+    F -- No --> H[Enter Code CHGR]
+    H --> I{Plan Number Blank?}
+    I -- Yes --> J[Stop bot and send email]
+    I -- No --> K[Insert Plan Number]
+    K --> L[Press F12]
+    L --> M{Check for Pop-up}
+    M -- Exists --> N[Click OK]
+    M -- No Pop-up --> O[Select Change Group Account Recovery]
+    O --> P[Search Rule ID Row by Row]
+    P --> Q{Rule ID Found?}
+    Q -- No --> R[Insert New Row]
+    R --> S{Check for Pop-up}
+    S -- Exists --> T[Click OK]
+    S -- No Pop-up --> U[Insert Rule ID]
+    Q -- Yes --> U
+    U --> V[Select Rule ID and Click OK]
+    V --> W[Insert Effective Date]
+    W --> X[Insert Statement Label]
+    X --> Y[Press F6 to Save]
+    Y --> Z[Press F12]
+    Z --> AA[Go to Description Screen]
+    AA --> AB[Insert Description]
+    AB --> AC[Press F12 Twice]
+    AC --> AD[Insert Plan Number and FUND TYPE]
+    AD --> AE{Check for Pop-up}
+    AE -- Exists --> AF[Click OK]
+    AE -- No Pop-up --> AG[Insert % of BASIS]
+    AG --> AH[Press Enter]
+    AH --> AI[Press F6 to Save]
+    AI --> AJ{Check for Pop-up}
+    AJ -- Exists --> AK[Click OK]
+    AJ -- No Pop-up --> AL[Return to Previous Screen]
+    AL --> AM[Press F11 Four Times]
+    AM --> AN[Go to Maintain Debit Method Order Rules]
+    AN --> AO[Insert Plan Number and Sequence Number]
+    AO --> AP[Insert STK Values]
+    AP --> AQ[Press F6 to Save]
+    AQ --> AR[Press Ctrl+F9]
+    AR --> AS[Insert Begin Date, End Date, Schedule Date]
+    AS --> AT[Insert Amount]
+    AT --> AU[Press F6 to Save]
+    AU --> AV[Press F3 Twice to Return to CHGR]
+    AV --> AW[Continue to Next Record]
+    AW --> AX[Log Errors if Occur]
+    AX --> AY[End]
+
+
+Here’s the corrected version of your points with numbering:
+
+RPA will receive the Input report from ---- [TBD].
+
+Login to EASY and select the Database as given in the input report.
+
+Enter code as “CHGR” and hit “Enter.”
+
+Insert Plan Number -> Press [Enter] then Press F12.
+
+Check if a pop-up appears, then click on the OK button.
+Select "Change group account recovery information," then press Enter.
+
+Since the Rule is not on the plan:
+
+Search for the Rule ID row by row in the RULE ID column.
+If the Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
+Check if a pop-up appears, then click OK.
+Insert the Rule ID from the spreadsheet in the [RULE ID column], then hit Enter.
+Select the Rule ID from the below screen, then click OK.
+Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
+
+Press Tab [4 times] to reach the statement label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
+
+Press F6 to save.
+
+Press F12 once to bring up the next screen.
+
+Press F12 again to bring you to the next screen, which lands you on the description screen.
+
+Insert DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
+Press F12 three times to bring you to the amount of Fee.
+
+Insert the amount from the spreadsheet in the [FEE AMOUNT column].
+Press F6 to save.
+If the CALC Y value exists in the spreadsheet, the bot will perform the same action as filling the CALC Y value on the [AFREALLOC rule not on plan].
+
+Press F11 four times to bring you back to this screen, then press the down arrow key once to VIEW PAYEE ACCOUNT INFO, then press F12.
+
+On the payment receiver type, press SHIFT+F1 to bring up a drop-down, pick "Plan holding account," and hit Enter.
+
+Hit Enter again to move to the share PCT and enter 100.
+
+Enter the effective date by inserting the date from the spreadsheet in the [EFT DATE (if new rule added) column].
+
+Press Enter twice to land on the Money Type.
+
+Press SHIFT+F1 to bring up a drop-down menu. At this point, pick the UPA2 option.
+
+If there are more than one UPA2 choices, take a screenshot and press F3 to go to the next record.
+
+If there is only one UPA2 choice, select it.
+
+Hit Enter, and it will fill in the information from the choice you made.
+
+Press Enter five times to reach ARS NAME. You may get a pop-up; press Enter to bypass it.
+
+Once on ARS NAME, press SHIFT+F1 and pick "FEE_REPORT_TRF," hit Enter, then press F6 to save.
+
+Press F11, then press Ctrl+F9 to bring you to the assessment row section.
+
+Insert the begin, end, and schedule dates from the spreadsheet [BEGIN, END, SCHE DATE columns]. The schedule date must end with 00:00.
+
+Hit Enter to move to REQUESTED AMOUNT (the system at this point should insert a date into the EFFECTIVE column—nothing to insert here).
+
+Press F6 to save, then press F3 twice to return to CHGR.
+Click OK and press F3 twice to exit the plan and return to CHGR to start on the next plan in the list.
+
+
+Steps for AFREALLOC Rule Not on Plan:
 RPA will receive the Input report from ---- [TBD].
 Login to EASY and select the database as given in the input report.
 Enter code "CHGR" and press [Enter].
-Insert the group number -> Press [Enter], then press F12.
+Insert Plan Number -> Press [Enter], then press F12.
+Check if a pop-up exists, then click on the OK button.
+Select "Change Group Account Recovery Information" -> Press [Enter].
+Since the rule is not on plan:
+Search Rule ID row by row in the RULE ID column.
+If Rule ID is not found, insert a new row using Ctrl+F12 or the down arrow key.
+Check if a pop-up appears, then click the OK button.
+Insert the Rule ID from the spreadsheet in the [RULE ID column] and press [Enter].
+Select the rule ID from the below screen, then click OK.
+Tab over to the effective date and insert the effective date from the spreadsheet in the [EFT DATE (if new rule added) column].
+Press Tab 4 times to reach the Statement Label column and insert the STATEMENT LABEL from the spreadsheet in the [STATEMENT LABEL column].
+Press F6 to save.
+Press F12 once to bring up the next screen.
+Press F12 to go to the description screen, then insert the DESCRIPTION from the spreadsheet in the [DESCRIPTION column].
+Press F12 twice.
+Insert the plan number, then press [Enter] 6 times to insert the FUND TYPE from the spreadsheet [CALC = Y column].
+Split the value with a comma, then enter the first value, press [Enter], and insert Y.
+Press the down arrow key.
+Insert the plan number -> Press [Enter] 6 times to insert the second FUND TYPE from the spreadsheet.
+Press [Enter], insert Y, then repeat the process for the third value.
+If a pop-up appears, click the OK button.
+Press F12 to reach the % of BASIS.
+Insert 0 -> Press [Enter], then press F6 to save.
+If a pop-up appears, click the OK button.
+Press F11 four times to return to the previous screen.
+Press the down arrow key to go to "Maintain Debit Method Order Rules" and press F12 three times to land here.
+Insert the plan number -> Press [Enter], then insert the sequence number (start with 1 and increment by 1 each time).
+Press [Enter] 6 times to reach the FUND TYPE column.
+Insert STK from the spreadsheet [DMO = Y column, split the value with a comma, then enter the first value].
+Press [Enter], then insert Y.
+Press the down arrow key, and if a pop-up appears, press [Enter] to go through it.
+Repeat steps 23-26 for the second and third STK values.
+Press F6 to save, then press Ctrl+F9.
+Insert the Begin Date, End Date, and Schedule Date from the spreadsheet [BEGIN, END, SCHE Date columns].
+Ensure the schedule date ends with "00:00".
+Hit [Enter] to move to the REQUESTED AMOUNT (the system should insert a date into the EFFECTIVE column).
+Insert the amount from the spreadsheet [Requested Amount column].
+Press F6 to save -> Press F3 twice to return to CHGR.
+Continue to the next record.
+Note: If any column value is already filled in, the bot will overwrite that value.
+Steps for AFREALLOC Rule on Plan:
+RPA will receive the Input report from ---- [TBD].
+Login to EASY and select the database as given in the input report.
+Enter code "CHGR" and press [Enter].
+Insert Plan Number -> Press [Enter], then press F12.
+Check if a pop-up exists, then click the OK button.
 Select "Change Group Account Recovery Information" -> Press [Enter].
 Since the rule is on the plan:
 If the rule appears twice or more, DO NOT use a rule with a term date.
 Press F12 to bring up the selection screen.
-Press F12 to enter "Maintain Combo Details."
+Press F12 to go into "Maintain Combo Details."
 Ensure the description is displayed as expected.
-Press F12 three times to reach the amount of the fee.
-Use the down arrow key to the last amount and add a term date that is one day prior to the EFT date on the sheet.
-Use the down arrow key until a clean row with no data appears, then insert the amount from the sheet.
-Press F6 to save; a new date will appear since the old fee was termed.
+Press F12 twice to check for the standard three exclusions.
+If not present, they need to be added.
+Press F12 once to reach the % of BASIS section.
+Use the down arrow key until a clean row with no data appears.
+Insert 0 and press F6 to save.
 Press F11 four times to return to the previous screen.
-Use the down arrow key to reach "View Payee Account Information," then press F12.
-TBD (further steps depend on additional information).
+Use the down arrow key to reach "Maintain Debit Method Order Rules" and press F12.
+Press F12 to go to the data insert columns.
+Ensure the three standard entries are there; if not, add them.
+Press Ctrl+F9 to go to the assessment row, then insert a new row using Ctrl+F12.
+Insert the Begin Date, End Date, and Schedule Date from the spreadsheet [BEGIN, END, SCHE Date columns].
+Ensure the schedule date ends with "00:00".
+Hit [Enter] again to move to the REQUESTED AMOUNT.
+The system should insert a date into the EFFECTIVE column.
+Insert the amount from the spreadsheet.
+Press F6 to save -> Press F3 twice to return to CHGR.
+Continue to the next record.
+We then click OK and press F3 twice to exit the plan and return to CHGR to begin the next plan in the list.
+
+
+
+
+
+
+
+
+
