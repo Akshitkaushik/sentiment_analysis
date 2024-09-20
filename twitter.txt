@@ -2,14 +2,13 @@ Sub ChangeWrapTextToTopAndBottom()
     Dim shape As Shape
     Dim inlineShape As InlineShape
     
-    ' Loop through InlineShapes (images within text)
+    ' Loop through InlineShapes (images within the text)
     For Each inlineShape In ActiveDocument.InlineShapes
-        inlineShape.ConvertToShape 'Convert inline images to floating shapes
-        inlineShape.WrapFormat.Type = wdWrapTopBottom 'Set wrap to Top and Bottom
+        inlineShape.ConvertToShape ' Convert inline image to floating shape
     Next inlineShape
     
-    ' Loop through floating Shapes (images not inline)
+    ' Loop through Shapes (floating images)
     For Each shape In ActiveDocument.Shapes
-        shape.WrapFormat.Type = wdWrapTopBottom 'Set wrap to Top and Bottom
+        shape.WrapFormat.Type = wdWrapTopBottom ' Set wrap to Top and Bottom
     Next shape
 End Sub
