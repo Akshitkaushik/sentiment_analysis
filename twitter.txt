@@ -1,14 +1,5 @@
-Sub ChangeWrapTextToTopAndBottom()
-    Dim shape As Shape
-    Dim inlineShape As InlineShape
-    
-    ' Loop through InlineShapes (images within the text)
-    For Each inlineShape In ActiveDocument.InlineShapes
-        inlineShape.ConvertToShape ' Convert inline image to floating shape
-    Next inlineShape
-    
-    ' Loop through Shapes (floating images)
-    For Each shape In ActiveDocument.Shapes
-        shape.WrapFormat.Type = wdWrapTopBottom ' Set wrap to Top and Bottom
-    Next shape
-End Sub
+I hope this message finds you well. I reviewed the boat procedure document, and I’m pleased to see that all the steps have been accurately added and corrected. Thank you for your efforts in refining the format; I will certainly adopt this format for my future procedure documents.
+
+I appreciate your guidance on the requirements and process for the CFR boat, and I will ensure to follow this format in my future documentation. Thank you once again for your support.
+
+Best regards,
