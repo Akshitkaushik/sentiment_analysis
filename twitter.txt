@@ -1,9 +1,12 @@
-As Nitin mentioned, he has verified the “Send” folder and was unable to find any emails related to the "canteytech.com" domain in the Outlook folder and the Proofpoint application. I have also re-verified the Outlook, Proofpoint application, and input files, but couldn't locate any emails associated with this domain.
+Dear Team,
 
-For your reference, I have attached some screenshots from Outlook and Proofpoint related to the record 758240-01. Additionally, I have attached a screenshot from the bot run yesterday, where you can see all the recipients.
+I hope you are doing well.
 
-Please let me know if you need any further information.
+I wanted to clarify the timing of the original email. It was received by you on Tuesday, September 10, 2024, at 5:49 PM EST. The sample email we shared shows it was sent at 3:18 AM on September 11, 2024, IST. This difference in time is because India is 9 hours and 30 minutes ahead of Eastern Standard Time (EST).
 
-Thank you!
+In summary, the email sample is in IST, while the time you received is in EST. I hope this helps clear up any confusion.
+
+If you have any further questions, please feel free to ask.
 
 Best regards,
+[Your Name]
