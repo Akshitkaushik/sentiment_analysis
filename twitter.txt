@@ -1,12 +1,1 @@
-Dear Team,
-
-I hope you are doing well.
-
-I wanted to clarify the timing of the original email. It was received by you on Tuesday, September 10, 2024, at 5:49 PM EST. The sample email we shared shows it was sent at 3:18 AM on September 11, 2024, IST. This difference in time is because India is 9 hours and 30 minutes ahead of Eastern Standard Time (EST).
-
-In summary, the email sample is in IST, while the time you received is in EST. I hope this helps clear up any confusion.
-
-If you have any further questions, please feel free to ask.
-
-Best regards,
-[Your Name]
+Thank you for the input data. I checked the provided SSN number in the Easy application, but I am not getting the same GAID and SSN extension as mentioned in the input sheet. On the attached screenshot of the Easy application, you can clearly see that the SSN column is empty, and the GAID is also different, but in the input sheet, we have the SSN number. I have attached the screenshot; please check as the data seems to be mismatched
