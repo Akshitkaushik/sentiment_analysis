@@ -1,1 +1,14 @@
-Thank you for the input data. I checked the provided SSN number in the Easy application, but I am not getting the same GAID and SSN extension as mentioned in the input sheet. On the attached screenshot of the Easy application, you can clearly see that the SSN column is empty, and the GAID is also different, but in the input sheet, we have the SSN number. I have attached the screenshot; please check as the data seems to be mismatched
+Subject: Request for UAT Data for Iowa Process Development
+
+Dear Team,
+
+I hope this message finds you well.
+
+I would like to inform you that the development of the Iowa process has been successfully completed, and we are now ready for UAT testing. Could you kindly provide the UAT data for this process so that we can proceed with the testing?
+
+I have attached the clickpath document for your reference. Please let me know if you require any additional information or have any further questions.
+
+Thank you for your support.
+
+Best regards,
+Akshit Kaushik
