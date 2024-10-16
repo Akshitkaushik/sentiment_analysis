@@ -1,3 +1,11 @@
-In the comp screen, as you confirmed before, when selecting the "commac" number in the "acct" column, the "Active Procedure" table below remains empty. Once we select the "commac," the same data is populated in the first row of the "Active Procedure" table.
+Subject: Request for Review and Approval of Bot Solution Document
 
-As we discussed, and you confirmed, in real-time scenarios, the "acct" column contains values starting from the first row. It never happens that the first row is empty while data appears in the second, third, or fifth row. The values always start from the first row.
+Dear Khan,
+
+I hope you're doing well.
+
+As per our discussion yesterday, I have shared the bot solution document along with the detailed steps for your review. Additionally, I have included a few notes within the document for your reference. Kindly go through them at your convenience.
+
+Please provide your approval, and if any changes are required, do let me know. I appreciate your feedback and suggestions.
+
+Thank you for your time and support.
