@@ -1,14 +1,3 @@
-Subject: Request for UAT Data for Iowa Process Development
+In the comp screen, as you confirmed before, when selecting the "commac" number in the "acct" column, the "Active Procedure" table below remains empty. Once we select the "commac," the same data is populated in the first row of the "Active Procedure" table.
 
-Dear Team,
-
-I hope this message finds you well.
-
-I would like to inform you that the development of the Iowa process has been successfully completed, and we are now ready for UAT testing. Could you kindly provide the UAT data for this process so that we can proceed with the testing?
-
-I have attached the clickpath document for your reference. Please let me know if you require any additional information or have any further questions.
-
-Thank you for your support.
-
-Best regards,
-Akshit Kaushik
+As we discussed, and you confirmed, in real-time scenarios, the "acct" column contains values starting from the first row. It never happens that the first row is empty while data appears in the second, third, or fifth row. The values always start from the first row.
