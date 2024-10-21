@@ -1,3 +1,1 @@
-"Hello Khan,
-
-Thank you for the comma, subset, and value. As we know, this subset and value are to confirm whether the correct commas are being saved or not. Could you please provide this subset and its value in the input sheet, in a separate column with the corresponding comma number? I will directly read the subset and its value from the input sheet to train my bot.
+In this testing phase, I need this data inside the input sheet. In real-time, we also need these subsets and the value column inside the input sheet
