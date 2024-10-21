@@ -1,11 +1,3 @@
-Subject: Request for Review and Approval of Bot Solution Document
+I would like to clarify that the provided data is test input data, not the soft launch data. We will need to conduct one round of testing in the production environment, as the business has uploaded some demo records in production for testing.
 
-Dear Khan,
-
-I hope you're doing well.
-
-As per our discussion yesterday, I have shared the bot solution document along with the detailed steps for your review. Additionally, I have included a few notes within the document for your reference. Kindly go through them at your convenience.
-
-Please provide your approval, and if any changes are required, do let me know. I appreciate your feedback and suggestions.
-
-Thank you for your time and support.
+I will include all the necessary participants in the bot results as required.
