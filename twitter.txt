@@ -1,10 +1,1 @@
-Thank you for your question. I wanted to clarify that the development for the State of Iowa is mostly complete, with only the ADV and subset validation remaining. I have already added other necessary validations to the current code. Recently, the team informed me that they require this subset and value validation, which is why I mentioned needing the data in the input sheet.
-
-If the team is okay proceeding without the ADV and subset validation, I have no concerns with moving forward as-is. However, if this validation is essential, I would need to restart some development to accommodate it. The decision is entirely up to you and the team.
-
-Based on the current flow and code development, we have already set up a call with the team to showcase a demo video. This will allow the team to review and check the steps during the call.
-
-Please let me know how you'd like to proceed.
-
-Best regards,
-Akshit Kaushik
+"Jyothi, could you please review my email to Harrison below? I’ve already mentioned that the decision regarding ADV validation is up to the business team, not me. If they are satisfied with today's demo, I have no concerns. Recently, Khan informed me that they require this validation, which is why I requested that the data be included in the input file. However, if their team is fine without the ADV validation, I have no objections; it’s their decision. That’s why we set up a call with the team today.
