@@ -1,1 +1,9 @@
-"Jyothi, could you please review my email to Harrison below? I’ve already mentioned that the decision regarding ADV validation is up to the business team, not me. If they are satisfied with today's demo, I have no concerns. Recently, Khan informed me that they require this validation, which is why I requested that the data be included in the input file. However, if their team is fine without the ADV validation, I have no objections; it’s their decision. That’s why we set up a call with the team today.
+ubject: Request for Assistance in Setting Up Machine for Production
+
+Dear Sanjay,
+
+I hope you are doing well. I would like to inform you that the process development and UAT for the State of Iowa have been successfully completed. Could you kindly assist with setting up a machine for the production environment? The bot ID for the State of Iowa is SAAP183, and the application user is Easy.
+
+Please let me know if you require any further information or assistance from my side.
+
+Thank you in advance for your support.
