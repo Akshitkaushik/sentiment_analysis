@@ -1,11 +1,11 @@
-Assistance Required: SSN Data Access Issue in Production Environment
+Subject: Query Regarding Production Testing for Demo SSNs
 
-Dear Tony,
+Hello Khan,
 
-I hope this message finds you well.
+Today, I conducted the production testing manually using the three demo SSNs (123, 222, 333) that you shared. I have a query regarding the "Acct" column on the comp page. As per your confirmation, each "CommAc" entry should start in the first row of the "Acct" column. However, for these three demo SSNs, the "CommAc" field appears to be empty. I’ve attached a screenshot for your reference.
 
-Today, I commenced testing in the production environment utilizing the production database. However, I am encountering an issue accessing SSN data specifically in this environment. I have attached a screenshot of the error for your reference.
+If I proceed to run the bot with this data, it will execute without any issues and will share the output with you as expected. However, since "CommAc" is empty or not found, could you please look into this issue and update me accordingly?
 
-In the UAT environment, I can access the SSN data without any issues, suggesting the problem is isolated to the production setup. I would greatly appreciate it if you could review the matter and provide any necessary assistance to resolve it.
+Additionally, could you provide the email addresses within the input file for these three demo SSNs? An email address is mandatory for each SSN.
 
-Thank you very much for your support and attention to this matter.
+Thank you for your assistance.
