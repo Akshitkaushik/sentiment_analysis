@@ -1,12 +1,8 @@
-I wanted to inform you that last week, the business confirmed the estimated volume data size. I have attached the relevant email for your reference.
+Hi Harish,
 
-We are now ready for production testing, and I kindly request your approval to move the code into the production environment. For your convenience, I have attached the following approval emails:
+I’ve completed the first round of testing on the production data. The bot is functioning as expected, and I manually validated the data within the Easy application. The bot successfully selects the correct CommAC number based on the business file provided.
 
-UAT approval
-Code review
-Email template
-Volume size estimate
-Once approved, I will conduct a round of testing in production. If everything goes well, I will run the bot tomorrow and share the results with the business.
+Today's testing was conducted using my email to receive both the audit file and communication email. Tomorrow, I will run the bot again, and the communication email and audit file will be sent to the business team as per the process.
 
-Thank you for your consideration, and please let me know if you have any questions.
+Thank you for your guidance and support. Please let me know if there’s anything specific you’d like me to verify in the next test run.
 
