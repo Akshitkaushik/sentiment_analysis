@@ -1,8 +1,9 @@
-Hi Harish,
+I hope you are doing well. I wanted to inform you that we successfully moved the code to production today. The bot was executed using the input file shared by you, and it ran without issues. For today’s testing, I used my email to receive both the audit file and the communication email.
 
-I’ve completed the first round of testing on the production data. The bot is functioning as expected, and I manually validated the data within the Easy application. The bot successfully selects the correct CommAC number based on the business file provided.
+Tomorrow, I will run the bot again, and as per the process, the communication email and audit file will be sent to the specified input email ID. I have attached today’s audit file, email template, success email, and the input file you provided for your reference.
 
-Today's testing was conducted using my email to receive both the audit file and communication email. Tomorrow, I will run the bot again, and the communication email and audit file will be sent to the business team as per the process.
+Could you kindly confirm if the bot is selecting the correct CommCare number on the Easy application? I have already validated it on my end, but it would be helpful if you could also verify and confirm. Additionally, could you please share more data for tomorrow's test, or should I use the same data?
 
-Thank you for your guidance and support. Please let me know if there’s anything specific you’d like me to verify in the next test run.
+Thank you, and please let me know if there’s anything else I need to address.
 
+Best regards,
