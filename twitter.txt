@@ -1,9 +1,5 @@
-I hope you are doing well. I wanted to inform you that we successfully moved the code to production today. The bot was executed using the input file shared by you, and it ran without issues. For today’s testing, I used my email to receive both the audit file and the communication email.
+I hope you are doing well. Could you please share the State of Iowa input file with this email daily? This will allow my bot to read the input file directly from this address. Additionally, could you also send the input file to our team email ID as a backup?
 
-Tomorrow, I will run the bot again, and as per the process, the communication email and audit file will be sent to the specified input email ID. I have attached today’s audit file, email template, success email, and the input file you provided for your reference.
-
-Could you kindly confirm if the bot is selecting the correct CommCare number on the Easy application? I have already validated it on my end, but it would be helpful if you could also verify and confirm. Additionally, could you please share more data for tomorrow's test, or should I use the same data?
-
-Thank you, and please let me know if there’s anything else I need to address.
+Thank you for your assistance.
 
 Best regards,
