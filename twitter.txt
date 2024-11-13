@@ -1,1 +1,16 @@
-I received confirmation from Khan that both he and the business team have received the email, and he has also validated the COMMAC number. He confirmed there is no additional data for the soft launch. Could you please guide me on the next steps?
+Hello Khan,
+
+Could you please provide an update regarding the following information for the Iowa process?
+
+Business area
+Business area owner
+Owner's email address
+Bot run frequency
+Run time
+Recurrence pattern
+Can this bot be run on U.S. holidays? (Yes or No)
+If the frequency is daily, does that mean the bot will run all seven days, Monday through Sunday?
+Thank you very much for your assistance.
+
+
+Thank you for the confirmation. If you are satisfied with the bot's results from today’s run, please provide your approval
