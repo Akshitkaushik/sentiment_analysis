@@ -1,16 +1,1 @@
-Hello Khan,
-
-Could you please provide an update regarding the following information for the Iowa process?
-
-Business area
-Business area owner
-Owner's email address
-Bot run frequency
-Run time
-Recurrence pattern
-Can this bot be run on U.S. holidays? (Yes or No)
-If the frequency is daily, does that mean the bot will run all seven days, Monday through Sunday?
-Thank you very much for your assistance.
-
-
-Thank you for the confirmation. If you are satisfied with the bot's results from today’s run, please provide your approval
+Thank you for the approval. We are ready to proceed with the live data and would appreciate it if you could let us know the expected date for its availability. This will allow us to begin the soft launch period for this process
