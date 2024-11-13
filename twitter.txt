@@ -1,5 +1,7 @@
-I hope you are doing well. Could you please share the State of Iowa input file with this email daily? This will allow my bot to read the input file directly from this address. Additionally, could you also send the input file to our team email ID as a backup?
+Hello Khan,
 
-Thank you for your assistance.
+Today, I triggered the bot with the same data, and it ran successfully as expected. I hope the input email participants have also received the communication email. Could you please confirm if the business team has received the audit file as well?
 
-Best regards,
+Additionally, could you validate the COMMAC number in the Easy application to ensure that the bot is selecting the correct command on your end? Your confirmation on this would be greatly appreciated.
+
+Thank you!
