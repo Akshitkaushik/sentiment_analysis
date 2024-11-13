@@ -1,3 +1,1 @@
-I wanted to update you that production testing has been successfully completed using the data shared by the business team, and the bot is now deployed in production. Once we receive confirmation from Khan, we will be ready to proceed with live data.
-
-Khan, if you have any additional data for testing, please feel free to share it with me during this soft launch period. On our end, we are fully prepared and ready to move forward.
+I received confirmation from Khan that both he and the business team have received the email, and he has also validated the COMMAC number. He confirmed there is no additional data for the soft launch. Could you please guide me on the next steps?
