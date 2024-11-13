@@ -1,7 +1,3 @@
-Hello Khan,
+I wanted to update you that production testing has been successfully completed using the data shared by the business team, and the bot is now deployed in production. Once we receive confirmation from Khan, we will be ready to proceed with live data.
 
-Today, I triggered the bot with the same data, and it ran successfully as expected. I hope the input email participants have also received the communication email. Could you please confirm if the business team has received the audit file as well?
-
-Additionally, could you validate the COMMAC number in the Easy application to ensure that the bot is selecting the correct command on your end? Your confirmation on this would be greatly appreciated.
-
-Thank you!
+Khan, if you have any additional data for testing, please feel free to share it with me during this soft launch period. On our end, we are fully prepared and ready to move forward.
