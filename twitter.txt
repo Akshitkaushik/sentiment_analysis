@@ -1,1 +1,12 @@
-Thank you for the approval. We are ready to proceed with the live data and would appreciate it if you could let us know the expected date for its availability. This will allow us to begin the soft launch period for this process
+Hello Jyothi,
+
+I hope you are doing well. I wanted to remind you that the go-live date for the Iowa process is scheduled for tomorrow. I trust you are aware of this and prepared with the input file sharing setup for the RPA team.
+
+As discussed in our recent call, please ensure that the sheet name is set as “Sheet1.”
+
+Additionally, if possible, could you please send a sample file to the bot mailbox for testing purposes?
+
+Thank you for your assistance and support.
+
+Best regards,
+Akshit
