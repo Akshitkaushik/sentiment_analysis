@@ -1,12 +1,5 @@
-Hello Jyothi,
+I would like to request your approval to move the Iowa TaskBot into production. Recently, I received an email regarding a subject change request. Accordingly, I have updated the subject line in the TaskBot, and now we need to deploy this updated version into production.
 
-I hope you are doing well. I wanted to remind you that the go-live date for the Iowa process is scheduled for tomorrow. I trust you are aware of this and prepared with the input file sharing setup for the RPA team.
+Could you please provide your approval at your earliest convenience?
 
-As discussed in our recent call, please ensure that the sheet name is set as “Sheet1.”
-
-Additionally, if possible, could you please send a sample file to the bot mailbox for testing purposes?
-
-Thank you for your assistance and support.
-
-Best regards,
-Akshit
+Thank you very much for your consideration.
