@@ -1,11 +1,15 @@
-Subject: Request for Latest Code on Morning Star Enhancement
+Subject: Request for Sample Data and Approval for Next Steps
 
-Dear Team,
+Dear Leslie,
 
-I am currently working on the Morning Star enhancement request. Could you please share the latest code with me for this project?
+Thank you for the updated Word templates and descriptions.
 
-Note: Harish is aware of this enhancement request.
+Could you please share the sample data for testing so I can provide you and the team with the updated results? I would appreciate it if you could send the data at your earliest convenience.
 
-Thank you for your support.
+Additionally, I have attached two emails for your review. These are related to the testing and your approval for the next steps. Please review them and let me know if everything looks good.
+
+I have also attached the URLs with the updated descriptions and the new links. Furthermore, I have attached the termination bot template—please review the changes and let me know if I should add anything further.
+
+Thank you for your attention to this.
 
 Best regards,
