@@ -1,15 +1,60 @@
-Subject: Request for Sample Data and Approval for Next Steps
+Accomplishments: 
+Briefly capture:
 
-Dear Leslie,
+The most impactful contributions made towards the goals committed to
+How expectations were met/exceeded for the role
+Contributions towards building the culture of Empower by demonstrating our Values, participation in BRGs, ACT, building team culture and connections, etc.
+Highlight specific improved skills, knowledge, or capabilities used to achieve the goals committed to
+Employee
+Answer
+Answer
 
-Thank you for the updated Word templates and descriptions.
 
-Could you please share the sample data for testing so I can provide you and the team with the updated results? I would appreciate it if you could send the data at your earliest convenience.
+Challenges:
+Briefly capture:Obstacles or challenges that may be preventing achievement of the expectations of your role and/or goalsSupport needed to overcome the challenges listedChallenges overcome and lessons learned which demonstrate growth and perseverance
 
-Additionally, I have attached two emails for your review. These are related to the testing and your approval for the next steps. Please review them and let me know if everything looks good.
+Question
+Question
+Challenges:
+Briefly capture:
 
-I have also attached the URLs with the updated descriptions and the new links. Furthermore, I have attached the termination bot template—please review the changes and let me know if I should add anything further.
+Obstacles or challenges that may be preventing achievement of the expectations of your role and/or goals
+Support needed to overcome the challenges listed
+Challenges overcome and lessons learned which demonstrate growth and perseverance
+Employee
+Answer
+Answer
 
-Thank you for your attention to this.
 
-Best regards,
+Error: The field Answer is required and must have a value.
+Focus Forward:
+Briefly capture:Priorities that will be focused on over the next six monthsContinued or new focus on development itemsPlans for building connections, mentoring, etc.  
+
+Question
+Question
+Focus Forward:
+Briefly capture:
+
+Priorities that will be focused on over the next six months
+Continued or new focus on development items
+Plans for building connections, mentoring, etc.  
+Employee
+Answer
+Answer
+
+
+Additional Feedback/Comments:
+Briefly capture additional comments in the box below. Consider:Positive or constructive feedback you want to ask for or give Additional information not included above that is relevant to contributions and/or developmentQuestions about stretch projects or career opportunitiesAnything top of mind
+
+If you do not have any other comments, ensure you put N/A in the box as this is a required field.
+
+Question
+Question
+Additional Feedback/Comments:
+Briefly capture additional comments in the box below. Consider:
+
+Positive or constructive feedback you want to ask for or give 
+Additional information not included above that is relevant to contributions and/or development
+Questions about stretch projects or career opportunities
+Anything top of mind
+If you do not have any other comments, ensure you put N/A in the box as this is a required field.
