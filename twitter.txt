@@ -1,6 +1,14 @@
+Subject: Confirmation for Processing Sheets Over Two Days
+
+Hi [Recipient's Name],
+
 I just wanted to check with you regarding the HDQ bot. Today, we received the input file, and across both sheets, we have a total of over 10,000 emails to send. However, since the bot is only capable of sending up to 10,000 emails in a single day, I wanted to confirm if it would be acceptable to process one sheet's data today and the other sheet's data tomorrow.
 
 The sheet names are:
 
 Eligibility
 Vesting
+Please let me know if this approach works for you.
+
+Best regards,
+[Your Name]
