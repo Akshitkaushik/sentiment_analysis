@@ -1,15 +1,33 @@
-Dear Cheryl,
 
-Thank you for your response.
 
-As per your request, I have made the changes mentioned in your email. Specifically, I have updated the fonts and adjusted the screenshot sizes as highlighted in point no. 1 of your email. I have shared the updated results with you via email for your review.
+Here’s a corrected and more polite version of your email:  
 
-Thank you for confirming the closure regarding the second point in your email.
+---
 
-For confirmation, I would like to clarify that we are using two bots: one for "termination dated" and the other for "termination branding." Could you please confirm if I can proceed with applying the same changes to the "termination branding" bot template? I have currently shared the updated results for the "termination dated" bot. I look forward to hearing your thoughts on this.
+**Subject:** Follow-Up on MTR Walkthrough Call  
 
-Regarding the "Gov as result email" part, I will review it and provide you with updates as soon as possible.
+Dear Khan,  
 
-Please let me know your feedback on the shared results at your earliest convenience.
+Thank you for the insightful MTR walkthrough call earlier. I truly appreciate your time and effort in explaining the details.  
 
-Best regards,
+I have a few questions and requests for further clarification:  
+
+1. Could you kindly share the DEV and UAT POST URLs? I will need them to raise the Bot ID request.  
+2. Regarding the HTTP POST body, could you please confirm the values for the following fields:  
+   - **Reason**  
+   - **InitiatedID**  
+   - **InitiatedType**  
+   Specifically, for each record, do we need to update these values with the same identifiers, such as "GP00" and "Batch"? Please clarify what values need to be assigned for each record.  
+3. Regarding quality control (QC), how can we confirm that the bot is performing the tasks accurately? I’d appreciate your thoughts on this.  
+4. Could you let me know the volume of data we should expect to receive in production?  
+5. For every record, is it mandatory to create a JWT token?  
+6. Lastly, could you share the email address of the business team that will receive the audit logs in the future?  
+
+Thank you in advance for your guidance and support. Looking forward to your response.  
+
+Best regards,  
+Akshit  
+
+---  
+
+Let me know if further adjustments are needed!
