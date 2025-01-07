@@ -1,5 +1,3 @@
-I wanted to ask for your assistance in raising a request for a bot ID. Additionally, I also need to raise a request for an API ID, as this bot is not utilizing any other application but only the API.
+We are not using any application for this process. We are only using the API method, so please create the Bot ID and API ID.
 
-When I attempt to raise the bot ID request, I see three options. Could you please guide me on which option to select among these—API ID or Batch ID? If I select API ID, could you also help me understand which option to choose from the ones displayed in the second screenshot?
-
-I also wanted to ask if I need to raise separate requests for the bot ID and the API ID.
+For this, we do not have any click-path document because we are solely relying on the API
