@@ -1,12 +1,5 @@
-Subject: Request for BOT ID and API ID
+I wanted to ask for your assistance in raising a request for a bot ID. Additionally, I also need to raise a request for an API ID, as this bot is not utilizing any other application but only the API.
 
-Hello Team,
+When I attempt to raise the bot ID request, I see three options. Could you please guide me on which option to select among these—API ID or Batch ID? If I select API ID, could you also help me understand which option to choose from the ones displayed in the second screenshot?
 
-I need your help regarding the BOT ID request. I am also requesting the API ID.
-
-In the shared screenshot, there is a highlighted column with three options. Could you please let me know which option I need to select? Generally, when requesting only the BOT ID, we choose the "Batch ID" option. However, in this case, where I am requesting the API ID, please let me know which option I should select.
-
-Thank you for your assistance!
-
-Best regards,
-[Your Name]
+I also wanted to ask if I need to raise separate requests for the bot ID and the API ID.
