@@ -1,7 +1,12 @@
-Dear Rob,
+Subject: Request for BOT ID and API ID
 
-I hope this email finds you well.
+Hello Team,
 
-I wanted to inform you that the termination-dated enhancement part has been completed, and Cheryl is satisfied with the results.
+I need your help regarding the BOT ID request. I am also requesting the API ID.
 
-Additionally, I would like to bring to your attention the "Termination Date Branding Bot." This bot has not been triggered so far. Could you kindly confirm if we can proceed to decommission this bot?
+In the shared screenshot, there is a highlighted column with three options. Could you please let me know which option I need to select? Generally, when requesting only the BOT ID, we choose the "Batch ID" option. However, in this case, where I am requesting the API ID, please let me know which option I should select.
+
+Thank you for your assistance!
+
+Best regards,
+[Your Name]
