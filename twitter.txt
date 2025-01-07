@@ -1,33 +1,8 @@
+Yes, both bots are performing the same job. I confirmed with my team that the second bot has not been triggered yet. As discussed yesterday, the bot changes related to the termination dates have been completed.
 
+Could you please share the latest test cases with me? I will complete the final round of testing and share the results with you for your feedback.
 
-Here’s a corrected and more polite version of your email:  
+Thank you for your support.
 
----
-
-**Subject:** Follow-Up on MTR Walkthrough Call  
-
-Dear Khan,  
-
-Thank you for the insightful MTR walkthrough call earlier. I truly appreciate your time and effort in explaining the details.  
-
-I have a few questions and requests for further clarification:  
-
-1. Could you kindly share the DEV and UAT POST URLs? I will need them to raise the Bot ID request.  
-2. Regarding the HTTP POST body, could you please confirm the values for the following fields:  
-   - **Reason**  
-   - **InitiatedID**  
-   - **InitiatedType**  
-   Specifically, for each record, do we need to update these values with the same identifiers, such as "GP00" and "Batch"? Please clarify what values need to be assigned for each record.  
-3. Regarding quality control (QC), how can we confirm that the bot is performing the tasks accurately? I’d appreciate your thoughts on this.  
-4. Could you let me know the volume of data we should expect to receive in production?  
-5. For every record, is it mandatory to create a JWT token?  
-6. Lastly, could you share the email address of the business team that will receive the audit logs in the future?  
-
-Thank you in advance for your guidance and support. Looking forward to your response.  
-
-Best regards,  
-Akshit  
-
----  
-
-Let me know if further adjustments are needed!
+Best regards,
+Akshit
