@@ -1,3 +1,9 @@
-We are not using any application for this process. We are only using the API method, so please create the Bot ID and API ID.
+Hello Tom,
 
-For this, we do not have any click-path document because we are solely relying on the API
+Thank you very much for providing the Service Update API endpoints.
+
+I have a query regarding this process. I believe we may need an additional API endpoint for JWT Authorization to successfully utilize the shared API endpoints. Could you please share the JWT generator endpoint as well? Alternatively, if you are using a different approach, I would appreciate it if you could guide me accordingly.
+
+Thank you for your assistance!
+
+Best regards,
