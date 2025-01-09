@@ -1,45 +1,43 @@
 @startuml
-!define RECTANGLE class
+skinparam ArrowThickness 4
+skinparam ArrowLength 500
+skinparam defaultFontSize 14
+skinparam backgroundColor #FFFFFF
+skinparam activityBackgroundColor #F9F9F9
+skinparam activityBorderColor #CCCCCC
+skinparam activityFontColor #333333
 
-' Define Steps
-RECTANGLE "Check if MTR Input File has been Received" as Step1
-RECTANGLE "Send Email to Business Team (File Missing)" as Step2
-RECTANGLE "Download File from S3 and Save in Input Folder" as Step3
-RECTANGLE "Validate the File" as Step4
-RECTANGLE "File is Empty" as Step5
-RECTANGLE "Send Email to User (File Empty)" as Step6
-RECTANGLE "File Contains Data" as Step7
-RECTANGLE "Check Mandatory Columns" as Step8
-RECTANGLE "Mandatory Column Missing" as Step9
-RECTANGLE "Skip Record" as Step10
-RECTANGLE "Proceed with Record" as Step11
-RECTANGLE "Generate JWT Token" as Step12
-RECTANGLE "Hit Service Update API" as Step13
-RECTANGLE "Update Data" as Step14
-RECTANGLE "Check Response Status" as Step15
-RECTANGLE "Update Status in Excel File" as Step16
-RECTANGLE "Continue to Next Record" as Step17
-RECTANGLE "Share the Audit File" as Step18
-RECTANGLE "End" as Step19
+start
 
-' Define Flow
-Step1 --> Step2 : If File Not Received
-Step1 --> Step3 : If File Received
-Step3 --> Step4 : Validate File
-Step4 --> Step5 : If File is Empty
-Step5 --> Step6 : Send Email to User
-Step4 --> Step7 : If File Contains Data
-Step7 --> Step8 : Check Mandatory Columns
-Step8 --> Step9 : If Mandatory Column is Missing
-Step9 --> Step10 : Skip Record
-Step8 --> Step11 : If Mandatory Column Exists
-Step11 --> Step12 : Generate JWT Token
-Step12 --> Step13 : Hit Service Update API
-Step13 --> Step14 : Update Data
-Step14 --> Step15 : Check Response Status
-Step15 --> Step16 : Update Status in Excel
-Step16 --> Step17 : Continue to Next Record
-Step17 --> Step18 : Share the Audit File
-Step18 --> Step19 : End
+:Check if MTR input file is received;
+if (File received?) then (yes)
+  :Download the file from S3;
+  :Save the file inside input folder;
+else (no)
+  :Send email to Business team informing file is missing;
+  stop
+endif
+
+:Validate the file;
+if (File empty?) then (yes)
+  :Send email to user stating the file is empty;
+  stop
+else (no)
+  :Check mandatory columns for values;
+  if (Mandatory column missing?) then (yes)
+    :Skip the record;
+    :Continue to next record;
+    stop
+  else (no)
+    :Proceed with the record;
+    :Generate JWT token;
+    :Use token to hit Service Update API with headers and body;
+    :Update the status in the Excel file;
+    :Continue to next record;
+  endif
+endif
+
+:Share the audit file;
+stop
 
 @enduml
