@@ -1,43 +1,5 @@
-@startuml
-skinparam ArrowThickness 4
-skinparam ArrowLength 500
-skinparam defaultFontSize 14
-skinparam backgroundColor #FFFFFF
-skinparam activityBackgroundColor #F9F9F9
-skinparam activityBorderColor #CCCCCC
-skinparam activityFontColor #333333
+I hope you're doing well. I wanted to discuss something personal with you. I noticed on Workday that there are developer openings in our team, and I wanted to ask if it would be possible to refer someone for the position.
 
-start
+I have a family connection who is currently looking for a job. He has around 12 years of experience in the IT industry, with approximately 10 years in RPA development and support. At present, he is managing a support team, similar to how Mahesh is managing in our team. He is proficient in two tools—Blue Prism and Automation Anywhere—and has experience working in the healthcare and insurance domains.
 
-:Check if MTR input file is received;
-if (File received?) then (yes)
-  :Download the file from S3;
-  :Save the file inside input folder;
-else (no)
-  :Send email to Business team informing file is missing;
-  stop
-endif
-
-:Validate the file;
-if (File empty?) then (yes)
-  :Send email to user stating the file is empty;
-  stop
-else (no)
-  :Check mandatory columns for values;
-  if (Mandatory column missing?) then (yes)
-    :Skip the record;
-    :Continue to next record;
-    stop
-  else (no)
-    :Proceed with the record;
-    :Generate JWT token;
-    :Use token to hit Service Update API with headers and body;
-    :Update the status in the Excel file;
-    :Continue to next record;
-  endif
-endif
-
-:Share the audit file;
-stop
-
-@enduml
+If you're okay with it and the opening is still available, may I refer him? Please let me know your thoughts.
