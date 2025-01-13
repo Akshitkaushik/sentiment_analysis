@@ -1,5 +1,33 @@
-I hope you're doing well. I wanted to discuss something personal with you. I noticed on Workday that there are developer openings in our team, and I wanted to ask if it would be possible to refer someone for the position.
+Here's a revised and polished version of your email in a polite and formal tone:
 
-I have a family connection who is currently looking for a job. He has around 12 years of experience in the IT industry, with approximately 10 years in RPA development and support. At present, he is managing a support team, similar to how Mahesh is managing in our team. He is proficient in two tools—Blue Prism and Automation Anywhere—and has experience working in the healthcare and insurance domains.
+---
 
-If you're okay with it and the opening is still available, may I refer him? Please let me know your thoughts.
+**Subject:** Request for Approval and Assistance with Database Access for DEV and QA Environments  
+
+Dear Harish,  
+
+I hope this email finds you well.  
+
+I need your assistance regarding database access for the DEV and QA environments. My API ID has been created, and I raised an OAuth client setup request for the bot ID for all environments (DEV, QA, UAT, and PROD). However, I was informed by Gourav Gupta from the API team that for DEV and QA, we need to create the client ID and client secret ourselves.  
+
+While attempting to create these, I realized that database access is required to proceed. Unfortunately, I currently do not have access to the database.  
+
+I referred to the database access steps on the Confluence page and found that we can raise a request for database access for the DEV and QA environments via an IT service ticket. I have attached the relevant screenshots and the link to the steps for your reference.  
+
+Here are my requests:  
+
+1. **Approval for Database Access:** I kindly request your approval to proceed with requesting database access for the DEV and QA environments.  
+2. **Manager Assistance to Raise Request:** According to the IT service process, only a manager can raise the request for database access. Therefore, I request your help in raising this access request on my behalf.  
+
+Additionally, the business team has informed me that all databases are being used for the MTR bot.  
+
+I have included all the required information for the database access request below for your reference.  
+
+Thank you for your support and guidance. Please let me know if you need any additional details from my side.  
+
+Best regards,  
+[Your Name]  
+
+--- 
+
+This version maintains clarity and professionalism while ensuring all your points are communicated effectively.
