@@ -1,29 +1,15 @@
-Hello Harish,
+Hello Team,
 
-I hope you are doing well.
+I hope this email finds you well.
 
-I wanted to update you regarding the API access process. I connected with Harsh earlier, and he shared some steps for obtaining API access. Following those steps, the CHAD team created my API ID. As the next step, I shared this API ID with the OAuth team, requesting client credentials (client ID and client secret).
+I have received approval from Harish and the business team to push the new code into production. Kindly proceed with importing the attached ZIP files into the production environment.
 
-However, I was informed by a member of the OAuth team that, for DEV and QA environments, we now need to create the client ID and client secret ourselves. This is part of a new process where the OAuth team will only handle client credentials for PROD and UAT environments going forward.
+Bot Name: Termination Date
 
-As you know, Harsh built the API bot last year, but there have been significant changes to the API access steps since then. This is why I am requesting your help for the DEV database access.
+I have attached two ZIP files:
 
-If needed, I can schedule a meeting with you and Harsh to discuss this further and clarify the process.
+One ZIP file contains the supporting images.
+The other ZIP file contains the code.
+Please import both files into production. Let me know if you require any additional information or assistance.
 
-Looking forward to your guidance.
-
-
-
-
-Subject: Request for Approval to Push Changes to PROD for Termination Date Bot
-
-Hello Harish,
-
-I hope you are doing well.
-
-I kindly request your approval to push the changes to PROD for the Termination Date Bot. I have attached the business approval email for your reference, as I have already received confirmation from the business team regarding these changes.
-
-Please let me know if you need any additional information.
-
-Best regards,
-[Your Name]
+Thank you for your support!
