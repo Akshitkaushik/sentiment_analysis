@@ -11,12 +11,14 @@ start
 
 :Store API Credentials;
 note right
-The API login details, like the ID, password, and other necessary information, will be safely saved in a secure place called the Automation Anywhere Credential Vault. This ensures sensitive details are protected and not visible in the code. When the bot runs, it will fetch these details securely and use them wherever needed.
+The API login details, like the ID, password, and other necessary information, will be safely saved in a secure place called the Automation Anywhere Credential Vault. 
+This ensures sensitive details are protected and not visible in the code. When the bot runs, it will fetch these details securely and use them wherever needed.
 end note
 
 :Store API Endpoints;
 note right
-All the web addresses (API endpoints) that the bot needs to use will be stored in a secure file or in the same credential vault. This way, the bot can access them as required without risking security.
+All the web addresses (API endpoints) that the bot needs to use will be stored in a secure file or in the same credential vault.
+This way, the bot can access them as required without risking security.
 end note
 
 :Read Input Data;
