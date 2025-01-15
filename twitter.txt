@@ -1,15 +1,71 @@
-Hello Team,
+@startuml
+skinparam ArrowThickness 4
+skinparam ArrowLength 500
+skinparam defaultFontSize 14
+skinparam backgroundColor #FFFFFF
+skinparam activityBackgroundColor #F9F9F9
+skinparam activityBorderColor #CCCCCC
+skinparam activityFontColor #333333
 
-I hope this email finds you well.
+start
 
-I have received approval from Harish and the business team to push the new code into production. Kindly proceed with importing the attached ZIP files into the production environment.
+:Store API Credentials;
+note right
+Save login details like ID and password securely
+in the Automation Anywhere Credential Vault.
+This ensures protection and eliminates visibility
+in the code. The bot will retrieve these details
+at runtime.
+end note
 
-Bot Name: Termination Date
+:Store API Endpoints;
+note right
+Save all API web addresses in a secure file or
+the Credential Vault. This allows the bot to
+access them securely and dynamically.
+end note
 
-I have attached two ZIP files:
+:Read Input Data;
+note right
+Process records or files step by step from the
+defined input source, such as an Excel file
+or database.
+end note
 
-One ZIP file contains the supporting images.
-The other ZIP file contains the code.
-Please import both files into production. Let me know if you require any additional information or assistance.
+:Make Initial API Call;
+note right
+Use the Automation Anywhere REST Web Service
+Action to connect to APIs. Fetch details like URL,
+credentials, and data from the vault or file, and
+save the API response.
+end note
 
-Thank you for your support!
+:Extract API Token;
+note right
+Extract and save the token (if provided) from
+the API response for use in the next API calls.
+end note
+
+:Make Next API Call;
+note right
+Use the extracted token for authentication.
+Send the next request using secure information
+and validate the response.
+end note
+
+:Update Records;
+note right
+Based on the API response, update results in
+an organized manner, like saving data to an
+Excel file or database.
+end note
+
+:Process Next Record;
+note right
+Move to the next record and repeat the process
+until all data is handled.
+end note
+
+
+stop
+@enduml
