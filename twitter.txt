@@ -1,33 +1,29 @@
-Here's a revised and polished version of your email in a polite and formal tone:
+Hello Harish,
 
----
+I hope you are doing well.
 
-**Subject:** Request for Approval and Assistance with Database Access for DEV and QA Environments  
+I wanted to update you regarding the API access process. I connected with Harsh earlier, and he shared some steps for obtaining API access. Following those steps, the CHAD team created my API ID. As the next step, I shared this API ID with the OAuth team, requesting client credentials (client ID and client secret).
 
-Dear Harish,  
+However, I was informed by a member of the OAuth team that, for DEV and QA environments, we now need to create the client ID and client secret ourselves. This is part of a new process where the OAuth team will only handle client credentials for PROD and UAT environments going forward.
 
-I hope this email finds you well.  
+As you know, Harsh built the API bot last year, but there have been significant changes to the API access steps since then. This is why I am requesting your help for the DEV database access.
 
-I need your assistance regarding database access for the DEV and QA environments. My API ID has been created, and I raised an OAuth client setup request for the bot ID for all environments (DEV, QA, UAT, and PROD). However, I was informed by Gourav Gupta from the API team that for DEV and QA, we need to create the client ID and client secret ourselves.  
+If needed, I can schedule a meeting with you and Harsh to discuss this further and clarify the process.
 
-While attempting to create these, I realized that database access is required to proceed. Unfortunately, I currently do not have access to the database.  
+Looking forward to your guidance.
 
-I referred to the database access steps on the Confluence page and found that we can raise a request for database access for the DEV and QA environments via an IT service ticket. I have attached the relevant screenshots and the link to the steps for your reference.  
 
-Here are my requests:  
 
-1. **Approval for Database Access:** I kindly request your approval to proceed with requesting database access for the DEV and QA environments.  
-2. **Manager Assistance to Raise Request:** According to the IT service process, only a manager can raise the request for database access. Therefore, I request your help in raising this access request on my behalf.  
 
-Additionally, the business team has informed me that all databases are being used for the MTR bot.  
+Subject: Request for Approval to Push Changes to PROD for Termination Date Bot
 
-I have included all the required information for the database access request below for your reference.  
+Hello Harish,
 
-Thank you for your support and guidance. Please let me know if you need any additional details from my side.  
+I hope you are doing well.
 
-Best regards,  
-[Your Name]  
+I kindly request your approval to push the changes to PROD for the Termination Date Bot. I have attached the business approval email for your reference, as I have already received confirmation from the business team regarding these changes.
 
---- 
+Please let me know if you need any additional information.
 
-This version maintains clarity and professionalism while ensuring all your points are communicated effectively.
+Best regards,
+[Your Name]
