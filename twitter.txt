@@ -11,33 +11,26 @@ start
 
 :Store API Credentials;
 note right
-Save login details like ID and password securely
-in the Automation Anywhere Credential Vault.
-This ensures protection and eliminates visibility
-in the code. The bot will retrieve these details
-at runtime.
+The API login details, like the ID, password, and other necessary information, will be safely saved in a secure place called the Automation Anywhere Credential Vault. This ensures sensitive details are protected and not visible in the code. When the bot runs, it will fetch these details securely and use them wherever needed.
 end note
 
 :Store API Endpoints;
 note right
-Save all API web addresses in a secure file or
-the Credential Vault. This allows the bot to
-access them securely and dynamically.
+All the web addresses (API endpoints) that the bot needs to use will be stored in a secure file or in the same credential vault. This way, the bot can access them as required without risking security.
 end note
 
 :Read Input Data;
 note right
 Process records or files step by step from the
 defined input source, such as an Excel file
-or database.
+.
 end note
 
 :Make Initial API Call;
 note right
-Use the Automation Anywhere REST Web Service
-Action to connect to APIs. Fetch details like URL,
-credentials, and data from the vault or file, and
-save the API response.
+The bot will use a feature in Automation Anywhere called the REST Web Service Action to connect to APIs.
+It will gather details like the web address, login information, and any extra data to send, all from the secure vault or file.
+The response from the API (the information the API sends back) will be saved in a variable. If the response includes a token (like a special key for accessing more data), the bot will extract it and save it for the next step.
 end note
 
 :Extract API Token;
@@ -48,22 +41,19 @@ end note
 
 :Make Next API Call;
 note right
-Use the extracted token for authentication.
-Send the next request using secure information
-and validate the response.
+Using the token from the previous step, the bot will make another API call to the next web address.
+It will securely include the required information and ensure all details are handled safely.
+The bot will check if the response is correct (using the response code) and save any necessary results for further processing.
 end note
 
 :Update Records;
 note right
-Based on the API response, update results in
-an organized manner, like saving data to an
-Excel file or database.
+Based on the response from the API, the bot will update records in a file (like an Excel sheet) or a database, so all actions are recorded and organized.
 end note
 
 :Process Next Record;
 note right
-Move to the next record and repeat the process
-until all data is handled.
+After completing one set of data, the bot will move to the next and repeat the process until everything is done.
 end note
 
 
