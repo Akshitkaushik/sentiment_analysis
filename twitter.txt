@@ -1,63 +1,11 @@
-@startuml
-skinparam ArrowThickness 4
-skinparam ArrowLength 500
-skinparam defaultFontSize 14
-skinparam backgroundColor #FFFFFF
-skinparam activityBackgroundColor #F9F9F9
-skinparam activityBorderColor #CCCCCC
-skinparam activityFontColor #333333
+Hi Khan, hope you're doing well.
 
-start
+I wanted to update you that we’ve created the Client API ID and Client Secret for token generation for the MTR process. However, the JWT endpoints are still not confirmed.
 
-:Store API Credentials;
-note right
-The API login details, like the ID, password, and other necessary information, will be safely saved in a secure place called the Automation Anywhere Credential Vault. 
-This ensures sensitive details are protected and not visible in the code. When the bot runs, it will fetch these details securely and use them wherever needed.
-end note
+I understand there’s a call scheduled with TOM to discuss this, but I was hoping to verify the credentials with the endpoints beforehand to check if they are working as expected. This way, if there are any issues, I can raise them with the OAuth team in advance.
 
-:Store API Endpoints;
-note right
-All the web addresses (API endpoints) that the bot needs to use will be stored in a secure file or in the same credential vault.
-This way, the bot can access them as required without risking security.
-end note
+Could you please help by asking TOM if he can use these credentials on his end to test their functionality? If he agrees, I can share the credentials with him directly so he can provide feedback. I already sent him a message on Teams, but I believe he might be busy with other tasks right now.
 
-:Read Input Data;
-note right
-Process records or files step by step from the
-defined input source, such as an Excel file
-.
-end note
+Your help with this would save us time and ensure everything is ready for future development. Please let me know if this works.
 
-:Make Initial API Call;
-note right
-The bot will use a feature in Automation Anywhere called the REST Web Service Action to connect to APIs.
-It will gather details like the web address, login information, and any extra data to send, all from the secure vault or file.
-The response from the API (the information the API sends back) will be saved in a variable. If the response includes a token (like a special key for accessing more data), the bot will extract it and save it for the next step.
-end note
-
-:Extract API Token;
-note right
-Extract and save the token (if provided) from
-the API response for use in the next API calls.
-end note
-
-:Make Next API Call;
-note right
-Using the token from the previous step, the bot will make another API call to the next web address.
-It will securely include the required information and ensure all details are handled safely.
-The bot will check if the response is correct (using the response code) and save any necessary results for further processing.
-end note
-
-:Update Records;
-note right
-Based on the response from the API, the bot will update records in a file (like an Excel sheet) or a database, so all actions are recorded and organized.
-end note
-
-:Process Next Record;
-note right
-After completing one set of data, the bot will move to the next and repeat the process until everything is done.
-end note
-
-
-stop
-@enduml
+Thank you! 😊
