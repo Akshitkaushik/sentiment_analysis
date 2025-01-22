@@ -1,11 +1,14 @@
-Hi Khan, hope you're doing well.
+We will use these client credentials for generating the JWT token, with the username and password specified in the JWT endpoints.
 
-I wanted to update you that we’ve created the Client API ID and Client Secret for token generation for the MTR process. However, the JWT endpoints are still not confirmed.
+Client username: userid in the JWT endpoints
+Client secret: password in the JWT endpoints
+These client credentials have been created by us and will only be used for the development and QA environments. The client credentials for production and UAT will be shared via the API OAuth at a later time."
 
-I understand there’s a call scheduled with TOM to discuss this, but I was hoping to verify the credentials with the endpoints beforehand to check if they are working as expected. This way, if there are any issues, I can raise them with the OAuth team in advance.
 
-Could you please help by asking TOM if he can use these credentials on his end to test their functionality? If he agrees, I can share the credentials with him directly so he can provide feedback. I already sent him a message on Teams, but I believe he might be busy with other tasks right now.
 
-Your help with this would save us time and ensure everything is ready for future development. Please let me know if this works.
 
-Thank you! 😊
+JWT endpoints have been shared by Tom.
+
+Updated API endpoints for each environment have also been shared by Tom.
+
+As an example and reference, we are using this API endpoint from one of our projects. This project also uses JWT tokens, and we can check the endpoint format there.
