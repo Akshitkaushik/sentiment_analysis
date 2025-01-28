@@ -1,5 +1,11 @@
-As discussed during our last call, we are using the provided endpoint along with my client’s credentials to generate the token. While we are successfully able to generate the token, we are encountering an "Invalid Authorization Token" error when passing the token.
+I have an approach to verify and test the generated token value:
 
-Could you please assist us in resolving this issue? Alternatively, if there is another way to verify the token, we would appreciate your guidance.
+I can generate the token using my client’s credentials and the shared JWT endpoint, then share it with you during a call. You can use this token in the MTR API via Postman. If the MTR API gives a 200 response, it confirms that the endpoint and client credentials are generating the correct token, and the issue lies elsewhere. However, if you encounter the same "Invalid Authorization Token" error, it would indicate a potential issue with the endpoint or my client credentials.
 
-Looking forward to your response
+Alternatively, you can directly use the endpoint and my client credentials on your end via Postman to verify whether the generated token works for the MTR API.
+
+Lastly, you can use the endpoint with your credentials to check if the token works for the MTR API.
+
+This is my proposed approach. If you have some time, we can try applying it. If it doesn’t work, we can explore other possibilities.
+
+Please share your thoughts.
