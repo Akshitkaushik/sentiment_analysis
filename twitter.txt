@@ -1,11 +1,5 @@
-Hi Tom,
+As discussed during our last call, we are using the provided endpoint along with my client’s credentials to generate the token. While we are successfully able to generate the token, we are encountering an "Invalid Authorization Token" error when passing the token.
 
-Thank you for the testing. I wanted to provide some updates on the points discussed:
+Could you please assist us in resolving this issue? Alternatively, if there is another way to verify the token, we would appreciate your guidance.
 
-As you mentioned, you set the initial ID to AP110023, and no additional database permissions were required for this API. However, when passing this initial ID in the body of the API, I am still encountering the same issue. I am uncertain if the issue lies with the JWT token or if there are other access-related problems. I’ve attached a screenshot for your reference.
-
-Regarding APP11202, as per your update, no additional database permissions are required. However, I hope you’ve reviewed Chad’s email, where he mentioned that certain data access or additional information might be necessary. If this information is still required, could you kindly share the relevant details? I’ve attached Chad’s email for your reference.
-
-Please let me know if any clarification is needed.
-
-Best regards,
+Looking forward to your response
