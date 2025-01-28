@@ -1,14 +1,11 @@
-We will use these client credentials for generating the JWT token, with the username and password specified in the JWT endpoints.
+Hi Tom,
 
-Client username: userid in the JWT endpoints
-Client secret: password in the JWT endpoints
-These client credentials have been created by us and will only be used for the development and QA environments. The client credentials for production and UAT will be shared via the API OAuth at a later time."
+Thank you for the testing. I wanted to provide some updates on the points discussed:
 
+As you mentioned, you set the initial ID to AP110023, and no additional database permissions were required for this API. However, when passing this initial ID in the body of the API, I am still encountering the same issue. I am uncertain if the issue lies with the JWT token or if there are other access-related problems. I’ve attached a screenshot for your reference.
 
+Regarding APP11202, as per your update, no additional database permissions are required. However, I hope you’ve reviewed Chad’s email, where he mentioned that certain data access or additional information might be necessary. If this information is still required, could you kindly share the relevant details? I’ve attached Chad’s email for your reference.
 
+Please let me know if any clarification is needed.
 
-JWT endpoints have been shared by Tom.
-
-Updated API endpoints for each environment have also been shared by Tom.
-
-As an example and reference, we are using this API endpoint from one of our projects. This project also uses JWT tokens, and we can check the endpoint format there.
+Best regards,
