@@ -1,11 +1,1 @@
-I have an approach to verify and test the generated token value:
-
-I can generate the token using my client’s credentials and the shared JWT endpoint, then share it with you during a call. You can use this token in the MTR API via Postman. If the MTR API gives a 200 response, it confirms that the endpoint and client credentials are generating the correct token, and the issue lies elsewhere. However, if you encounter the same "Invalid Authorization Token" error, it would indicate a potential issue with the endpoint or my client credentials.
-
-Alternatively, you can directly use the endpoint and my client credentials on your end via Postman to verify whether the generated token works for the MTR API.
-
-Lastly, you can use the endpoint with your credentials to check if the token works for the MTR API.
-
-This is my proposed approach. If you have some time, we can try applying it. If it doesn’t work, we can explore other possibilities.
-
-Please share your thoughts.
+Actually, last week we went for a biopsy, and tomorrow I need to show the report to the doctor. A family member of mine is suffering from a disease, and the doctor suspects it might be cancer. That's why I need to log off 2 hours early
