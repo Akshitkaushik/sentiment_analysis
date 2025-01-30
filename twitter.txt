@@ -1,1 +1,3 @@
-Actually, last week we went for a biopsy, and tomorrow I need to show the report to the doctor. A family member of mine is suffering from a disease, and the doctor suspects it might be cancer. That's why I need to log off 2 hours early
+I have already shared the headers, URL, and body parameters in the previous email. For your reference, I have now attached a screenshot along with the headers again. This screenshot demonstrates the scenario with JWT + headers.
+
+However, when we use Bearer + token, I encounter the issue mentioned. I have also attached a screenshot of the Bearer error. Additionally, I shared some approaches in the team chat—please review them to see if any of those might work. If they seem feasible, we can proceed with those approaches to verify the token.
