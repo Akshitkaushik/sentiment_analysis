@@ -1,3 +1,3 @@
-I have already shared the headers, URL, and body parameters in the previous email. For your reference, I have now attached a screenshot along with the headers again. This screenshot demonstrates the scenario with JWT + headers.
+Hello Jason,
 
-However, when we use Bearer + token, I encounter the issue mentioned. I have also attached a screenshot of the Bearer error. Additionally, I shared some approaches in the team chat—please review them to see if any of those might work. If they seem feasible, we can proceed with those approaches to verify the token.
+I have already tried using the bearer token in the authorization header, and I have shared the results in the email below. Additionally, I have attached a screenshot of the error we encountered when using the bearer token in the headers. Could you please review the email and advise?
