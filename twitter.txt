@@ -1,31 +1,23 @@
 import requests
 
-# API URL
-url = "https://enrollemt.advisoryservice.com/individual/11222322/enrollement"
+# Define the URL
+url = "https://example.com/token"  # Replace with your actual URL
 
-# Token for Authorization (replace with your actual token)
-token = "your_token_here"
-
-# Headers
+# Define the headers
 headers = {
-    "Authorization": f"Bearer {token}",
-    "Content-Type": "application/json"
+    "Content-Type": "application/x-www-form-urlencoded"
 }
 
-# Body
-body = {
-    "akshit": "kaushik",
-    "kaushik": "alsihti"
+# Define the payload (data to be sent in the request)
+data = {
+    "grant_type": "client_credentials",
+    "client_id": "akshit",
+    "client_secret": "kuahsik"
 }
 
-# Send POST request
-try:
-    response = requests.post(url, headers=headers, json=body)
-    # Check if the request was successful
-    if response.status_code == 200:
-        print("Response Data:", response.json())  # Assuming the response is JSON
-    else:
-        print(f"Failed with status code: {response.status_code}")
-        print("Response Content:", response.text)
-except Exception as e:
-    print("An error occurred:", str(e))
+# Send the POST request
+response = requests.post(url, headers=headers, data=data)
+
+# Print the response
+print("Status Code:", response.status_code)
+print("Response:", response.text)
