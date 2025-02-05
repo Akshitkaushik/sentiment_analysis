@@ -1,23 +1,11 @@
-import requests
+Subject: Request for Feedback on Development Test Data
 
-# Define the URL
-url = "https://example.com/token"  # Replace with your actual URL
+Dear Tom,
 
-# Define the headers
-headers = {
-    "Content-Type": "application/x-www-form-urlencoded"
-}
+Thank you for providing the development test data. I have used this data in my development, and I would appreciate it if you could check whether the updates are reflected in the database on your end. Kindly share your feedback at your earliest convenience.
 
-# Define the payload (data to be sent in the request)
-data = {
-    "grant_type": "client_credentials",
-    "client_id": "akshit",
-    "client_secret": "kuahsik"
-}
+I have attached the audit file for your reference and have also included some individual IDs for testing. Please review them as well. Additionally, I have added a few new columns to this file—please check the last five columns and their values. If any of these columns are not required, please let me know. I included them for future use, as they will help in tracking the status of individual IDs more effectively.
 
-# Send the POST request
-response = requests.post(url, headers=headers, data=data)
+Looking forward to your feedback.
 
-# Print the response
-print("Status Code:", response.status_code)
-print("Response:", response.text)
+Best regards,
