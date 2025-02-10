@@ -1,9 +1,33 @@
-Yes, you are correct that the four records are not in the Easy MA Enrollment database. I added these records for testing purposes to understand how we can handle incorrect data if received in real-time.
+Steps to Create an API ID:
+Request a Bot ID
 
-The 4th failure comment – "Mandatory data missing" means that if any mandatory column value is empty in real-time, we will skip that record and update the comment accordingly. In the attached screenshot, you can see that the database is empty for a mandatory value, which is why I included such data for testing.
+Use the following link to raise a request for the Bot ID: [Insert Link]
+Request an API ID
 
-I have tested with the development data. Could you please help me by sharing the UAT test data so that I can proceed with UAT testing? Also, if you have any records where multiple GAID values exist, please share those as well so I can test that scenario.
+Use the link below to request an API ID: [Insert Link]
+While raising the API ID request, select the "API Request" option in the Type field.
+Please refer to the attached screenshot for guidance.
+The API ID and Bot ID requests will be handled by Tonny and the Chad team.
 
-Thank you for your support!
+Requesting Client Credentials
+Once the API ID is created, you need to request client credentials to generate a token.
 
-Best regards,
+Submit a request for client credentials to the OAuth team at apisuport.com.
+You can also connect with Gourav Gupta for assistance with client credentials.
+Client Credentials Request Steps:
+Important:
+For Dev and QA environments, client credentials need to be created manually. The OAuth team only provides UAT and PROD client credentials via a separate email.
+
+For Dev and QA environments, follow the steps provided in the attached link: [Insert Link]
+Refer to the attached screenshots for detailed instructions.
+How to Fill Out the Form:
+Name – Owner’s Name: Karthik
+Client Type: Choose the appropriate option based on requirements (e.g., B2B). You can verify this with an OAuth team member or the business team.
+Owner’s Contact: Enter Karthik’s email.
+After entering these details, click on the "Add Owner Contact" button.
+Then, click on the "Create" button.
+Once created, you will receive your Dev and QA client credentials, which can be used to generate the token in your API.
+Note:
+When creating Dev and QA client credentials, you may encounter access issues on the client credentials page. If you do not have access, you need to raise a database access request.
+
+To raise a database access request, refer to the steps provided on the Confluence page: [Insert Link]
