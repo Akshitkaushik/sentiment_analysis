@@ -1,33 +1,64 @@
-Steps to Create an API ID:
-Request a Bot ID
 
-Use the following link to raise a request for the Bot ID: [Insert Link]
-Request an API ID
 
-Use the link below to request an API ID: [Insert Link]
-While raising the API ID request, select the "API Request" option in the Type field.
-Please refer to the attached screenshot for guidance.
-The API ID and Bot ID requests will be handled by Tonny and the Chad team.
+Hello Team,  
 
-Requesting Client Credentials
-Once the API ID is created, you need to request client credentials to generate a token.
+Thank you for joining.  
 
-Submit a request for client credentials to the OAuth team at apisuport.com.
-You can also connect with Gourav Gupta for assistance with client credentials.
-Client Credentials Request Steps:
-Important:
-For Dev and QA environments, client credentials need to be created manually. The OAuth team only provides UAT and PROD client credentials via a separate email.
+The bot, named **State Iowa Process**, has recently been automated. I have completed the testing, and since last week, we have been receiving live PPTs. I have triggered the bot with live PPTs, and it is working as expected.  
 
-For Dev and QA environments, follow the steps provided in the attached link: [Insert Link]
-Refer to the attached screenshots for detailed instructions.
-How to Fill Out the Form:
-Name – Owner’s Name: Karthik
-Client Type: Choose the appropriate option based on requirements (e.g., B2B). You can verify this with an OAuth team member or the business team.
-Owner’s Contact: Enter Karthik’s email.
-After entering these details, click on the "Add Owner Contact" button.
-Then, click on the "Create" button.
-Once created, you will receive your Dev and QA client credentials, which can be used to generate the token in your API.
-Note:
-When creating Dev and QA client credentials, you may encounter access issues on the client credentials page. If you do not have access, you need to raise a database access request.
+The goal of this bot is to offer **online enrollment** to State of Iowa employees. It generates a report identifying which PPTs enrolled online the previous day and then sends an email notification to those PPTs.  
 
-To raise a database access request, refer to the steps provided on the Confluence page: [Insert Link]
+### **Process Overview**  
+This is a **linear and straightforward process**.  
+
+- **POC**: Taufique (Business Analyst)  
+- **Input File Source**: The input file is received via email from the **EBSI team**. The POC for this file is **Jyothilaxmi**, who shares it via email with a specific subject.  
+- **Email Rule**: A rule is set to check emails with this subject, and the bot retrieves the file from the **Outlook folder**.  
+- **Outlook Folder Name**: **State Iowa Process**  
+- **File Naming Convention**: **Report_2299ddmmyyyy**  
+
+### **Bot Handling Scenarios**  
+The bot manages different scenarios as follows:  
+
+1. **If the input file is not received** → The bot sends an email notification to the business team.  
+2. **If the input file is empty** → The bot notifies the business team with an "Audit Input File" email.  
+3. **If the bot encounters an error** → It notifies our team only, attaching the system and error logs.  
+4. **If the bot runs successfully** → It sends an email to both the business team and our team, attaching the audit file.  
+
+### **Bot Automation Steps**  
+1. Check if the input file exists in the designated Outlook folder.  
+   - If found, download and save it in the input folder.  
+   - If not, send an email notification.  
+2. After downloading, check the number of rows in the file.  
+3. Create status folders.  
+4. Validate the required column values:  
+   - If mandatory values are missing, skip that record, update the status as **"Missing Mandatory Value"**, and notify the business team with the audit file.  
+5. Log in to the **Easy Application**.  
+6. Select the database.  
+7. Enter the **screen name** (CHAP).  
+8. Enter the **SSN** and **GAID**.  
+9. Check for any pop-ups.  
+10. Click the **COMP** button and wait for the **COMP** screen.  
+11. Select the **COMM ACCT** number in the **COMM ACCT Table**.  
+12. Check if the required table values are selected.  
+    - If selected, confirm the pop-up.  
+13. Press **F6**, check for pop-ups, and press **F6** again.  
+14. Extract the final status:  
+    - If the final status is **"Participant Changes"**, the bot sends a **Welcome Email** to the user and updates the status as **"COMM ACCT Successfully Updated"**.  
+15. Proceed to the next record.  
+16. After processing all records:  
+    - Share the audit file.  
+    - Remove the input file from the input folder.  
+
+### **Additional Information**  
+- **Audit File Email Recipient**: akshitkaushik@gmail.com  
+- **Bot Trigger Time**: **11 AM MST, Monday to Friday**  
+
+Let me know if you need any further clarification.  
+
+Best Regards,  
+[Your Name]  
+
+---
+
+This version is **more structured, clear, and professional**. Let me know if you need any modifications! 🚀
