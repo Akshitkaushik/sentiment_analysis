@@ -1,11 +1,19 @@
-Subject: Scheduling the State Iowa Bot
+Career Goals: I aim to grow in HR, gaining expertise in recruitment and employee engagement, with a long-term goal of taking on a leadership role.
 
-Hello Team,
+Requests/Recommendations: I seek opportunities for training, mentorship, and challenging projects to enhance my HR skills.
 
-As discussed in last week’s Iowa KT call, I will trigger the State Iowa bot in unattended mode on Thursday and Friday. The bot has been running successfully in unattended mode. Please proceed with scheduling it.
+Feedback & Improvements: I have received positive feedback on my communication and relationship-building skills and continue to improve my HR technical knowledge.
 
-Additional Information:
+Other: I stay updated with HR trends, focus on planning and organization, and thrive in collaborative environments.
 
-Schedule Time: [Specify Time]
-If any input file is missing after the bot runs, please follow up with the EBSI team.
-Thanks!
+
+
+
+
+
+
+Guidance and Training – Regular mentorship and training sessions to enhance my skills, provided by my manager and HR team.
+Clear Communication – Well-defined roles, responsibilities, and expectations set by my supervisor to align my work with organizational goals.
+Access to Resources – Necessary tools, software, and materials provided by the IT and administrative teams to perform tasks efficiently.
+Feedback and Development – Constructive feedback from leadership to improve performance and career growth opportunities.
+Collaboration and Support – Team cooperation and cross-functional assistance to ensure smooth workflow and knowledge sharing.
