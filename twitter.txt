@@ -1,19 +1,26 @@
-Career Goals: I aim to grow in HR, gaining expertise in recruitment and employee engagement, with a long-term goal of taking on a leadership role.
+import requests
+ 
+ 
+ # Define the URL
+ url = "https://example.com/token"  # Replace with your actual URL
 
-Requests/Recommendations: I seek opportunities for training, mentorship, and challenging projects to enhance my HR skills.
+ 
+ # Define the headers
+ headers = {
+     "Content-Type": "application/x-www-form-urlencoded"
+ }
 
-Feedback & Improvements: I have received positive feedback on my communication and relationship-building skills and continue to improve my HR technical knowledge.
-
-Other: I stay updated with HR trends, focus on planning and organization, and thrive in collaborative environments.
-
-
-
-
-
-
-
-Guidance and Training – Regular mentorship and training sessions to enhance my skills, provided by my manager and HR team.
-Clear Communication – Well-defined roles, responsibilities, and expectations set by my supervisor to align my work with organizational goals.
-Access to Resources – Necessary tools, software, and materials provided by the IT and administrative teams to perform tasks efficiently.
-Feedback and Development – Constructive feedback from leadership to improve performance and career growth opportunities.
-Collaboration and Support – Team cooperation and cross-functional assistance to ensure smooth workflow and knowledge sharing.
+ 
+ # Define the payload (data to be sent in the request)
+ data = {
+     "grant_type": "client_credentials",
+     "client_id": "akshit",
+     "client_secret": "kuahsik"
+ }
+ # Send the POST request
+ response = requests.post(url, headers=headers, data=data)
+ Looking forward to your feedback.
+ 
+ # Print the response
+ print("Status Code:", response.status_code)
+ print("Response:", response.text)
