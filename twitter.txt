@@ -1,1 +1,1 @@
-I have a mirror ID and need the same access for my bot ID. Please grant all necessary permissions accordingly
+Please do not cancel any tickets. We need two separate bot IDs as we will be using two additional bot runners, each assigned to a different database. The key difference in this request is the database value. Kindly proceed with creating the bot IDs accordingly.
