@@ -1,23 +1,17 @@
-Subject: Request to Create Two Bot Runners for Talcott DMF Bot
+Hello Rob,
 
-Hi Sanjay,
+I wanted to inform you that we are currently receiving the input files in the S3 location at [ ].
 
-I need your help in creating two bot runners for the Talcott DMF bot.
+Since we will now be receiving input files for three different databases, I have created separate subfolders in the S3 location based on the database names. We would like each file to be placed inside its respective subfolder according to the database name.
 
-Recently, I received an enhancement request for the bot, where they want to include two additional databases in the current flow. I have two bot IDs, each with specific database access.
+For example:
 
-Additional Information:
+If the folder name is in02, it should contain only the in02 database file.
+If the file belongs to in03, it should be inside the in03 subfolder.
+Similarly, the is02 file should be placed inside the is02 subfolder.
+I am attaching a screenshot of the subfolder structure for your reference, along with the main S3 location path.
 
-Bot ID: [Provide Bot ID]
+Please let me know if you need any further details.
 
-Password: [Provide Password]
-Database: [Provide Database]
-Bot ID: [Provide Bot ID]
-
-Password: [Provide Password]
-Database: [Provide Database]
-Since we are already running this bot with an existing bot ID, please use it as a mirror ID and ensure these two bot runners have all the required access.
-
-Kartghiga, if anything is missing, please share the details with Sanjay.
-
-Let me know if you need any further information.
+Best regards,
+[Your Name]
