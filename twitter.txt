@@ -1,1 +1,23 @@
-Please do not cancel any tickets. We need two separate bot IDs as we will be using two additional bot runners, each assigned to a different database. The key difference in this request is the database value. Kindly proceed with creating the bot IDs accordingly.
+Subject: Request to Create Two Bot Runners for Talcott DMF Bot
+
+Hi Sanjay,
+
+I need your help in creating two bot runners for the Talcott DMF bot.
+
+Recently, I received an enhancement request for the bot, where they want to include two additional databases in the current flow. I have two bot IDs, each with specific database access.
+
+Additional Information:
+
+Bot ID: [Provide Bot ID]
+
+Password: [Provide Password]
+Database: [Provide Database]
+Bot ID: [Provide Bot ID]
+
+Password: [Provide Password]
+Database: [Provide Database]
+Since we are already running this bot with an existing bot ID, please use it as a mirror ID and ensure these two bot runners have all the required access.
+
+Kartghiga, if anything is missing, please share the details with Sanjay.
+
+Let me know if you need any further information.
