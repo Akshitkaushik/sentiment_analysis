@@ -1,17 +1,8 @@
-Hello Rob,
+Hello Taufique,
 
-I wanted to inform you that we are currently receiving the input files in the S3 location at [ ].
+As we are approaching the MTR bot deployment, I have a few questions and would appreciate your help:
 
-Since we will now be receiving input files for three different databases, I have created separate subfolders in the S3 location based on the database names. We would like each file to be placed inside its respective subfolder according to the database name.
-
-For example:
-
-If the folder name is in02, it should contain only the in02 database file.
-If the file belongs to in03, it should be inside the in03 subfolder.
-Similarly, the is02 file should be placed inside the is02 subfolder.
-I am attaching a screenshot of the subfolder structure for your reference, along with the main S3 location path.
-
-Please let me know if you need any further details.
-
-Best regards,
-[Your Name]
+What volume can we expect at the time of go-live?
+On which day and at what time should we run this bot? Please share the schedule.
+Will this bot be a scheduled bot or a trigger-based bot?
+Looking forward to your response.
