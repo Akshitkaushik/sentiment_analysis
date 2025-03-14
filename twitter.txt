@@ -1,8 +1,5 @@
-Hello Taufique,
+You are absolutely right—testing is typically done in three phases. As of now, we have completed testing using UAT data in the UAT environment.
 
-As we are approaching the MTR bot deployment, I have a few questions and would appreciate your help:
+The next step is to move the code to the production environment, where I will test the bot using some dummy production data. This will allow us to validate the bot's functionality before it starts processing real-time data. Additionally, we will verify all necessary production database access to ensure a smooth go-live process.
 
-What volume can we expect at the time of go-live?
-On which day and at what time should we run this bot? Please share the schedule.
-Will this bot be a scheduled bot or a trigger-based bot?
-Looking forward to your response.
+Please let me know if you have any concerns or suggestions.
