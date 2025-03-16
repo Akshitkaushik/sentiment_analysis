@@ -1,5 +1,7 @@
-You are absolutely right—testing is typically done in three phases. As of now, we have completed testing using UAT data in the UAT environment.
+Hello Khan,
 
-The next step is to move the code to the production environment, where I will test the bot using some dummy production data. This will allow us to validate the bot's functionality before it starts processing real-time data. Additionally, we will verify all necessary production database access to ensure a smooth go-live process.
+Thank you for sharing the PPTs. I will proceed with testing my bot.
 
-Please let me know if you have any concerns or suggestions.
+I have one more request—would it be possible to receive these PPTs within the input file? If Jyothilaxmi extracts the PPTs and shares them in the S3 location, I will be able to test my bot end-to-end, from downloading the input file to updating the data via the API.
+
+If this is feasible, could you please share the data inside the input file in the S3 path? Let me know your thoughts.
