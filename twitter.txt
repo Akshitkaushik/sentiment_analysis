@@ -1,8 +1,5 @@
-
 Hello Khan,
 
-Thank you for sharing the PPTs. I will proceed with testing my bot.
+I have tested the MTR bot in the production environment using production shared data. I have attached the success email, which contains an Excel audit file.
 
-I have one more request—would it be possible to receive these PPTs within the input file? If Jyothilaxmi extracts the PPTs and shares them in the S3 location, I will be able to test my bot end-to-end, from downloading the input file to updating the data via the API.
-
-If this is feasible, could you please share the data inside the input file in the S3 path? Let me know your thoughts.
+Please review the results and confirm if everything is correct.
