@@ -1,18 +1,3 @@
-Hello Harrishon,
+Thank you for providing the dummy accounts. I have attached a file for your reference. I would appreciate it if you could share the dummy account data in the attached Excel format, ensuring that all column values are included.
 
-I have completed the UAT testing for the additional bot component in the Talcott DMF bot. I have attached the test results in this email for your review.
-
-Could you please provide your approval to move the code to the production environment?
-
-Thank you.
-
-
-Hello @Kahn and Chris,
-
-As you know, we have completed both production and UAT testing. Before the go-live, I need your approval to proceed, as the bot is working as expected.
-
-Note: Just a reminder that the code freeze will be in effect from March 28 to April 11, during which no changes can be made to the bot process.
-
-Looking forward to your approval.
-
-Thank you.
+Looking forward to your response.
