@@ -1,3 +1,9 @@
-Thank you for providing the dummy accounts. I have attached a file for your reference. I would appreciate it if you could share the dummy account data in the attached Excel format, ensuring that all column values are included.
+Request to Import Updated Talcott DMF Bot
 
-Looking forward to your response.
+Hello Team,
+
+Please import the updated Talcott DMF bot attached. You can find Harish's approval in the email below.
+
+Note: Kindly take a backup of the current Talcott DMF bot before proceeding.
+
+Thank you.
