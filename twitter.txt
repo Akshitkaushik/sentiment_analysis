@@ -1,9 +1,12 @@
-Request to Import Updated Talcott DMF Bot
+Subject: Assistance Required – Unable to Login to Cirrus
 
-Hello Team,
+Hello Surendera,
 
-Please import the updated Talcott DMF bot attached. You can find Harish's approval in the email below.
+I need your assistance as we are unable to log in to the Cirrus application on this machine. I have attached the error screenshot for your reference. This is our first time accessing Cirrus on this machine, but we are able to log in successfully on a different machine.
 
-Note: Kindly take a backup of the current Talcott DMF bot before proceeding.
+Could you please help us resolve this issue? Additionally, do we need to raise any specific request for access?
 
-Thank you.
+User ID: [Provide User ID]
+Password: [Provide Password]
+
+Looking forward to your guidance.
