@@ -9,4 +9,14 @@ I need your assistance with updating the Entrust mapping. Could you please remov
 Please let me know once this is done or if you need any further details. I appreciate your help on this.
 
 Best regards,
+
+
+
+Hey @Jay, hope you're doing well! 😊
+
+Could you please help update the Entrust mapping? We need to remove the mapping with SAAP168 and SAAP169 and instead map it with SAAP221 and SAAP222. Let me know once it's done or if you need any details.
+
+Thanks in advance! 🙌
+
+
 [Your Name]
