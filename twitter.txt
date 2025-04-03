@@ -1,12 +1,12 @@
-Subject: Assistance Required – Unable to Login to Cirrus
+Subject: Request for Entrust Mapping Update
 
-Hello Surendera,
+Hello Jay,
 
-I need your assistance as we are unable to log in to the Cirrus application on this machine. I have attached the error screenshot for your reference. This is our first time accessing Cirrus on this machine, but we are able to log in successfully on a different machine.
+I hope you're doing well.
 
-Could you please help us resolve this issue? Additionally, do we need to raise any specific request for access?
+I need your assistance with updating the Entrust mapping. Could you please remove the existing mapping with SAAP168 and SAAP169 and instead map the Entrust ID with SAAP221 and SAAP222?
 
-User ID: [Provide User ID]
-Password: [Provide Password]
+Please let me know once this is done or if you need any further details. I appreciate your help on this.
 
-Looking forward to your guidance.
+Best regards,
+[Your Name]
