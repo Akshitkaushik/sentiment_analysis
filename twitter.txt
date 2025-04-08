@@ -1,1 +1,13 @@
-Just to clarify, the bot runner IDs are SAAP168 and SAAP169, as we are using the existing machines for this process. The IDs SAAP221 and SAAP222 are being used specifically for Easy database access.
+Hello Tony,
+
+Hope you're doing well.
+
+I need your help regarding two tickets we recently raised for the new bot IDs: SAAP221 and SAAP222.
+
+The bot ID SAAP222 has access to IN04 UAT and PROD databases, and it's working fine in both environments.
+
+However, for SAAP221, which is connected to the IS02 database, I’m encountering an error while accessing the PROD database. It’s working fine with the UAT IS02 environment. I’ve attached the error for your reference.
+
+Could you please look into this issue? It's a bit urgent, as the bot is scheduled to run tomorrow.
+
+Appreciate your help!
