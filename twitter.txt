@@ -1,13 +1,13 @@
-Hello Tony,
+Dear Tony,
 
-Hope you're doing well.
+I hope this message finds you well.
 
-I need your help regarding two tickets we recently raised for the new bot IDs: SAAP221 and SAAP222.
+I’m reaching out regarding the two tickets we recently raised for the new bot IDs SAAP221 and SAAP222.
 
-The bot ID SAAP222 has access to IN04 UAT and PROD databases, and it's working fine in both environments.
+The bot ID SAAP222 has access to both IN04 UAT and PROD environments, and it is functioning correctly across both.
 
-However, for SAAP221, which is connected to the IS02 database, I’m encountering an error while accessing the PROD database. It’s working fine with the UAT IS02 environment. I’ve attached the error for your reference.
+However, I’m facing an issue with SAAP221, which is configured to work with the IS02 database. While it is working fine in the UAT environment, I’m encountering an error when attempting to access the PROD database. I’ve attached the error details for your reference.
 
-Could you please look into this issue? It's a bit urgent, as the bot is scheduled to run tomorrow.
+Could you kindly look into this at your earliest convenience? The bot is scheduled to run tomorrow, so a quick resolution would be greatly appreciated.
 
-Appreciate your help!
+Thank you in advance for your support.
