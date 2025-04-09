@@ -1,3 +1,10 @@
-I would like to share that another bot ID, SAAP222, is currently working in production with the IN04 database. You may use this as a reference to compare the access configurations and help identify the issue with SAAP221 bot ID for IS02 database access.
+Hi Tony,
+Hope you're doing well.
 
-Your assistance in resolving this matter would be greatly appreciated.
+As you're aware, we’ve been facing an issue with the SAAP221 bot ID accessing the IS02 database. I’ve already connected with both the Service Desk and IAM teams, but unfortunately, the issue still persists.
+
+The Service Desk team has reset the password twice—once yesterday and again today—but there’s been no improvement. The IAM team has also confirmed that everything appears to be in order from their end.
+
+At this point, I’m reaching out to you as my last hope. If possible, could you please take a look from your side or guide me on whom I should connect with to get this resolved?
+
+Appreciate your help!
