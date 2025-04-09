@@ -1,13 +1,13 @@
-Dear Tony,
+ Urgent Assistance Required for EASY IS02 PROD Database Access Issue
 
-I hope this message finds you well.
+Dear Team,
 
-I’m reaching out regarding the two tickets we recently raised for the new bot IDs SAAP221 and SAAP222.
+I am currently facing an issue with the EASY IS02 PROD database. I had raised a ticket regarding this yesterday, and the Service Desk team has since reset the password for the EASY bot ID SAAP221. They have now reassigned the ticket to your team and advised me to follow up with you for further assistance.
 
-The bot ID SAAP222 has access to both IN04 UAT and PROD environments, and it is functioning correctly across both.
+Could you please help me resolve this issue at the earliest? I have attached a screenshot of the error for your reference.
 
-However, I’m facing an issue with SAAP221, which is configured to work with the IS02 database. While it is working fine in the UAT environment, I’m encountering an error when attempting to access the PROD database. I’ve attached the error details for your reference.
+This is quite urgent, as we have a bot scheduled to run today and it requires access to the EASY IS02 data using the SAAP221 bot ID.
 
-Could you kindly look into this at your earliest convenience? The bot is scheduled to run tomorrow, so a quick resolution would be greatly appreciated.
+Thank you for your support.
 
-Thank you in advance for your support.
+Best regards,
