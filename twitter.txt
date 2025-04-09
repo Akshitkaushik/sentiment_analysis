@@ -1,13 +1,9 @@
- Urgent Assistance Required for EASY IS02 PROD Database Access Issue
+Thank you for your response.
 
-Dear Team,
+I would like to provide an update regarding the issue. As per the Service Desk team, the password for the EASY bot ID was reset yesterday. Since then, I am unable to log in using the old password—only the new password provided by the Service Desk is working.
 
-I am currently facing an issue with the EASY IS02 PROD database. I had raised a ticket regarding this yesterday, and the Service Desk team has since reset the password for the EASY bot ID SAAP221. They have now reassigned the ticket to your team and advised me to follow up with you for further assistance.
+The Service Desk team has informed me that the IAM team will handle this issue going forward. I have also attached the relevant ticket comments in the email below for your reference.
 
-Could you please help me resolve this issue at the earliest? I have attached a screenshot of the error for your reference.
-
-This is quite urgent, as we have a bot scheduled to run today and it requires access to the EASY IS02 data using the SAAP221 bot ID.
+Kindly assist in resolving this issue at the earliest. Please let me know if any additional information or action is required from my side.
 
 Thank you for your support.
-
-Best regards,
