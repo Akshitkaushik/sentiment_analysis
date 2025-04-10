@@ -1,1 +1,65 @@
-test
+On Error Resume Next
+
+Dim filename, filenamexlsx, file
+filename = WScript.Arguments.Item(0) & " " & WScript.Arguments.Item(1) & " " & WScript.Arguments.Item(2) & " " & WScript.Arguments.Item(3) & " " & WScript.Arguments.Item(4)
+MsgBox(filename)
+
+filenamexlsx = filename
+file = filename
+filenamexlsx = Replace(filenamexlsx, "csv", "xlsx")
+file = Replace(file, ".csv", "")
+
+Set objExcel = CreateObject("Excel.Application")
+If Err.Number <> 0 Then
+    MsgBox "Error creating Excel.Application: " & Err.Description
+    WScript.Quit
+End If
+
+objExcel.Visible = True
+Set objWorkbook = objExcel.Workbooks.Open(filename)
+If Err.Number <> 0 Then
+    MsgBox "Error opening file: " & Err.Description
+    WScript.Quit
+End If
+
+objWorkbook.SaveAs file & ".xlsx", 51
+If Err.Number <> 0 Then
+    MsgBox "Error saving file as .xlsx: " & Err.Description
+    WScript.Quit
+End If
+
+objWorkbook.Close
+objExcel.Quit
+Set objExcel = Nothing
+Set objWorkbook = Nothing
+
+Set objExcel1 = CreateObject("Excel.Application")
+If Err.Number <> 0 Then
+    MsgBox "Error creating Excel.Application (second instance): " & Err.Description
+    WScript.Quit
+End If
+
+objExcel1.Visible = True
+Set objWorkbook1 = objExcel1.Workbooks.Open(filenamexlsx)
+If Err.Number <> 0 Then
+    MsgBox "Error opening new .xlsx file: " & Err.Description
+    WScript.Quit
+End If
+
+objExcel1.ActiveSheet.Name = "Sheet1"
+If Err.Number <> 0 Then
+    MsgBox "Error renaming sheet: " & Err.Description
+    WScript.Quit
+End If
+
+objWorkbook1.Save
+objWorkbook1.Close
+objExcel1.Quit
+Set objExcel1 = Nothing
+Set objWorkbook1 = Nothing
+
+If Err.Number = 0 Then
+    MsgBox "Conversion completed successfully."
+Else
+    MsgBox "An unexpected error occurred: " & Err.Description
+End If
