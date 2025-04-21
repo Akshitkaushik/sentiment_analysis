@@ -1,65 +1,9 @@
-On Error Resume Next ' Enable global error handling
+Hello Rob,
 
-Dim filename, filenamexlsx, file
-Dim objExcel, objWorkbook, objExcel1, objWorkbook1
+I hope you're doing well.
 
-' Get full file path from first argument
-filename = WScript.Arguments.Item(0)
-MsgBox "Original file path: " & filename
+As you know, Taufique is on leave until May 5th. I just wanted to check if there is anyone else available for the BSS process who can share the RPA requirements and provide the necessary details during his absence.
 
-' Check if file exists
-If Not CreateObject("Scripting.FileSystemObject").FileExists(filename) Then
-    MsgBox "File not found: " & filename
-    WScript.Quit
-End If
+Taufique had informed me last Friday that he is currently supporting the EBSI process, and once he's back from leave, he will share confirmation on the BSS RPA steps. In the meantime, it would be helpful if someone else could assist with the information.
 
-' Prepare .xlsx file path
-file = Left(filename, Len(filename) - 4)
-filenamexlsx = file & ".xlsx"
-
-' Step 1: Convert CSV to XLSX
-Set objExcel = CreateObject("Excel.Application")
-objExcel.Visible = False
-Set objWorkbook = objExcel.Workbooks.Open(filename)
-
-If Err.Number <> 0 Then
-    MsgBox "Error opening CSV file:" & vbCrLf & Err.Description
-    WScript.Quit
-End If
-
-objWorkbook.SaveAs filenamexlsx, 51 ' 51 = xlOpenXMLWorkbook (.xlsx)
-
-If Err.Number <> 0 Then
-    MsgBox "Error saving as XLSX:" & vbCrLf & Err.Description
-    WScript.Quit
-End If
-
-objWorkbook.Close False
-objExcel.Quit
-Set objWorkbook = Nothing
-Set objExcel = Nothing
-
-' Step 2: Rename worksheet to "Sheet1"
-Set objExcel1 = CreateObject("Excel.Application")
-objExcel1.Visible = False
-Set objWorkbook1 = objExcel1.Workbooks.Open(filenamexlsx)
-
-If Err.Number <> 0 Then
-    MsgBox "Error opening XLSX file:" & vbCrLf & Err.Description
-    WScript.Quit
-End If
-
-objWorkbook1.Sheets(1).Name = "Sheet1"
-
-If Err.Number <> 0 Then
-    MsgBox "Error renaming worksheet:" & vbCrLf & Err.Description
-    WScript.Quit
-End If
-
-objWorkbook1.Save
-objWorkbook1.Close False
-objExcel1.Quit
-Set objWorkbook1 = Nothing
-Set objExcel1 = Nothing
-
-MsgBox "Conversion successful!" & vbCrLf & filenamexlsx
+Looking forward to your guidance.
