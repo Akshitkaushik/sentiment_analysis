@@ -1,9 +1,62 @@
-Hello Rob,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan Service Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        ul {
+            margin-top: 0;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
-I hope you're doing well.
+    <h1>Welcome to the Plan Service Center!</h1>
 
-As you know, Taufique is on leave until May 5th. I just wanted to check if there is anyone else available for the BSS process who can share the RPA requirements and provide the necessary details during his absence.
+    <p>The Plan Service Center (PSC) is your centralized hub for managing and accessing your retirement plan real-time.
+    Designed with efficiency in mind, PSC helps streamline plan administration and improve communication.</p>
 
-Taufique had informed me last Friday that he is currently supporting the EBSI process, and once he's back from leave, he will share confirmation on the BSS RPA steps. In the meantime, it would be helpful if someone else could assist with the information.
+    <h2>PSC helps you:</h2>
+    <ul>
+        <li>Access key plan service contacts and understand how they support your plan</li>
+        <li>Simplify day-to-day tasks using <strong>Empower Case Management*</strong></li>
+        <li>Manage participant data with ease</li>
+        <li>Stay on top of outstanding tasks through the <strong>Action Center</strong></li>
+    </ul>
 
-Looking forward to your guidance.
+    <h2>Need help getting started?</h2>
+    <ul>
+        <li><a href="#">PSC overview video</a> - A great first step to understanding the website.</li>
+        <li>Plan Management by Empower provides helpful tips to assist you with completing plan tasks accurately.</li>
+        <li><a href="#">Plan Management Live</a> - Join our interactive training series where you can learn about key plan events and on-demand PSC resources.</li>
+        <li>Plan Management On-demand offers a number of short videos throughout the PSC and on the <a href="#">Empower Plan Resource website</a>.</li>
+    </ul>
+
+    <div class="note">
+        * The ability to edit/view cases coincides with the existing user access level authorized during account setup.
+    </div>
+
+    <p>Automation - Welcome</p>
+
+</body>
+</html>
