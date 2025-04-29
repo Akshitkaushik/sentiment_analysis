@@ -1,15 +1,11 @@
-Request for Review and Approval – Updated PSC Email Template
-
-Hi Cheryl,
+Hi Tom,
 
 I hope you're doing well.
 
-I recently received an enhancement request regarding the PSC email template. I’ve completed the necessary changes and attached the updated email template for your review. For reference, I’ve also included the original requirement email shared by Rob.
+I would like to clarify that the MTR bot operates solely through APIs and does not interact with any user interface elements.
 
-Kindly review both templates and let me know if any additional changes are needed. Please verify that all links, fonts, and formatting are correct.
+However, when utilizing RPA bots, we have the capability to interact directly with user interfaces, including applications like Empower Oracle Forms. RPA bots can simulate user actions such as clicking buttons, entering data, and navigating through forms, effectively automating tasks that would typically require manual input.​
 
-If everything looks good, I would appreciate your approval so I can proceed with moving the changes to the production environment.
+Rob, could you please provide further explanation or confirmation regarding the Empower Forms interaction? Your insights would be greatly appreciated.
 
-Thank you, and please let me know if you have any questions.
-
-Best regards,
+Thank you for your support.
