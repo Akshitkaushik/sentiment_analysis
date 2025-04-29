@@ -1,14 +1,10 @@
-<ul style="margin-left:0.75in; padding-left:0.25in; list-style-position:outside; list-style-type:disc;">
-    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
-        Access key <strong>plan service contacts</strong> and understand how they support your plan
-    </li>
-    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
-        <strong>Simplify day-to-day tasks using Empower Case Management*</strong>
-    </li>
-    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
-        Manage participant data with ease
-    </li>
-    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
-        Stay on top of outstanding tasks through the <strong>Action Center</strong>
-    </li>
-</ul>
+<div style="text-align: center; margin: 0; padding: 0;">
+        <a href="https://empower.wistia.com/medias/hfu7bgsnao">
+            <img src="C:/Users/saap13/Documents/Automation Anywhere Files/Automation Anywhere/My Docs/PSCEmail Docs/EmailConfig/EmpowerWelcomeVideo.jpg" 
+                 style="width: 600px; height: 91px; margin: 0; padding: 0; border: 0; display: block; line-height: 0;">
+        </a>
+    </div>
+    <div style="text-align: center; margin: 0; padding: 0;">
+        <img src="C:/Users/saap13/Documents/Automation Anywhere Files/Automation Anywhere/My Docs/PSCEmail Docs/EmailConfig/SecondImage.jpg" 
+             style="width: 600px; height: 300px; margin: 0; padding: 0; border: 0; display: block; line-height: 0;">
+    </div>
