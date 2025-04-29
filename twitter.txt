@@ -1,9 +1,14 @@
-Dear Team,
-
-As per our previous discussion, the RPA job for the MTR process is scheduled to start on 1st May. I would like to confirm whether we are fully prepared for the go-live.
-
-Could you please confirm if the required data is ready for the bot to run on 1st May? Also, kindly let me know if there are any pending dependencies or additional tasks we are waiting on before proceeding.
-
-Looking forward to your response.
-
-Best regards,
+<ul style="margin-left:0.75in; padding-left:0.25in; list-style-position:outside; list-style-type:disc;">
+    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
+        Access key <strong>plan service contacts</strong> and understand how they support your plan
+    </li>
+    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
+        <strong>Simplify day-to-day tasks using Empower Case Management*</strong>
+    </li>
+    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
+        Manage participant data with ease
+    </li>
+    <li style="font-size:16px; font-family:'Open Sans'; margin-bottom:6px;">
+        Stay on top of outstanding tasks through the <strong>Action Center</strong>
+    </li>
+</ul>
