@@ -1,40 +1,5 @@
-<config>
-	<PSCEmails>
-		<EmailFormatting><![CDATA[
-    <p style="text-align: center;">
-        <a href="https://empower.wistia.com/medias/hfu7bgsnao">
-            <img src="C:/Users/saap13/Documents/Automation Anywhere Files/Automation Anywhere/My Docs/PSCEmail Docs/EmailConfig/EmpowerWelcomeVideo.jpg" style="width: 600px; height: 300px;">
-        </a>
-    </p>
-    <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:center;'>
-        <strong><span style='font-size:21px;line-height:107%;font-family:"Open Sans";color:#0070C0;'>Welcome to the Plan Service Center!</span></strong>
-    </p>
-    <p><span style='font-size:16px;font-family:"Open Sans";'>The Plan Service Center (PSC) is your centralized hub for managing and accessing your retirement plan real-time.  Designed with efficiency in mind, PSC helps streamline plan administration and improve communication.</span></p>
-    <p><strong><span style='font-size:19px;font-family:"Open Sans";color:black;'>PSC helps you:</span></strong></p>
-    <ul>
-        <li><span style='font-size:16px;font-family:"Open Sans";'>Access key <strong>plan service contacts </strong>and understand how they support your plan</span></li>
-        <li><span style='font-size:16px;font-family:"Open Sans";'><strong>Simplify day-to-day tasks using Empower Case Management* </strong></span></li>
-        <li><span style='font-size:16px;font-family:"Open Sans";'>Manage participant data with ease</span></li>
-        <li><span style='font-size:16px;font-family:"Open Sans";'>Stay on top of outstanding tasks through the  <strong>Action Center  </strong></span></li>
-    </ul>
-    <p><strong><span style='font-size:19px;font-family:"Open Sans";color:black;'>Need help getting started?</span></strong></p>
-    <ul>
-        <li>
-            <p><span style='font-size:15px;font-family:"Calibri",sans-serif;'><a href="https://empower.wistia.com/medias/hfu7bgsnao"><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'>PSC overview video</span></a></span><span style='font-size:16px;font-family:"Open Sans";'> - A great first step to understanding the website. </span></p>
-        </li>
-        <li><span style='font-size:16px;font-family:"Open Sans";'>Plan Management by Empower provides helpful tips to assist you with completing plan tasks accurately.</span></li>
-        <li>
-            <p><span style='font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size:15px;font-family:"Calibri",sans-serif;'><a href="https://docs.empower.com/EE/Empower/DOCS/Plan-Management-Program.pdf"><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'>Plan Management Live</span></a></span> <span style='font-size:16px;font-family:"Open Sans";'>Join our interactive training series where you can learn about key plan events and on-demand PSC resources.</span></span></span></p>
-        </li>
-        <li>
-            <p><span style='font-size:16px;font-family:"Open Sans";'>Plan Management On-demand offers a number of short videos throughout the PSC and on the</span> <span style='font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size:16px;font-family:"Open Sans";'><span style='font-size:15px;font-family:"Calibri",sans-serif;'><a href="https://www.empower.com/psc/plan-resources/index.html"><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'>Empower Plan Resource website</span></a></span></span></span></span></p>
-        </li>
-    </ul>
-    <p><br></p>
-    <p><span style='font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size:16px;font-family:"Open Sans";'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size: 9px; font-family: "Open Sans"; color: black;'><span style='font-family: "Open Sans";'>&nbsp;* The ability to edit/view cases coincides with the existing user access level authorized during account setup.</span></span></span></span></span></span></p>
-    <p><span style='font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size:16px;font-family:"Open Sans";'><span style='font-size:16px;line-height:107%;font-family:"Open Sans";'><span style='font-size: 9px; font-family: "Open Sans"; color: black;'><span style='font-family: "Open Sans";'>Automation - Welcome</span></span></span></span></span></span></p>
-    <p><br></p>
-    <p><br></p>
-		]]></EmailFormatting>
-	</PSCEmails>
-</config>
+I’m currently working on the enhancement request related to the PSC email. In order to proceed, I would need to export the latest version of the code from the production environment. For that, I kindly request your approval so that the support team can share the most recent production code with me.
+
+Once I receive it, I will begin testing and implementing the required changes as per the new requirements.
+
+Thank you for your support.
