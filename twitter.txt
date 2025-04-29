@@ -1,11 +1,9 @@
-Hi Tom,
+Dear Team,
 
-I hope you're doing well.
+As per our previous discussion, the RPA job for the MTR process is scheduled to start on 1st May. I would like to confirm whether we are fully prepared for the go-live.
 
-I would like to clarify that the MTR bot operates solely through APIs and does not interact with any user interface elements.
+Could you please confirm if the required data is ready for the bot to run on 1st May? Also, kindly let me know if there are any pending dependencies or additional tasks we are waiting on before proceeding.
 
-However, when utilizing RPA bots, we have the capability to interact directly with user interfaces, including applications like Empower Oracle Forms. RPA bots can simulate user actions such as clicking buttons, entering data, and navigating through forms, effectively automating tasks that would typically require manual input.​
+Looking forward to your response.
 
-Rob, could you please provide further explanation or confirmation regarding the Empower Forms interaction? Your insights would be greatly appreciated.
-
-Thank you for your support.
+Best regards,
