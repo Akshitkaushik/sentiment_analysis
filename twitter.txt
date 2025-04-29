@@ -1,5 +1,15 @@
-I’m currently working on the enhancement request related to the PSC email. In order to proceed, I would need to export the latest version of the code from the production environment. For that, I kindly request your approval so that the support team can share the most recent production code with me.
+Request for Review and Approval – Updated PSC Email Template
 
-Once I receive it, I will begin testing and implementing the required changes as per the new requirements.
+Hi Cheryl,
 
-Thank you for your support.
+I hope you're doing well.
+
+I recently received an enhancement request regarding the PSC email template. I’ve completed the necessary changes and attached the updated email template for your review. For reference, I’ve also included the original requirement email shared by Rob.
+
+Kindly review both templates and let me know if any additional changes are needed. Please verify that all links, fonts, and formatting are correct.
+
+If everything looks good, I would appreciate your approval so I can proceed with moving the changes to the production environment.
+
+Thank you, and please let me know if you have any questions.
+
+Best regards,
