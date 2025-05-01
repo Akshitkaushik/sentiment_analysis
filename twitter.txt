@@ -1,1 +1,13 @@
-style="max-width: 600px; width: 100%; height: auto; border: 0; display: block;">
+ Request for Approval to Export MTR Code from Production
+
+Dear Kaarthik / Harish,
+
+I hope you're doing well.
+
+I would like to request your approval to export the MTR code from the production environment. We are running this bot for the first time in production with live data today. However, we have encountered an issue where the bot receives dynamic error messages in different formats (e.g., string and JSON). As a result, the bot is currently unable to update these JSON-formatted errors into the Excel file.
+
+To resolve this, I need to update the code. Kindly approve the export so that the support team can proceed, and I can implement the necessary changes to complete today’s run without delay.
+
+Thank you for your support.
+
+Best regards,
