@@ -1,13 +1,17 @@
- Request for Approval to Export MTR Code from Production
+I have completed the requested changes to the template. Please find the updated version attached.
 
-Dear Kaarthik / Harish,
+I have made the modifications exactly as per the requirements you shared. Kindly review it and let me know if any further adjustments are needed.
 
-I hope you're doing well.
+Looking forward to your feedback.
 
-I would like to request your approval to export the MTR code from the production environment. We are running this bot for the first time in production with live data today. However, we have encountered an issue where the bot receives dynamic error messages in different formats (e.g., string and JSON). As a result, the bot is currently unable to update these JSON-formatted errors into the Excel file.
 
-To resolve this, I need to update the code. Kindly approve the export so that the support team can proceed, and I can implement the necessary changes to complete today’s run without delay.
+
+The first run of the MTR bot has been successfully completed. I believe everyone should have received the success email along with the audit file.
+
+Kindly review the audit files and verify the status. The bot has processed and unenrolled the individual IDs it identified from the database based on the input data.
+
+Please share your feedback after reviewing the output. Once we have confirmation, I will schedule this bot to run automatically at a fixed time for future executions.
 
 Thank you for your support.
 
-Best regards,
+MTR Bot - First Run Completion and Request for Feedback
