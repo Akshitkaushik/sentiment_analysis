@@ -1,44 +1,5 @@
-Hello Team,
-
-Chris, thank you for sharing your QC observations. I also reviewed the audit file for March data. As per our records, we received a total of 1,200 cases, out of which 721 accounts were successfully unenrolled, while 533 records encountered errors during processing.
-
-As you mentioned, we are targeting dates of death on or after April 1, 2025, for unenrollment. Jyothilaxmi is currently working on applying the appropriate date filters to the death date column. She will be sharing the corrected dataset for the relevant month shortly.
-
-Error Types Observed:
-We are primarily encountering the following types of errors:
-
-Account not found
-
-Invalid database lookup key [401k]
-
-Enrollment could not be completed due to system or data issues
-
-Could not extract result set (Database-level error)
-
-Below is a summary of these errors, their possible reasons, and suggested fixes:
-
-
-Error Message	Possible Reason	Suggested Fix
-Account not found	The person ID is incorrect or the associated account does not exist in the system.	Verify the person ID and ensure the account exists in the database.
-Invalid DB lookup key [401k]	The system does not recognize the database key “401k”.	Use the correct database key (e.g., “isis”) that the system expects.
-Could not extract result set	There is a technical issue in executing the database query or establishing a connection.	Review database logs and verify the SQL query and connection settings.
-Clarification on the RPA Process:
-I would also like to clarify how the RPA bot functions in this process to explain why certain failures may be occurring.
-
-Once all necessary filters and conditions are applied, the EBSI team extracts the data from the database and uploads it to SharePoint.
-
-The RPA process begins only after the file is uploaded.
-
-The bot downloads the file, extracts key fields such as Individual ID, Plan Number, and Database Name, and uses these to trigger an API call for each record.
-
-Based on the API response, the bot updates the audit Excel file accordingly.
-
-If the individual ID, plan number, and database key are valid and exist in the system, the account is successfully unenrolled.
-
-If any of the values are incorrect or do not exist in the system, the bot logs the response (e.g., "Account not found").
-
-It is important to note that the bot does not apply any filters or transformations to the data. It processes the file exactly as received. Therefore, any inconsistencies in the input data (e.g., invalid IDs, wrong database keys) directly affect the API success rate.
-
-Please review the findings and suggestions and feel free to coordinate with the respective teams for resolution.
-
-Best regards,
+| **Error Message**                    | **Possible Reason**                                                                 | **Suggested Fix**                                                                 |
+|-------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **Account not found**               | The person ID is incorrect or the associated account does not exist in the system. | Verify the person ID and ensure the account exists in the database.               |
+| **Invalid DB lookup key [401k]**    | The system does not recognize the database key “401k”.                             | Use the correct database key (e.g., “isis”) that the system expects.              |
+| **Could not extract result set**    | There is a technical issue in executing the database query or establishing a connection. | Review database logs and verify the SQL query and connection settings.           |
