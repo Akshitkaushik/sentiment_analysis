@@ -1,4 +1,9 @@
-Error Message	Possible Reason	Suggested Fix
-Account not found	The person ID is incorrect or the associated account does not exist in the system.	Verify the person ID and ensure the account exists in the database.
-Invalid DB lookup key [401k]	The system does not recognize the database key “401k”.	Use the correct database key (e.g., “isis”) that the system expects.
-Could not extract result set	There is a technical issue in executing the database query or establishing a connection.	Review database logs and verify the SQL query and connection settings.
+April Month Bot Run – Completion Confirmation and Audit File Review
+
+Dear Team,
+
+The bot for the month of April was successfully triggered and has completed its run. I trust that everyone has received the success email along with the audit file.
+
+Kindly review the latest audit file and share your feedback at your earliest convenience.
+
+Best regards,
