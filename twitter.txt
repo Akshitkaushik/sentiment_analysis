@@ -1,9 +1,23 @@
-Hello Jyothi,
+import requests
 
-Just to inform you, I triggered the first bot run yesterday around 12 PM, followed by the second run at approximately 1 PM.
+# Define the URL
+url = "https://example.com/token"  # Replace with your actual URL
 
-Today, I re-triggered the bot, and it has successfully completed the run for the month of April.
+# Define the headers
+headers = {
+    "Content-Type": "application/x-www-form-urlencoded"
+}
 
-Please let me know if you need any further details.
+# Define the payload (data to be sent in the request)
+data = {
+    "grant_type": "client_credentials",
+    "client_id": "akshit",
+    "client_secret": "kuahsik"
+}
 
-Best regards,
+# Send the POST request
+response = requests.post(url, headers=headers, data=data)
+
+# Print the response
+print("Status Code:", response.status_code)
+print("Response:", response.text)
