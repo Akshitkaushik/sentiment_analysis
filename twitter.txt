@@ -1,23 +1,8 @@
-import requests
+Hello Khan,
 
-# Define the URL
-url = "https://example.com/token"  # Replace with your actual URL
+This is just my observation — not confirmed — but as Chris mentioned in his email, he reviewed several accounts where no PASV records were found. It seems the EBSI report might be pulling incorrect data, including participants without PASV records, which could be causing the "could not find or null" error in the RPA bot.
 
-# Define the headers
-headers = {
-    "Content-Type": "application/x-www-form-urlencoded"
-}
+Could you please check with EBSI if this is indeed a data extraction issue?
 
-# Define the payload (data to be sent in the request)
-data = {
-    "grant_type": "client_credentials",
-    "client_id": "akshit",
-    "client_secret": "kuahsik"
-}
-
-# Send the POST request
-response = requests.post(url, headers=headers, data=data)
-
-# Print the response
-print("Status Code:", response.status_code)
-print("Response:", response.text)
+Best regards,
+[Your Name]
