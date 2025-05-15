@@ -1,38 +1,33 @@
-Sub OpenAndHighlightExcel()
+Sub HighlightPostTimeGreaterThan4PM()
     On Error GoTo ErrorHandler
 
-    Dim wb As Workbook
     Dim ws As Worksheet
-    Dim cell As Range
     Dim lastRow As Long
+    Dim cell As Range
     Dim filePath As String
+    Dim wb As Workbook
 
-    ' 🔁 Set your Excel file path here:
+    ' Set your file path here
     filePath = "C:\Users\YourName\Desktop\yourfile.xlsx"
 
-    ' 📂 Check if file exists
-    If Dir(filePath) = "" Then
-        MsgBox "File not found: " & filePath, vbCritical
-        Exit Sub
-    End If
-
-    ' 📖 Open the workbook
+    ' Open the workbook
     Set wb = Workbooks.Open(filePath)
     Set ws = wb.Sheets(1)
 
-    ' 🔎 Find the last used row in column L
+    ' Find the last used row in column L
     lastRow = ws.Cells(ws.Rows.Count, "L").End(xlUp).Row
 
-    ' 🔁 Loop from row 2 to last row
+    ' Loop through each cell in column L (starting from row 2)
     For Each cell In ws.Range("L2:L" & lastRow)
-        If IsDate(cell.Value) Then
-            If TimeValue(cell.Value) > TimeValue("16:00") Then
-                cell.EntireRow.Interior.Color = RGB(255, 255, 0) ' Highlight full row in Yellow
+        If IsNumeric(cell.Value) Then
+            ' 0.6666667 = 4:00 PM in Excel serial time
+            If cell.Value > 0.6666667 Then
+                cell.Interior.Color = RGB(255, 255, 0) ' Yellow
             End If
         End If
     Next cell
 
-    MsgBox "Highlighting complete for Post Time > 16:00.", vbInformation
+    MsgBox "Highlighting complete.", vbInformation
     Exit Sub
 
 ErrorHandler:
