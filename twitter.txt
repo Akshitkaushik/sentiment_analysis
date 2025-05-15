@@ -3,7 +3,7 @@ Function OpenAndHighlightExcel(filePath)
 
     Dim xlApp, wb, ws, lastRow, cell, fso
 
-    ' Check if file exists
+    ' File system check
     Set fso = CreateObject("Scripting.FileSystemObject")
     If Not fso.FileExists(filePath) Then
         MsgBox "File not found: " & filePath, vbCritical
@@ -17,40 +17,57 @@ Function OpenAndHighlightExcel(filePath)
         Exit Function
     End If
 
-    xlApp.Visible = True ' Show Excel to the user
+    xlApp.Visible = True
 
-    ' Open workbook
+    ' Open the workbook
     Set wb = xlApp.Workbooks.Open(filePath)
     If wb Is Nothing Then
-        MsgBox "Failed to open the workbook.", vbCritical
+        MsgBox "Unable to open workbook.", vbCritical
         xlApp.Quit
         Exit Function
     End If
 
-    ' Use first sheet
     Set ws = wb.Sheets(1)
 
-    ' Find last row in column L
-    lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' -4162 = xlUp
+    ' Determine last row in column L
+    lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' xlUp = -4162
 
-    ' Loop from L2 to lastRow and highlight if time > 16:00
+    ' Loop through each cell in column L from row 2 to lastRow
     For Each cell In ws.Range("L2:L" & lastRow)
-        If IsDate(cell.Value) Then
-            If TimeValue(cell.Value) > TimeValue("16:00") Then
-                cell.Interior.Color = RGB(255, 255, 0) ' Yellow
+        Dim t
+        t = cell.Value
+
+        ' Attempt to parse only if value is not empty
+        If Not IsEmpty(t) Then
+            ' Normalize value to time
+            If IsDate(t) Then
+                If TimeValue(t) > TimeValue("16:00:00") Then
+                    cell.Interior.Color = RGB(255, 255, 0) ' Yellow highlight
+                End If
+            ElseIf InStr(t, ":") > 0 Then
+                ' Try to convert plain string times like "17:00"
+                On Error Resume Next
+                Dim testTime
+                testTime = TimeValue(t)
+                If Err.Number = 0 Then
+                    If testTime > TimeValue("16:00:00") Then
+                        cell.Interior.Color = RGB(255, 255, 0)
+                    End If
+                End If
+                On Error GoTo 0
             End If
         End If
     Next
 
-    ' Clean up (Excel remains open)
-    Set fso = Nothing
+    ' Clean up objects (Excel remains open)
     Set cell = Nothing
     Set ws = Nothing
     Set wb = Nothing
     Set xlApp = Nothing
+    Set fso = Nothing
 
-    MsgBox "Highlighting complete for times greater than 16:00.", vbInformation
+    MsgBox "Done: Highlighted all Post Times after 16:00.", vbInformation
 End Function
 
-' ✅ Example usage
+' Example call
 Call OpenAndHighlightExcel("C:\Users\YourName\Desktop\yourfile.xlsx")
