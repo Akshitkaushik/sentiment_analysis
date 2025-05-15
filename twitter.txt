@@ -1,41 +1,36 @@
-Function HighlightPostTimeAbove16(filePath)
+Function OpenExcelFile(filePath)
     On Error Resume Next
 
-    Dim xlApp, wb, ws, lastRow, cell
+    Dim xlApp, wb
+
+    ' Check if file exists
+    Dim fso
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    If Not fso.FileExists(filePath) Then
+        MsgBox "File not found: " & filePath, vbCritical
+        Exit Function
+    End If
+
+    ' Start Excel
     Set xlApp = CreateObject("Excel.Application")
-    If Err.Number <> 0 Then
-        MsgBox "Excel application could not be started.", vbCritical
+    If xlApp Is Nothing Then
+        MsgBox "Excel could not be started.", vbCritical
         Exit Function
     End If
 
-    xlApp.Visible = False
+    xlApp.Visible = True ' Show Excel to the user
+
+    ' Open Workbook
     Set wb = xlApp.Workbooks.Open(filePath)
-    If Err.Number <> 0 Then
-        MsgBox "Failed to open file: " & filePath, vbCritical
-        xlApp.Quit
-        Exit Function
+    If wb Is Nothing Then
+        MsgBox "Failed to open the workbook.", vbCritical
     End If
 
-    Set ws = wb.Sheets(1)
-
-    lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' xlUp = -4162
-
-    For Each cell In ws.Range("L2:L" & lastRow)
-        If IsDate(cell.Value) Then
-            If TimeValue(cell.Value) > TimeValue("16:00") Then
-                cell.Interior.Color = RGB(255, 255, 0) ' Yellow
-            End If
-        End If
-    Next
-
-    wb.Save
-    wb.Close False
-    xlApp.Quit
-
-    Set cell = Nothing
-    Set ws = Nothing
+    ' Clean up
+    Set fso = Nothing
     Set wb = Nothing
     Set xlApp = Nothing
-
-    MsgBox "Highlighting complete for times > 16:00", vbInformation
 End Function
+
+' Example usage
+Call OpenExcelFile("C:\Users\YourName\Desktop\yourfile.xlsx")
