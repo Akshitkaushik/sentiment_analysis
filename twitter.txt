@@ -1,1 +1,11 @@
-For Each cell In ws.Range("L2:L" & lastRow)
+Request for Validation of Test Results Based on Updated Input Sheet
+
+Dear Team,
+
+Thank you for sharing the input file. As per your updated requirements, I have completed the testing using the provided input sheet.
+
+Since I could not find any values greater than 16:00 in the "Post Time" column, I added a few sample entries above this threshold for testing purposes. I have highlighted the rows with post times greater than 16:00 in the attached result file for your reference.
+
+Kindly review the attached file and validate the results. Please let me know if the output meets your expectations, and feel free to share any feedback or suggestions.
+
+Looking forward to your response.
