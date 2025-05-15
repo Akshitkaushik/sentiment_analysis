@@ -1,35 +1,47 @@
-Sub HighlightPostTimeGreaterThan4PM()
-    On Error GoTo ErrorHandler
+Function HighlightPostTimeGreaterThan4PM(filePath)
+    On Error Resume Next
 
-    Dim ws As Worksheet
-    Dim lastRow As Long
-    Dim cell As Range
-    Dim filePath As String
-    Dim wb As Workbook
+    Dim xlApp, wb, ws, lastRow, i, cell
 
-    ' Set your file path here
-    filePath = "C:\Users\YourName\Desktop\yourfile.xlsx"
+    ' Create Excel application
+    Set xlApp = CreateObject("Excel.Application")
+    If xlApp Is Nothing Then
+        MsgBox "Failed to create Excel application.", 16
+        Exit Function
+    End If
+
+    xlApp.Visible = True
 
     ' Open the workbook
-    Set wb = Workbooks.Open(filePath)
+    Set wb = xlApp.Workbooks.Open(filePath)
+    If wb Is Nothing Then
+        MsgBox "Failed to open file: " & filePath, 16
+        Exit Function
+    End If
+
     Set ws = wb.Sheets(1)
 
-    ' Find the last used row in column L
-    lastRow = ws.Cells(ws.Rows.Count, "L").End(xlUp).Row
+    ' Get last row in column L
+    lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' -4162 = xlUp
 
-    ' Loop through each cell in column L (starting from row 2)
-    For Each cell In ws.Range("L2:L" & lastRow)
+    ' Loop through column L and highlight full row if value > 4 PM
+    For i = 2 To lastRow
+        Set cell = ws.Cells(i, 12) ' Column L = 12
         If IsNumeric(cell.Value) Then
-            ' 0.6666667 = 4:00 PM in Excel serial time
-            If cell.Value > 0.6666667 Then
-                cell.Interior.Color = RGB(255, 255, 0) ' Yellow
+            If cell.Value > 0.6666667 Then ' 4:00 PM as decimal
+                cell.EntireRow.Interior.Color = RGB(255, 255, 0)
             End If
         End If
-    Next cell
+    Next
 
-    MsgBox "Highlighting complete.", vbInformation
-    Exit Sub
+    MsgBox "Highlighting complete for Post Time > 16:00.", 64
 
-ErrorHandler:
-    MsgBox "Error occurred: " & Err.Description, vbCritical
-End Sub
+    ' Clean up
+    Set cell = Nothing
+    Set ws = Nothing
+    Set wb = Nothing
+    Set xlApp = Nothing
+End Function
+
+' ✅ Example usage
+Call HighlightPostTimeGreaterThan4PM("C:\Users\YourName\Desktop\yourfile.xlsx")
