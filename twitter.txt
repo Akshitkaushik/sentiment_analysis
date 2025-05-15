@@ -1,56 +1,35 @@
-Function OpenAndHighlightExcel(filePath)
-    On Error Resume Next
+Sub HighlightPostTimeGreaterThan4PM()
+    On Error GoTo ErrorHandler
 
-    Dim xlApp, wb, ws, lastRow, cell, fso
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim cell As Range
+    Dim filePath As String
+    Dim wb As Workbook
 
-    ' Check if file exists
-    Set fso = CreateObject("Scripting.FileSystemObject")
-    If Not fso.FileExists(filePath) Then
-        MsgBox "File not found: " & filePath, vbCritical
-        Exit Function
-    End If
+    ' Set your file path here
+    filePath = "C:\Users\YourName\Desktop\yourfile.xlsx"
 
-    ' Launch Excel
-    Set xlApp = CreateObject("Excel.Application")
-    If xlApp Is Nothing Then
-        MsgBox "Excel could not be started.", vbCritical
-        Exit Function
-    End If
-
-    xlApp.Visible = True
-
-    ' Open workbook
-    Set wb = xlApp.Workbooks.Open(filePath)
-    If wb Is Nothing Then
-        MsgBox "Unable to open workbook.", vbCritical
-        xlApp.Quit
-        Exit Function
-    End If
-
+    ' Open the workbook
+    Set wb = Workbooks.Open(filePath)
     Set ws = wb.Sheets(1)
 
-    ' Find last row in column L
-    lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' xlUp
+    ' Find the last used row in column L
+    lastRow = ws.Cells(ws.Rows.Count, "L").End(xlUp).Row
 
-    ' Loop through cells in L2 to last row
+    ' Loop through each cell in column L (starting from row 2)
     For Each cell In ws.Range("L2:L" & lastRow)
         If IsNumeric(cell.Value) Then
-            ' Excel stores 16:00 as 0.6666667
+            ' 0.6666667 = 4:00 PM in Excel serial time
             If cell.Value > 0.6666667 Then
                 cell.Interior.Color = RGB(255, 255, 0) ' Yellow
             End If
         End If
-    Next
+    Next cell
 
-    ' Clean up
-    Set fso = Nothing
-    Set cell = Nothing
-    Set ws = Nothing
-    Set wb = Nothing
-    Set xlApp = Nothing
+    MsgBox "Highlighting complete.", vbInformation
+    Exit Sub
 
-    MsgBox "Done: Highlighted all Post Times after 16:00.", vbInformation
-End Function
-
-' Example usage
-Call OpenAndHighlightExcel("C:\Users\YourName\Desktop\yourfile.xlsx")
+ErrorHandler:
+    MsgBox "Error occurred: " & Err.Description, vbCritical
+End Sub
