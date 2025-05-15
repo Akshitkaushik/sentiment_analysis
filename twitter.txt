@@ -1,8 +1,32 @@
-Hello Khan,
+On Error Resume Next
 
-This is just my observation — not confirmed — but as Chris mentioned in his email, he reviewed several accounts where no PASV records were found. It seems the EBSI report might be pulling incorrect data, including participants without PASV records, which could be causing the "could not find or null" error in the RPA bot.
+Dim xlApp, wb, ws, lastRow, cell
+Set xlApp = GetObject(, "Excel.Application") ' Attach to already open Excel
 
-Could you please check with EBSI if this is indeed a data extraction issue?
+If Err.Number <> 0 Then
+    MsgBox "Excel is not open.", vbCritical
+    WScript.Quit
+End If
 
-Best regards,
-[Your Name]
+Set wb = xlApp.ActiveWorkbook
+Set ws = xlApp.ActiveSheet
+
+' Find the last used row in column L
+lastRow = ws.Cells(ws.Rows.Count, "L").End(-4162).Row ' -4162 = xlUp
+
+' Loop through L2 to lastRow
+For Each cell In ws.Range("L2:L" & lastRow)
+    If IsDate(cell.Value) Then
+        If TimeValue(cell.Value) > TimeValue("16:00") Then
+            cell.Interior.Color = RGB(255, 255, 0) ' Yellow
+        End If
+    End If
+Next
+
+MsgBox "Highlighting complete.", vbInformation
+
+' Cleanup
+Set cell = Nothing
+Set ws = Nothing
+Set wb = Nothing
+Set xlApp = Nothing
