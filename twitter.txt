@@ -1,21 +1,7 @@
-Request for Approval to Export Latest Code from Production
+I have updated the template as per the requirements you shared. Kindly review the format and details, and let me know your feedback. Once I receive your confirmation, I will proceed to move these changes to the production environment.
 
-Dear Harish,
+Additionally, I have attached a screenshot for your reference. In the screenshot, I have highlighted a specific section. As per your requirement, it seems this value needs to be updated. However, the value is coming from the input file. Could you please confirm whether I should update this value to match the party directly, or should I leave it as it is?
 
-I hope you're doing well.
+Looking forward to your guidance.
 
-Kindly provide your approval to export the latest code from the production environment so that I can begin working on the enhancement re
-
-
-
-Request for Validation of Test Results Based on Updated Input Sheet
-
-Dear Team,
-
-Thank you for sharing the input file. As per your updated requirements, I have completed the testing using the provided input sheet.
-
-Since I could not find any values greater than 16:00 in the "Post Time" column, I added a few sample entries above this threshold for testing purposes. I have highlighted the rows with post times greater than 16:00 in the attached result file for your reference.
-
-Kindly review the attached file and validate the results. Please let me know if the output meets your expectations, and feel free to share any feedback or suggestions.
-
-Looking forward to your response.
+Best regards,
