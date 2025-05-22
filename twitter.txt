@@ -1,7 +1,1 @@
-I have updated the template as per the requirements you shared. Kindly review the format and details, and let me know your feedback. Once I receive your confirmation, I will proceed to move these changes to the production environment.
-
-Additionally, I have attached a screenshot for your reference. In the screenshot, I have highlighted a specific section. As per your requirement, it seems this value needs to be updated. However, the value is coming from the input file. Could you please confirm whether I should update this value to match the party directly, or should I leave it as it is?
-
-Looking forward to your guidance.
-
-Best regards,
+all is not required at the moment. I have shared a template review email with you—please feel free to check and get back to me. That also works for me."
