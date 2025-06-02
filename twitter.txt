@@ -1,7 +1,10 @@
-Hello Ryan,
+Hello Team,
 
-I’ve updated the template based on your feedback. Please review it and let me know if any further changes are required.
+I hope this message finds you well.
 
-Note: Regarding the image [ ], no changes have been made. The team will receive the same image in the same format, just as they are reviewing it now with the current template.
+I wanted to check if the input file we received yesterday for the month of May has been verified on your end. As you know, the team was working on verifying the data last time. If everything is confirmed and ready, please let me know so that I can proceed with triggering the bot.
 
-Thank you!
+Thank you for your support.
+
+Best regards,
+[Your Name]
