@@ -1,3 +1,8 @@
-esterday, I checked with Taufique regarding the BSS project walkthrough call. He mentioned that he is currently working on the requirements. Recently, Cheryl sent an email with a few updates, and once he receives the final version, he will schedule the walkthrough call with the RPA team—likely within the next week or two.
 
-In the meantime, if there's any other task that I can assist with, please feel free to assign it to me. I’ll be happy to start working on it."
+Subject: Update on Loan ACH Empower Email Template Configuration
+
+Hi Team,
+
+Just a quick update — I’ve made some changes to the email templates for the Loan ACH Empower & Branding project. These are only template-level updates.
+
+Since we’re currently using an additional machine for Loan ACH Empower, I’ve updated the config file (LapCH_ACH_Empower) accordingly. Please make sure to use this new config file when working from the additional machine.
