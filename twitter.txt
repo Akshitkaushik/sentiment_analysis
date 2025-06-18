@@ -1,1 +1,12 @@
-hello tst
+Subject: Click Path and Step One Ownership Clarification
+
+Hello Kaushik,
+
+Hope you're doing well.
+
+Could you please confirm if the shared click path is updated? In the Day 1 video, Step One was discussed—updating the Excel with Event ID, Date of Death, Residual, and Needs Transfer values.
+
+You mentioned the EBSI team might handle this—just wanted to clarify if Step One is owned by EBSI or the RPA team. Also, please let me know when we can expect the BSS process walkthrough.
+
+Thanks,
+[Your Name]
