@@ -1,8 +1,3296 @@
+Procedures for Working the BSS Trailing Dividend/Contribution Report 
 
-Subject: Update on Loan ACH Empower Email Template Configuration
+Overview
+•	BSS Trailing Dividend/Contribution Report – provides a list of all participant accounts with a date of death, ownership agreement code of ‘N’ that had an account balance, then went down to zero after a full withdrawal and then had a positive account balance in any account fund. It includes the following data points:
+o	SSN and SSN_EXT of participant
+o	First and Last Name
+o	Date of Death
+o	Current Account Balance
+o	Current account balance effective date
+o	Database
+o	Plan Segment
+o	GA_ID
+o	IND_ID
+o	Bene First and Last Name, BENE_SSN and BENE_SSN_EXT listed in EASY records and their Bene Percent. (Entitlement) 
 
-Hi Team,
+•	Bene Claims has placed the following manual process in place to research and process distributions as needed for each confirmed trailing dividend or contribution.
 
-Just a quick update — I’ve made some changes to the email templates for the Loan ACH Empower & Branding project. These are only template-level updates.
+Procedures
+Details: Each morning the gatekeeper (manager) will update the spreadsheet by processor with research items to complete. During research the processor will review each line item assigned to them and confirm if the amount is a trailing contribution/dividend in the decedent account. If yes, the processor will update the spreadsheet to indicate the balance is Residual and if it Needs Transfer by the segregation team.
 
-Since we’re currently using an additional machine for Loan ACH Empower, I’ve updated the config file (LapCH_ACH_Empower) accordingly. Please make sure to use this new config file when working from the additional machine.
+Step One - Confirm if account balance is residual: 
+1.	Enter the deceased participant's SSN in EASY (CABL) to start researching.
+2.	If the deceased participant account has .01 trailing balance and there are multiple beneficiaries, request the transfer and payout to the oldest beneficiary.
+3.	Confirm if the balance in the account is a residual/trailing contribution by reviewing the following: 
+a.	In the deceased participants account, review any death claim processed in the disbursement summary screen. 
+ 
+
+ 
+
+1.	If a full Death disbursement was made to the beneficiary through the deceased participants account, notate on the spreadsheet that this is a residual but does not need to be transferred. Add the Original Full WD Dist EID and Date of Original Dist to the spreadsheet. 
+
+ 
+
+b.	If there were no death claims processed in the disbursement summary screen, confirm in the QDRO/DEATH tab if segregation has processed to a beneficiary takeover account. Confirm the beneficiary information and entitlement on the spreadsheet is correct.  Update the spreadsheet to indicate that Y this is a residual and Y needs Transfer. 
+
+ 
+
+ 
+
+1.	Using EASY(CABL) review the beneficiary takeover account. Notate on the spreadsheet if the disbursement summary screen confirms a Full WD was processed by adding the Original Dist EID and Date of Original Dist to the spreadsheet.
+
+ 
+
+ 
+
+ 
+
+c.	There may be a situation where the bene has elected to only establish an account and let the $ sit in their takeover account. To come to this conclusion the bene account will still contain a balance and there will be no full WD in the disbursement summary screen. In this case, we still need to transfer the trailing into their bene account but no distribution should be processed. Note the spreadsheet Y that it is a residual, and Y needs to be transferred. However, indicate in the Original Dist EID field and Date of Original Dist field that a Full WD has not been taken.
+
+ 
+
+d.	If the beneficiary chose to rollover their account in the full WD and the original full WD occurred more than SIX months ago, do not proceed with a disbursement. Indicate on the spreadsheet that the R/O occurred more than 6 months ago.
+1.	If the account was previously segregated, indicate on the spreadsheet that Y it’s a Residual and Y Needs Transfer to the bene account however indicate in the Original Dist EID and Date of Original Dist that the R/O occurred more than 6 months ago.
+2.	If the beneficiary was paid directly out of the participants account the trailing balance will remain in the participants account. Indicate Y for Residual and N for Needs Transfer. Add that the R/O occurred more than 6 months ago to the Original Dist EID and Date of Original Dist.
+
+                        
+
+4.	If Step 3 is not satisfied, the balance is still waiting to be claimed and cannot be considered a residual or trailing contribution. Update N on the spreadsheet to indicate it is not a Residual and N in the Needs Transfer column as it does not need to be transferred.
+
+ 
+		
+5.	You may stop here and proceed to the next research item on the spreadsheet.
+																				
+Step two - Management Reporting Process: 									
+Management will collect all the items that needs to be segregated and will open SR to Segregation Team to transfer the residual amount to the beneficiary's account. Segregation SR Categories: Money Out/Beneficiary Support Services/3-Segregation 
+
+					
+
+Step three - Segregation Process:	
+The Segregation team received the SR and follows the following process below.  
+
+They follow the steps below for transferring the funds to the beneficiary account. 
+
+1.	 Check to ensure the bene account is active.  If it’s not, we must make sure that we change the codes to make it active.
+-	Go into CHPA, change codes to A (active) and FDR (first deposit received).  If FDR is not accepted, use AFD (awaiting first deposit). F6 to save.
+ 
+
+2.	Go to CABL for the ppt ssn and ensure it is also active following step 1 if it is terminated.
+3.	In the CABL screen, log an event to create a transfer event to transfer the money from the decedent to the beneficiary.
+ 
+
+
+-	Tab to Event Type and type, Shift+F1 for options and select Take Over
+-	Enter twice and type the decedent’s SSN.
+-	If prompted for plan number, enter the number without the -01 etc.
+-	F6 to save and note the Event ID
+-	F3 to exit.
+ 
+
+4.	 When back in CABL, Select the To Do List
+ 
+
+-	Type in your Event ID that you just created, F5.  This will bring up the decedent’s information.  Enter to go to the transfer screen.
+ 
+-	You go in on the date.  Change the date to the previous business day. Enter
+-	When this box pops up, select ok and continue.
+ 
+-	You will now see the funds that contain money.  Enter
+-	Select Yes to move money from all funds.
+ 
+-	If it is a single beneficiary, tab to the Take Over Percentage box and key in 100.  F12
+-	If you have multiple beneficiaries, calculate the portion this beneficiary should receive and key the dollar amount into the Take Over Amount box. F12
+ 
+-	Type in the beneficiary SSN.
+ 
+
+-	Enter twice and it will bring up a box at the bottom showing the funds that will go to the beneficiary.  F6
+-	When this box of options pops up, select P to process the transfer. Enter
+-	You will get a pop up saying that the transaction has been completed.  Press ok.  
+-	F3 to exit.
+ 
+
+5.	Once you are back on the CABL screen, F11 twice to refresh the decedent account.  Then F12
+-	Go into the decedent’s account in CHPA and terminate the account with the codes T and DEC.
+-	Update the restriction code to DTHN. 
+-	F6 to save the account. F3 to exit.
+6.	Go to EVDT and enter your Transfer Event ID.  F5 and then F12.  Enter your note (just your SR number if that’s what prompted your transfer or the WID if it was requested in OnBase).
+7.	Use the Gain/Loss Reason Code of NZ (Net to Zero) as there should never be Gain/Loss for Takeovers.  F6 to save.
+ 
+
+8.	F3 to exit and you are done.
+9.	SR is routed to Beneclaims: Money Out/Beneficiary Support Services/BSS Use Only 
+
+Step four - Once SR is received back from Segregation Team, Management adds the transfer EID to the spreadsheet and the SR number. The case is now ready for processing of the distribution.
+
+
+Step five - Disbursement/Payout Process: 
+
+•	If the original distribution has been more than 2 years AND the Beneficiary is older than 65, we must review Lexis Nexis to confirm they are not decrease prior to processing the trailing. 
+a.	If the beneficiary is documented as deceased, we will leave the funds in the account. Update the spreadsheet is Bene is Deceased per Lexis Nexis and add the following Narrative: DO NOT SEND TRAILING CONTRIBUTIONS TO BENEFICIARY XXXXXXXXXXXXX, HE IS DECEASED PER LEXIS NEXIS.
+b.	If the beneficiary is not documented in Lexis Nexis as deceased, please move forward with the payout.
+•	Review the AOR of the beneficiary and if it has been updated since the last distribution the trailing should be issued to the new AOR.
+•	For American Funds Roll Trade transactions, reject for a new claim form. The shares where the funds will be dropped might be inactive and will cause further issues if we process the trailing contribution to drop it to listed shares since these are old shares. 
+•	If the original distribution was processed with ACH, process the trailing distribution as CHK/Mail.
+•	If the original distribution was processed with Express delivery, process the trailing distribution as CHK/Mail. 	
+•	For payment to the beneficiary from the deceased participant account – copy the original narrative and enter the word Trailing.
+•	For payment to self from beneficiary account - copy the original narrative and enter the word Trailing and the SR #.	
+•	For rollover – copy the original narrative then add the word Trailing and SR#.	
+
+
+
+•	If Step 3a is confirmed, then proceed with the following: 
+
+Open two EASY windows of the Database shown on the line item of your spreadsheet. 	 
+
+1.	In your first EASY window, go to CABL, enter the deceased participants SSN, F5, press the Part Forms button and select Disbursement Summary. Search for the first full WD that was processed and use it as reference to copy from. (Two EASY windows for the same Database may be open at the same time.)
+
+
+                       
+ 
+	 
+
+2.	Create a new event id in EASY(CABL): In your second EASY window pull up the participants account using their SSN. Press the Part Forms button and select Log Events.
+
+                           
+
+	Type W under Code.								
+		Type participants SSN under Subject (SSN) If there is an extension, add this to the 			end of the SSN. Ex: 123456789 1
+		Press Tab.				
+		Type the group# under Related Subject if it doesn't automatically populate. Do not 			add -01 or -02.		
+		Press F6.				
+		A new Event Id will populate under the Event Id field.
+		Add the newly created Event ID to the spreadsheet under New Event Processed.	
+		Press F3 to return to the Client Information screen.	
+                     
+
+                                                                       
+
+3.	Process the new event ID in EASY(CABL): Using the second EASY window press the Part Forms button and select To Do List.
+Press OK.
+
+                                          
+
+Enter the new Event ID you created under Event ID field.	
+  		Press F5.	
+		Press Enter.	
+                          
+
+Select CASH.
+                   
+
+Referencing your first EASY window. Enter the Requested For: date (Next business days date), Disb Reason, Tax Reason and select FULL WD.
+Press the Bulletin button.
+Press F3.
+Press Save Disbursement button.
+
+
+
+                     
+
+
+ 
+
+Press OK.
+             
+
+Press Save Disbursement button.
+ 
+
+	Press Save Disbursement button.
+	
+In the Receiver Information screen type B in the Recvr Type.
+Press Tab.
+In the SSN/Tax ID window enter the BENEFICIARY SSN.
+Press Enter.
+
+             
+
+Press OK.
+
+            
+
+Review the List of individuals and select the line that matches your first EASY screen.
+Press OK.
+Copy the narrative from your first EASY window into the Narrative field and add TRAILING at the end.
+Press OK.
+
+       
+
+Update Disb% Share to 100% and use the Relation Code drop down to select BENEFICIARY.
+
+ 
+
+Press the Hand Chg button.
+Select Exclude Chg.
+
+ 
+
+Press the Narrative button.
+Press OK.
+
+ 
+
+Press the Save Disbursement button.
+         
+
+Review the DISBURSEMENT Qualifying Actions.
+Select the YES or No radio button as needed.
+Press the ACCEPT button.
+
+ +
+Press OK.
+
+ 
+
+Press Save Disbursement button.
+
+ 
+
+Press Save Disbursement button.
+
+ 
+
+Press OK.
+
+ 
+
+Press the Close button.
+
+ 
+
+Press OK.
+
+ 
+
+Press F3.
+	
+ 
+
+Confirm the Next Step column says AUTHORIZE.
+
+ 
+
+Press F3.
+
+4.	A QC reviewer will check the processed items every day to authorize them. They will highlight the authorized item in BLUE to indicate the case as completed.
+
+
+
+•	If step 3b is confirmed, then proceed with the following: 
+
+	The processor confirms on the spreadsheet that a Transfer EID and SR # was 			provided. This indicates that the transfer of funds to the bene's account is 	complete. The processor can now process the trailing contribution.
+
+                                                    
+
+
+
+         	Open two EASY windows of the Database shown on the line item of your spreadsheet. 	Use the first EASY window to recall the original distribution event so you can copy it. 
+ 
+	Follow 	the steps below: 
+
+1.	In your first EASY window, go to CABL, enter the beneficiary SSN, F5, press the Part Forms button and select Disbursement Summary. Search for the first full WD that was processed and use it as reference to copy from. (Two EASY windows for the same Database may be open at the same time.)
+
+      
+
+2.	Create a new event id in EASY(CABL): In your second open EASY window pull up the bene’s account using their SSN. Press the Part Forms button and select Log Events.
+
+                           
+
+	Type W under Code.								
+		Type SSN under Subject (SSN) If there is an extension, add this to the end of the 			               SSN. Ex: 123456789 1
+		Press Tab.				
+		Type the group# under Related Subject if it doesn't automatically populate. Do not 			add -01 or -02.		
+		Press F6.				
+		A new Event Id will populate under the Event Id field.
+		Add the newly created Event ID to the spreadsheet under New Event Processed.			              Press F3 to return to the Client Information screen.	
+
+                     
+
+                                                                       
+
+
+3.	Process the new event ID in EASY(CABL): Using the second EASY window press the Part Forms button and select To Do List.
+
+                                 
+                                
+
+Enter the new Event ID you created under Event ID field.	
+  		Press F5.	
+		Press Enter.	
+                         
+
+	         Select CASH.
+                    
+
+Referencing your first EASY window. Enter the Requested For: date (Next business days date), Disb Reason, Tax Reason and select FULL WD.
+Press the Bulletin button.
+Press F3.
+Press Save Disbursement button.
+
+
+
+                   
+
+
+ 
+
+Press OK.
+ 
+
+Press Save Disbursement button.
+ 
+
+	Press Save Disbursement button.
+
+                      
+
+	In the Receiver Information window, enter B in Recvr Type, enter the Bene’s			SSN.
+	Press Enter
+
+                       
+
+	Press OK
+
+                              
+
+Press OK.
+In the first EASY window being used as reference press the List Narratives 		
+button.
+                                                           
+
+Return to the second EASY window you are processing in and in the 	
+Narrative field copy what is written from your first EASY window. At the end of the 
+narrative add “TRAILING SR (SR# from spreadsheet)”.
+
+ 
+				
+	Press OK.
+	Update Disb% Share to 100%.
+	Use the dropdown in Relation Code and select BENEFICIARY.
+	Press the Hand Chg button.
+
+ 
+
+	Press Exclude Chg button.
+	Press the Narrative button.
+
+ 
+
+	Compare what is written to the original narrative in your first EASY window. 				Confirm that TRAILING and the SR number has been added.
+	Press OK.
+
+              
+
+	Press Save Disbursement.
+
+           
+
+	Review the DISBURSEMENT Qualifying Action window and select the radio 				buttons as YES or NO based on the question and how they should be 				answered.
+	Press the ACCEPT button.
+
+                                        
+
+	Press OK.
+
+                  
+
+	Press Save Disbursement button.
+
+                                                  
+
+	Press Save Disbursement button.
+
+                                                  
+
+	Press OK.
+
+                                                     
+
+	Press OK.
+
+                    
+
+	Press the Close button.
+
+                                                    
+
+	Press OK.
+	Press F3.
+
+                    
+
+	Confirm Next Step says AUTHORIZE.
+	Press F3.
+			
+4.	A QC reviewer will check the processed items every day to authorize them. They will highlight the authorized item in BLUE to indicate the case as completed. 														
+
+	
+
+
+
+
+
+
+BSS Deceased Participant Trailing Dividend Project - PM Kick-off Call-20250128_150154-Meeting Recording
+January 29, 2025, 8:01PM
+46m 58s
+
+Khan, Taufique started transcription
+
+Khan, Taufique   0:03
+Happening when it's happening 'cause you know it is once you get it all down on paper, it looks like a lot.
+
+Fowler, Cheryl   0:08
+Mm hmm.
+
+Khan, Taufique   0:08
+But when you're actually doing it, you know it's just like muscle memory at that point.
+And you know, you're just clicking through F threes and F sixes and you know, just getting things done.
+
+Fowler, Cheryl   0:16
+Yeah.
+
+Khan, Taufique   0:17
+So I'd like to see an example of.
+I'm hoping we can get both of the day one and day 2 processes in our call today.
+If not, it's OK. We've got the call for tomorrow, but.
+From Cheryl, thank you for confirming that.
+We can do day one and day 2 steps in this on the same day, so that'll help our automation teams as well.
+
+Fowler, Cheryl   0:37
+Yes.
+
+Khan, Taufique   0:40
+We won't have to.
+Kind of create two different processes and and you know they can. They can get to it once they start swinging hammers.
+But First things first, I'm going to stop sharing, and if there's some, I think Amy, you said you can kind of drive for us.
+
+Fowler, Cheryl   0:54
+Yeah, I just wanna shut the stage that for today we have Amy, who's one of our processors on the project that will walk us through an example.
+
+Khan, Taufique   0:58
+Yeah.
+
+Fowler, Cheryl   1:04
+But what?
+
+Khan, Taufique   1:04
+OK.
+
+Fowler, Cheryl   1:05
+We won't have today that we'll need to do tomorrow is the transfer piece, the segregation creating the takeover account or or moving the money from the deceased participant to the beneficiary account.
+
+Khan, Taufique   1:08
+Mm hmm.
+OK.
+Got it.
+
+Fowler, Cheryl   1:18
+We won't be able to see that today. We'll do that tomorrow.
+
+Khan, Taufique   1:20
+OK.
+Got it.
+
+Fowler, Cheryl   1:21
+But Amy can definitely take us through.
+A case today.
+
+Khan, Taufique   1:27
+Awesome. All right, let's see it.
+
+White, Amy   1:30
+OK.
+
+Presley, Rob   1:33
+I'll just jump in that we're tentatively slotting the the build to go live in May. And to your point, tafiq, if we can, if we can, you know, if we can, if we can accelerate that, deliver it sooner, I think that would be wonderful for everyone, I'm sure.
+
+Fowler, Cheryl   1:38
+OK.
+
+Presley, Rob   1:46
+You'll agree so.
+
+Khan, Taufique   1:46
+Yeah.
+
+Fowler, Cheryl   1:47
+We agree 100%.
+
+Khan, Taufique   1:49
+All right.
+
+Fowler, Cheryl   1:51
+Thank you.
+
+Khan, Taufique   1:52
+5.
+
+White, Amy   1:55
+All right. Is everybody able to see my screen?
+
+Khan, Taufique   1:58
+Yep.
+
+White, Amy   1:59
+OK.
+Hopefully my dog is whining and will be quiet.
+So let's see here.
+So the day one is all about doing research and figuring out who the beneficiary is, we get the the spreadsheet that you can see here.
+And what we do is we look at each participant.
+So I've got my PNP here.
+
+Khan, Taufique   2:24
+Sorry real quick, I'm sorry.
+So the the report that you guys are getting, is it an e-mail everyday or is it in a shared drive or how do you guys get this?
+
+Fowler, Cheryl   2:34
+Yeah. So we get the the report, Rita and I, we get it through an e-mail, an Excel file through an e-mail and the report comes out by week, biweekly every other week currently.
+
+Khan, Taufique   2:39
+Mm hmm.
+OK.
+OK.
+
+Fowler, Cheryl   2:47
+And we scrub it based on some of the document process and we set it up and we add the cases to Amy, Kate Ryan's Chelsea, Sarah's tab for research, review and processing.
+
+Khan, Taufique   3:02
+Got it.
+OK. Thanks.
+Sorry, Amy, go ahead.
+
+Fowler, Cheryl   3:04
+No. OK.
+
+White, Amy   3:05
+Oh, it's fine.
+So at this point I'm gonna look at row 117 that I've got highlighted there.
+So I'm just gonna go into cable.
+Plug in their social.
+
+Khan, Taufique   3:22
+And this is all it's all deceased participant trailing dividends or this is just all trailing dividends that occur that you guys handle.
+
+White, Amy   3:33
+I would be deceased.
+
+Khan, Taufique   3:35
+OK.
+All right.
+
+White, Amy   3:38
+OK.
+So it looks like maybe they've already done some of the segregation today, so.
+This account this morning did have a balance.
+What I do then is I just make sure I'm looking obviously in the right account and I am. So first thing I go into part forms disbursement summary.
+And when I come in here, what I'm looking for is to make sure that we didn't because we used to pay beneficiary.
+Directly from deceased participant accounts and So what I'm looking when I go in here is to make sure that we don't have any of that going on.
+And so I'm going to kind of look here at the last disbursement that we process under the deceased participant and we can see that it was mend disc like a prepay.
+So at this point.
+I'm good in this screen.
+We didn't pay any per ad.
+Benny's through the deceased account.
+So the next thing I want to do is go into chipot.
+OK. And we can see.
+Let me see.
+So Beth Ann Cook, because of the spreadsheet, does give us.
+The beneficiary and their percentage. And So what?
+I'm coming in here for is to just confirm that those percentages and the socials and the names are correct so I can see how my narrative that it's correct, but I also do want to go down into.
+
+Khan, Taufique   5:19
+OK.
+
+White, Amy   5:26
+The Quadro Death tab on the trans.
+
+Khan, Taufique   5:29
+And Cheryl, Cheryl. While she's doing that, would you do me a favor and forward me the that biweekly e-mail that you guys get with the report? I just want to see where it's coming from and and look through that report kind of after our call and see what.
+
+Fowler, Cheryl   5:33
+Sure.
+Yep.
+
+Khan, Taufique   5:43
+The values are and. Column headers are and stuff like that.
+
+Fowler, Cheryl   5:46
+Yep, I can do that. You're welcome.
+
+Khan, Taufique   5:46
+Thank you.
+Sorry, sorry. Amy again, sorry, go ahead.
+
+White, Amy   5:49
+Oh, no, that's that's what we're here for.
+
+Khan, Taufique   5:49
+All right, all right.
+
+White, Amy   5:52
+So we can see here that Beth Ann Cook is in our Quadro Death tab with the 100% entitlement.
+
+Khan, Taufique   5:53
+Thanks.
+
+White, Amy   6:01
+So she is our beneficiary.
+We did have.
+So then what?
+I would do is this column here column U is asking is it a residual and so I would put a yes.
+Needs transfer, so it does need to be segregated to the beneficiary.
+Account and I put a yes in that column and then what I want to do.
+Oh, let's see. It's now.
+I want to go and look up.
+The beneficiary's account.
+
+Khan, Taufique   6:37
+And those pop up that that happen is that that's just every single time you want to get out of that screen or just ask you to save it, OK.
+
+White, Amy   6:43
+Yeah.
+Exactly, yeah.
+
+Khan, Taufique   6:46
+All right.
+
+White, Amy   6:51
+OK.
+So we can see.
+That the money has been segregated already to Bethan's account.
+
+Khan, Taufique   7:00
+Mm hmm.
+
+White, Amy   7:04
+So on day one, what I would have done is come down here into part forms, go into disbursement summary and I would have taken a look here at the last disburse what we're looking for is.
+The the full withdrawal, the death full withdrawal.
+
+Khan, Taufique   7:25
+Mm hmm.
+
+White, Amy   7:26
+To see if they've taken a full withdrawal and that we need to then process a residual to them.
+So on day one what I did, I came in here.
+I saw that we have a full withdrawal death and.
+
+Khan, Taufique   7:38
+Mm hmm.
+
+White, Amy   7:40
+So what I wrote the event ID here and then the effective date goes in this column.
+
+Khan, Taufique   7:49
+And you have to put those in like it's it doesn't just come in on the report, right?
+Like you're inputting the OK.
+
+White, Amy   7:53
+Right.
+Yep, I am inputting that.
+
+Khan, Taufique   7:59
+When does the from from the time the report gets ran to? When you're putting in these event IDs and dates?
+Does any I guess when do the dates in the event IDs get populated and easy?
+Is that like a separate process or is it once there's a date of death in the system, then those event IDs or the withdrawals? Is that like when do the event IDs get populated?
+Whenever the withdrawal happens.
+
+White, Amy   8:27
+But right when someone goes into process of withdrawal, it creates the event ID.
+
+Khan, Taufique   8:33
+Hmm.
+I'm get. I'm what I was trying to I what I was trying to get is if it if they're already populated or like say the date that the event takes place, having that pull into the report that you guys get automatically so you don't have to put in.
+
+White, Amy   8:34
+So every disbursement. Oh, sorry.
+
+Khan, Taufique   8:49
+The event ID and the date you know, maybe explore that.
+Just kind of, you know, save you guys a couple of steps.
+
+White, Amy   8:54
+Mm HM mm hmm.
+
+Khan, Taufique   8:56
+So you don't have to do it.
+That's just like adding a, you know, updating a report. You know, we can have our our NBA or EBSI team kind.
+Look in that to see if they can just add those columns in there for you so you don't have to go in and put them in every time.
+So they're there.
+
+White, Amy   9:13
+Yeah, I mean that.
+
+Khan, Taufique   9:14
+Just throwing that out there.
+
+White, Amy   9:15
+Yeah, that'd be fine.
+I it's probably something that we have to go in and just double check, kind of like the entitlement at 100%, right?
+
+Khan, Taufique   9:17
+All right.
+
+White, Amy   9:25
+We go in there to just make sure 'cause sometimes it can be off.
+
+Khan, Taufique   9:27
+Yeah, just AQA step. Yeah.
+
+White, Amy   9:30
+Yeah.
+
+Khan, Taufique   9:32
+Gotcha.
+
+White, Amy   9:32
+But no, I mean any information that can go into that I feel is helpful.
+
+Khan, Taufique   9:38
+OK.
+I'll just make a note for myself there, just to see like what we're gonna run. If we're gonna create a new report or another output file anyway, then whatever info you guys need, you know we can put that in there from easy.
+
+White, Amy   9:50
+Right.
+
+Khan, Taufique   9:51
+OK.
+All right.
+Sorry again.
+Go ahead.
+So event IDs and Event IDs, dates and then what's the next one?
+
+White, Amy   9:54
+Oh no, that's fine.
+And honestly, that from my perspective on the day one, that's it.
+
+Khan, Taufique   10:03
+OK. All right.
+Aside for so, a lot of the so a couple of the steps were kinda already done right, Amy?
+Like the IT was already completed or you didn't have to like save anything in there.
+
+White, Amy   10:11
+Mm hmm.
+No. On day one you don't.
+
+Khan, Taufique   10:17
+OK. All right.
+
+Fowler, Cheryl   10:19
+Amy would do you want to? Do you want to maybe have Rita?
+Rita, I don't know if you have the file, but if you could give her maybe two new brand new cases she hadn't had yet added to her tab. Or she can kind of take us through 2 brand new ones.
+
+Khan, Taufique   10:35
+Yeah. Yeah, just so we can actually see the the steps that are taken.
+
+White, Amy   10:37
+1.
+
+Khan, Taufique   10:39
+I was just gonna say that.
+Thank you, Cheryl.
+
+Fowler, Cheryl   10:40
+Yeah.
+
+Khan, Taufique   10:41
+Just to just so we can see the full clicks and you know make sure that this is the process and you know nothing, nothing out of the ordinary.
+
+White, Amy   10:49
+Yeah.
+
+Khan, Taufique   10:50
+So again, let's so Cheryl then.
+Like 100% of the time, these are the click paths. This is what happens every time there's a trailing dividend.
+
+Fowler, Cheryl   10:54
+Mm hmm.
+
+Khan, Taufique   10:58
+Deceased participant. These are the screens.
+These are the keys that we click on, and here's how it's done.
+Every single time.
+There's no special handling. There's no plans that are different or certain accounts are part, you know, plan sponsors that have certain.
+You know differentiate, you know, differentiations, anything that they.
+
+Fowler, Cheryl   11:21
+Yeah.
+
+Khan, Taufique   11:21
+They want different. It's all the same.
+
+Fowler, Cheryl   11:23
+There, there are a few plans that we scrub out that we just don't handle.
+They come on the report that I forward to you, but we scrub out.
+We read or I scrub them out and Amy and team don't handle because they do have some special handling special process.
+
+Khan, Taufique   11:34
+Hmm.
+OK.
+
+Fowler, Cheryl   11:38
+So maybe if you want tomorrow I can walk through the the scrubbing or preparing of the file. The spreadsheet that we do, we can walk through that piece of it. But.
+
+Khan, Taufique   11:44
+Sure. Yeah.
+Got it.
+
+Fowler, Cheryl   11:51
+Other than that.
+That there is some. There's a few plans that.
+I think that's in our procedures. Amy, keep me honest.
+Like if it's an RRA or we we add it to the procedures for some of the specific plans to make sure we care for those differently.
+
+Khan, Taufique   12:10
+Hmm.
+OK.
+
+Fowler, Cheryl   12:12
+But other than that, everything's pretty much the same in terms of these these these steps.
+
+Khan, Taufique   12:16
+Got it.
+
+Presley, Rob   12:19
+So so that I hear that that you have you have specific plans plan numbers that are omitted from the process just given the special handling, OK, OK, we would want to have those planned numbers.
+
+Khan, Taufique   12:20
+Awesome.
+
+Fowler, Cheryl   12:25
+Yes, there are some. Yep, Yep.
+
+Presley, Rob   12:31
+On the and incorporate an exclude list from the Evsi reporting perspective so they can be omitted upfront.
+
+Fowler, Cheryl   12:36
+OK.
+
+Khan, Taufique   12:36
+Mm hmm.
+
+Fowler, Cheryl   12:38
+I can send that over.
+I can again take you through it tomorrow if you want.
+
+Khan, Taufique   12:43
+Yeah.
+
+Fowler, Cheryl   12:43
+Just to see what I'm scrubbing out and definitely give you those plan numbers.
+So you have them, yeah.
+
+Khan, Taufique   12:48
+That'll be great.
+That would be awesome.
+Alright, tomorrow make a note here.
+Cool. OK.
+Alright, Amy, we're not letting you off yet.
+Well, we need a we need a brew. We need a new one.
+We need a brand new one you haven't seen or that isn't done yet.
+And once we get that going to look at that and then I think I think we'll be OK, but this'll definitely help our automation teams we see.
+
+White, Amy   13:05
+OK.
+OK.
+
+Khan, Taufique   13:14
+Let me see what make sure we get the right time in the video. What is it 16?
+17 minutes in, so we can just. OK, alright, go ahead.
+
+White, Amy   13:25
+All right, so looks like out of these four lines that she's added, three of them are for the same.
+Participant.
+So let's take a look what we've got.
+So 418464.
+OK.
+Francisco Raimundo 9898401 OK.
+So part forms disbursement summary.
+Looks like both those were cancelled, so we don't have any direct to beneficiary payments.
+
+Khan, Taufique   14:01
+OK.
+Got it.
+
+White, Amy   14:05
+So going out of here, back into Chippa.
+OK.
+So let's take a look.
+Alright so.
+I mean, I'm sure that adds up to 100, but in my brain I can't pay 7 point.
+
+Khan, Taufique   14:37
+Mm hmm.
+Neither. I'll try to do it, but I was like, let me.
+
+White, Amy   14:41
+Five plus, yeah.
+I know, and I've never seen a split like that, so I saw it and I was like, what's happening?
+
+Khan, Taufique   14:46
+All right.
+
+White, Amy   14:51
+All right, so it does.
+Total 100%.
+So I'm just gonna pull this over here.
+
+Khan, Taufique   14:55
+OK.
+
+White, Amy   14:59
+And I'm just going to double check.
+That it's correct.
+So Teresa's 25, the other two.
+Are 37.5 which is correct?
+In this case.
+For segregation purposes, if if.
+There is like an extra penny when they go and split this and you see you see both Mitchell and Ryan have 37.
+15.
+
+Khan, Taufique   15:30
+Yeah.
+
+White, Amy   15:31
+O how are we going to determine who gets that little extra enny or two, right?
+
+Khan, Taufique   15:35
+Yeah.
+
+White, Amy   15:35
+So what we do is we pay it out to the oldest beneficiary so we can see here what?
+
+Khan, Taufique   15:41
+OK.
+
+White, Amy   15:44
+Teresa is the oldest, but she's obviously got the lesser percentage, so we're going to put Mitchell.
+
+Khan, Taufique   15:50
+Mm hmm.
+
+White, Amy   15:55
+Where's Mitchell? Is right here.
+So what?
+I usually do.
+Is I just put Elvis?
+
+Khan, Taufique   16:02
+OK.
+
+White, Amy   16:05
+OK so.
+This point, we know that our spreadsheet beneficiaries are correct.
+So just gonna close out of here.
+Now let me get my spreadsheet.
+All right, so we know these are residuals, so I'm just going to type yes.
+
+Khan, Taufique   16:34
+Scenarios are if we haven't had any direction from the estate or beneficiaries, is that fair to say or?
+Is it always takeover accounts or is it always beneficiary stuff?
+Like if there's I guess, would there ever be times where?
+We don't do anything and easy and we just send a check to the beneficiaries or something like that or they have to tell us what they want to do.
+
+White, Amy   17:04
+Right. So we're we're always working off of prior disbursements, so say only two of the three binnies have claimed and so we've still got like $1500 in that deceased participants account. We would leave it there and we wouldn't process any residuals.
+
+Khan, Taufique   17:06
+Yeah.
+OK.
+Yeah, makes sense.
+OK.
+I gotcha.
+
+White, Amy   17:37
+Oh, let's go in.
+So I've sent you.
+Did I not type that right 605?
+I know 75.
+Not a copy and paste kind of gal so.
+Alright, so here in Teresa's account you can see she's got quite a balance.
+So I'm still gonna go into disbursement summary 'cause. I'm looking for that full withdrawal.
+
+Khan, Taufique   18:13
+Yeah.
+What are those three those 3 blue?
+
+White, Amy   18:15
+And it looks like.
+
+Khan, Taufique   18:18
+Buttons on the bottom.
+What do they say again?
+That's, I don't think I ever saw them, OK?
+
+White, Amy   18:20
+Let's take a look.
+Excellent view and update.
+
+Khan, Taufique   18:24
+I gotcha.
+All right, they're they're always cut off every time you were clicking on them.
+
+White, Amy   18:26
+Yep.
+
+Khan, Taufique   18:28
+Like, why did she click on what was it called?
+
+White, Amy   18:29
+I know.
+
+Khan, Taufique   18:30
+Like, OK, all right.
+
+White, Amy   18:31
+I I've gotten used to working with my window just like that 'cause.
+
+Khan, Taufique   18:34
+I know you're just.
+
+White, Amy   18:35
+That's how it opens.
+
+Khan, Taufique   18:38
+Thank you.
+
+White, Amy   18:39
+You're welcome.
+Let me try and drag that down too.
+So I'm just going to go in and take a look at these and make sure that we haven't had a full disbursement.
+You can see this one is a partial withdrawal.
+So we know.
+
+Khan, Taufique   18:55
+Hmm.
+
+White, Amy   18:55
+Definitely not that that one was canceled.
+I look at this one.
+And this is a partial withdrawal too.
+So this beneficiary's never taken a full withdrawal.
+
+Khan, Taufique   19:09
+Hmm.
+
+White, Amy   19:14
+And so basically what I do here is I just write not taken.
+And so that tomorrow the the money will get segregated to Teresa, but there's nothing for me to process because she hasn't taken a full withdrawal.
+
+Khan, Taufique   19:27
+OK.
+Hmm.
+
+White, Amy   19:33
+So this is pretty much the end of my my journey with Teresa's if you know.
+
+Khan, Taufique   19:37
+What do the I gotcha. Thank you for that, Amy.
+Could you scroll up on the spreadsheet? I just wanted to see what the headers or the column headers are called.
+
+White, Amy   19:45
+Oh yeah.
+
+Khan, Taufique   19:48
+And Cheryl, this is the one you just sent me, right?
+Like it's the same spread or this is a different one?
+
+Fowler, Cheryl   19:53
+No, the IT.
+Yeah, well, is this is the a working one I can send you this one. The one I sent you is just comes from.
+
+Khan, Taufique   20:03
+Oh, like the original before, before you guys change it.
+Yeah, OK. Yeah.
+
+Fowler, Cheryl   20:06
+Before we scrub it before we take out and then we.
+
+Khan, Taufique   20:11
+And then send me this one. Amy, if you could like the end end product.
+After the scrubbing after.
+
+Fowler, Cheryl   20:16
+I'll send you this one e-mail.
+
+Khan, Taufique   20:16
+Thank you, Cheryl.
+
+Fowler, Cheryl   20:17
+Send it to him, yeah.
+
+Khan, Taufique   20:18
+Yeah. All right.
+
+White, Amy   20:18
+OK.
+Thank you.
+
+Khan, Taufique   20:20
+That'll be good.
+
+Fowler, Cheryl   20:20
+Yeah. Yep.
+
+Oberfoell, Rita   20:20
+And can I?
+Oops, sorry. Can I?
+This is Rita.
+Can I add something, Amy, if you click on that Blue tab right next to where the red one is, that's where I pull the information from to put on each individual person's tab, and that's from that main report that Cheryl and myself get each or bi week.
+
+Khan, Taufique   20:32
+Hmm.
+OK.
+
+Fowler, Cheryl   20:40
+Yeah.
+
+Oberfoell, Rita   20:40
+And that's kind of where we house all of the data that we keep track of.
+
+Khan, Taufique   20:44
+OK.
+
+Oberfoell, Rita   20:45
+And if you want to scroll up a little bit.
+
+Fowler, Cheryl   20:47
+It's like our master file, but this is the one we scrub.
+
+Oberfoell, Rita   20:48
+You could.
+Correct.
+
+Khan, Taufique   20:52
+OK.
+So this Blue Tab Rita is post scrub.
+
+Fowler, Cheryl   20:52
+Yeah.
+
+Oberfoell, Rita   20:53
+Yeah.
+
+Fowler, Cheryl   20:56
+Yes.
+
+Oberfoell, Rita   20:56
+Correct, correct. Yep.
+
+Khan, Taufique   20:56
+OK, OK.
+All right, got it.
+Yeah, these these headers, these call them names will definitely help us when we're when we're getting requirements and stuff together.
+So that's that's great. OK.
+
+Fowler, Cheryl   21:08
+I'll send that to you, OK.
+
+Khan, Taufique   21:10
+Thank you.
+OK.
+All right.
+So, Amy, that was up to your part, putting in the the reasons or the not taken.
+So that's yours and then?
+Cheryl tomorrow. Then you said we can.
+You said it could be done on the same day, but we're gonna do it tomorrow just to see. OK, alright.
+
+Fowler, Cheryl   21:28
+Yes.
+Yeah. And we actually have.
+Oh, sorry.
+Go ahead, Amy.
+
+White, Amy   21:34
+Oh, go ahead, Cheryl.
+
+Fowler, Cheryl   21:35
+No, I was gonna say we actually have one plan. The state of Illinois that we do the research, the transfer and the distribution if any on the same day, the last day of the month, so.
+That's why I know it.
+It can be done.
+It's just we have to coordinate between someone other than Amy will do the transfer of the the funds.
+To the beneficiary account so that she can do the distribution so.
+
+Khan, Taufique   22:06
+Got it.
+
+Fowler, Cheryl   22:06
+It definitely can be done in the same day.
+
+Khan, Taufique   22:06
+And that's like one of the that's like one of the plans that we'll get tomorrow, like one of the plan numbers that has like a special handling and special, OK.
+
+Fowler, Cheryl   22:15
+A special Yep. Yep. I'll send that to you.
+
+Khan, Taufique   22:18
+Awesome. OK. All right, I think I've got.
+
+White, Amy   22:21
+Yeah.
+
+Khan, Taufique   22:22
+Yeah, go ahead, Amy.
+
+White, Amy   22:22
+I it looks like they have already done the segregation kind of on that first one that I was showing you.
+
+Khan, Taufique   22:30
+Mm hmm.
+
+White, Amy   22:30
+So I don't know if you want to wait tomorrow to see the segregation piece before I do the second day distribution piece.
+Would that make more sense for you?
+
+Khan, Taufique   22:41
+Mm hmm.
+I mean, you guys, you guys tell me you're the SME's, would it be better to wait or just go off of like it's all the same example, right?
+Like it's the same.
+It's the. It's these. They you said they did.
+They did Teresa's part already.
+Segregation and moving already.
+Or they were.
+They didn't have one for Teresa.
+Right. It was the first example that you showed us. Oh, OK.
+
+White, Amy   23:04
+Yeah, it was this, Patricia.
+
+Khan, Taufique   23:07
+Yeah, yeah, yeah.
+Patricia yeah.
+So you're saying hers is hers? Still has to be. It's done.
+
+White, Amy   23:12
+Has already been segregated.
+
+Khan, Taufique   23:13
+It's already segregated.
+OK.
+
+White, Amy   23:15
+It. Yeah, it's ready to be processed for a distribution.
+
+Khan, Taufique   23:19
+I'd like to see the segregation steps.
+Like the like the.
+So there's three steps, then it sounds like Amy, what you just showed us the segregation, and then the actual processing or moving of the money, is that right? To say, OK, OK.
+
+Fowler, Cheryl   23:27
+Mm hmm.
+
+White, Amy   23:29
+Uh huh.
+
+Fowler, Cheryl   23:35
+Correct 3.
+
+White, Amy   23:35
+Click the payment, yeah.
+
+Fowler, Cheryl   23:36
+Yep, Yep.
+
+Khan, Taufique   23:38
+All right.
+And Patricia's on step two or three, then.
+
+White, Amy   23:44
+Right now, she's on Step 3.
+
+Khan, Taufique   23:46
+OK.
+Yeah, let's, let's not jump ahead. I don't wanna.
+I'm getting like a crash course in your guys's department right now, so I wanna. I kind of wanna do it in order.
+Yeah, I don't.
+I mean, it wouldn't hurt to see after, but I think just to keep it clean, I wanna keep our recordings kind of kind of neat for our automation teams. And yeah, if we need to do, let's do it all to let's do the last.
+Technically one step, but really 2 steps tomorrow then.
+
+Fowler, Cheryl   24:16
+Mm hmm.
+
+Khan, Taufique   24:16
+And kind of let's if you could, does so does Teresa the one, Amy, the one you just showed us, does that have segregation and money moving steps if there wasn't anything in there or no action was taken?
+
+White, Amy   24:30
+So Charlie, so Teresa will have this Step 2 where we segregate the trailing to her account, but she won't have a Step 3.
+
+Khan, Taufique   24:36
+Mm hmm.
+OK, alright. And then the other three, Kyle and Josh.
+Ryan Josh Mitchell. Well, they have.
+They've got both steps left, right?
+
+White, Amy   24:53
+Right. Well, they've actually got all three 'cause. I didn't finish the first step.
+
+Khan, Taufique   24:53
+Or no. OK.
+All three, OK.
+But let's do that then.
+Let's keep them as the example.
+Let's do. Yeah, just do what you have to. For those ones up until the segregation and then the the day two money moving parts that we can we can look at tomorrow then.
+
+White, Amy   25:02
+OK.
+OK.
+Yep, sounds good.
+
+Khan, Taufique   25:15
+All right. OK.
+
+White, Amy   25:17
+We'll just go and do Mitchell.
+
+Khan, Taufique   25:19
+OK.
+If Cheryl is that OK with you? We do it that way.
+
+Fowler, Cheryl   25:25
+Yes, absolutely. Yep.
+
+Khan, Taufique   25:26
+Stick with the same examples, the same participants and just kind of keep it consistent.
+
+Fowler, Cheryl   25:30
+Yeah, think that sounds good? Yep.
+
+Khan, Taufique   25:33
+OK.
+Alright, cool.
+
+White, Amy   25:36
+OK.
+
+Khan, Taufique   25:37
+Well.
+
+White, Amy   25:41
+All right, so it's this account.
+Here it's got a balance, so may not.
+
+Khan, Taufique   25:44
+Mm hmm.
+
+White, Amy   25:48
+OK.
+So let's see if he's got a full disbursement.
+Oh wow, he does OK.
+Sure. So that that balance at 7000 is a little bigger than we usually see with someone that's taken a full withdrawal 989-8401.
+
+Khan, Taufique   26:15
+Mm hmm.
+In the full withdrawal is that that's that date 12/30.
+
+White, Amy   26:21
+I'm just.
+
+Khan, Taufique   26:26
+Was the date they took the withdrawal or that's the?
+
+White, Amy   26:27
+Let me.
+Let me take a look here.
+
+Khan, Taufique   26:31
+Oh, may may of 19 OK.
+
+White, Amy   26:31
+They took it May 6th, 2019.
+
+Khan, Taufique   26:36
+OK.
+
+White, Amy   26:38
+I'm just gonna. I'm gonna write that down.
+And then, because we know the transfer has to occur, so I'm gonna write down this event 'cause. We have looked at it and we know it's a full withdrawal.
+
+Khan, Taufique   26:50
+Oh, you're giving me.
+You're giving me a.
+You're giving me flashbacks of my time and implementation with, like stable value funds and puts and like, Oh my God, was this one of those like a year later and it was like one fund that they left somewhere and.
+
+White, Amy   27:06
+Right.
+
+Khan, Taufique   27:08
+All right.
+
+White, Amy   27:09
+Yeah. So what, you know my step to do would probably go back into the.
+
+Khan, Taufique   27:09
+Oh.
+
+White, Amy   27:17
+To the deceased participant account to see if they made like a large distribution after we had already.
+Segregated the first time or just kind of take a look at at why we have such a large balance or I mean it could be that maybe the check got.
+
+Khan, Taufique   27:28
+OK.
+
+White, Amy   27:37
+Returned or something.
+So anyways, more to that point.
+
+Khan, Taufique   27:40
+What's the what's the most? Or like the time frame you guys have seen like for trailing dividends, has it has it been like under a year at least?
+Or how more than, oh, man. OK, so anytime, anytime it could happen, OK.
+
+White, Amy   27:50
+2005.
+Anytime, anytime it can happen.
+
+Khan, Taufique   27:58
+All right, that's good. Well, I'll.
+Note that down.
+No time frame, just anytime.
+There's a balance in an account.
+We need to sweep it out.
+
+White, Amy   28:07
+It it can show up, yeah.
+
+Khan, Taufique   28:09
+All right.
+
+White, Amy   28:10
+I mean, you'll, I'm sure you've probably received our procedure on the trailing process. You know, there are times when you know if if we've got a rollover say this one was, if I came in here and it was a rollover and it had been longer than six months.
+
+Khan, Taufique   28:16
+Yep.
+Yeah.
+
+White, Amy   28:28
+I would leave the trailing and the account and not process.
+
+Khan, Taufique   28:32
+Yeah.
+
+White, Amy   28:33
+If.
+Let's see.
+So 2019. So we do have a rule that says that if the beneficiary.
+Is.
+Trying to remember if it's 60 or 65.
+And their disbursement was over two years ago.
+Then I have to research in LexisNexis to see if the participant is still alive or if if I can see that they're deceased.
+
+Khan, Taufique   28:59
+OK.
+OK.
+
+White, Amy   29:03
+So there are there are some rules that. Yeah, exactly.
+
+Khan, Taufique   29:06
+Little one offs like that.
+And that's that's kind.
+That's exactly what I'm glad we went through this, because stuff like that is stuff that we'll want to call out because our automation teams are very, very sensitive. When we, when we tell them, hey, this is what we want the bot or automation to do like, that's what.
+
+Fowler, Cheryl   29:14
+Mm hmm.
+Mm hmm.
+
+Khan, Taufique   29:27
+They build if there's a deviation or there's an extra step somewhere that they don't put in their code.
+The bot will fail.
+And it'll be on the audit log. So if there's stuff that we need to call out, if there's stuff like this that we need to just put a couple of lines of code in and say, hey, check this date or this field in this system somewhere then and.
+The automation team can access that place.
+Then you know it shouldn't be a problem.
+But they want the the 100% of the time.
+Here's the click path.
+This is how we move money.
+Clear it.
+Send it.
+You know, however.
+
+Fowler, Cheryl   30:08
+Mm, HM.
+
+Khan, Taufique   30:08
+Like that the most. If this is the process, there's the clicks.
+
+Fowler, Cheryl   30:10
+No.
+
+Khan, Taufique   30:12
+These one offs, it'll, they'll. They'll get upset at us and you know they'll call it out for sure.
+But but we can.
+
+Fowler, Cheryl   30:19
+We do have it.
+
+Khan, Taufique   30:19
+We can note it.
+
+Fowler, Cheryl   30:20
+We do have it documented in the procedures, but do you want me to?
+
+Khan, Taufique   30:24
+Yeah.
+
+Fowler, Cheryl   30:26
+Call these you know, one also exceptions out so you know, draw a chinton to them for you.
+
+Khan, Taufique   30:32
+Yeah. Yes, yes, because if they.
+
+Fowler, Cheryl   30:33
+OK, OK.
+
+Khan, Taufique   30:35
+Yeah, I'm no, I haven't gone through all of the click path yet.
+
+Fowler, Cheryl   30:38
+Mm hmm.
+
+Khan, Taufique   30:39
+I just wanted to see it first, but I'll I'll read it all and make sure you know if there are. But if you guys do have them like in your day-to-day, if there is something where you have to go check aside from easy some other place.
+
+Fowler, Cheryl   30:41
+OK.
+
+Khan, Taufique   30:53
+Definitely call that out because for the most part they like to build stuff in easy.
+
+Fowler, Cheryl   30:55
+OK.
+
+Khan, Taufique   31:00
+But if they do have to go check a different system.
+We'll definitely call that out and and see if they can access it or not.
+
+Fowler, Cheryl   31:06
+OK, OK.
+
+Presley, Rob   31:08
+Jump back on what? What system?
+What other different systems? Sorry.
+
+Khan, Taufique   31:10
+Hey.
+Amy, what was the where did you have to go check something again?
+
+White, Amy   31:14
+OK.
+
+Fowler, Cheryl   31:16
+Nexus Lexus.
+
+Khan, Taufique   31:17
+Nexus Lexus.
+
+White, Amy   31:17
+Oh, Yep, yeah, Yep. Next is.
+Lexus, is that what it's called?
+
+Khan, Taufique   31:22
+It was just a one off.
+Rob, it was just a, it's just a one off where if there was a distribution from a prior for more than two years, they have to check to see if the participant is a certain age in lexisnex or when when the distribution was or something. Yeah, it's you.
+
+Presley, Rob   31:23
+It's.
+
+White, Amy   31:33
+Right.
+
+Presley, Rob   31:36
+It's lex it.
+
+Khan, Taufique   31:39
+Guys can explain a little better than I just did, but yeah check like having the like the Ebsi report run in easy and then if we need to on certain participants check.
+
+Presley, Rob   31:42
+OK.
+
+Khan, Taufique   31:51
+LEXIS Nexus.
+
+Presley, Rob   31:53
+OK.
+
+Khan, Taufique   31:54
+If they can access it or not, I don't. If RPA can, but I'll check with Ebsi to see if if they.
+
+Presley, Rob   31:58
+We, well, we have an existing building place that that, that, that liaises with LEXIS Nexus, the Talcott death death master file.
+
+Khan, Taufique   32:03
+OK.
+OK.
+
+Presley, Rob   32:07
+But there's a couple of handoffs associated with it, and I know Harrison. I don't see him.
+I think he had to drop as well.
+There's a there's a couple of handoffs and some babysitting that goes with that and well, you know well, it's it's on a quarterly basis.
+
+Khan, Taufique   32:15
+Mm hmm.
+
+Presley, Rob   32:17
+So it's not the end of the world if we're running this on a daily basis.
+I don't know.
+We'll have to kick that around and see what that what that really means.
+
+Khan, Taufique   32:24
+Mm hmm.
+
+Presley, Rob   32:24
+Essentially, what that is is creating the file.
+And and apologize.
+I'm going to come in blind here with a couple of answers, so keep me honest. But you know, creating the EVs, I would create the file would have all the underlying content that we need from a bot perspective to go in and do the processing if there are.
+Some sort of as an indicator that says, hey, you know, these 17 people need an additional check. We need to go back and validate the birth date with LEXIS Nexus we would need.
+To put a piece together that was kind of like parse that out, serve it up to LexisNexis.
+Which would essentially be like posting out to their SFTP. We'd have to pay for the information to be validated, then sent back to us.
+
+Khan, Taufique   33:07
+And what was it, Amy?
+What was it again?
+It's they. If a participant had a distribution for more than two years ago, they checked the birth date to see if their what is it again.
+
+Fowler, Cheryl   33:16
+Hey Amy, click on the procedure tab for me.
+
+White, Amy   33:18
+Ah.
+
+Fowler, Cheryl   33:20
+Let's read it specifically 'cause. I think it's it's documented there under the procedure tab.
+
+White, Amy   33:21
+OK.
+
+Khan, Taufique   33:26
+Mm hmm.
+
+Fowler, Cheryl   33:26
+And then go up a little.
+Red there.
+Is it no go down?
+Sorry, it's right there. If the original distribution is number D, if the original distribution has been more than two years and the beneficiary is older than 65, we must review LEXIS LEXIS to confirm they are not deceased.
+
+Khan, Taufique   33:39
+Hmm.
+OK.
+
+Fowler, Cheryl   33:48
+Prior to processing trailing. So we had a couple trailings that we processed and and the checks came by.
+
+Khan, Taufique   33:48
+Hmm.
+
+Fowler, Cheryl   33:54
+We got feedback that the the beneficiaries were deceased, so we had checked out their we had plans like why are we issuing a checks to them. So we added this additional check as a safeguard to try to prevent that.
+
+Khan, Taufique   34:02
+Yeah.
+OK.
+So Rob, Rob, something like that.
+So row 35, right?
+The original distribution was more than two years and the Bessem fisheries older than 65 have to review LexisNexis to confirm they were not.
+
+Presley, Rob   34:18
+OK.
+
+Khan, Taufique   34:21
+They are not deceased prior to processing I guess.
+
+White, Amy   34:26
+Mm hmm.
+
+Presley, Rob   34:27
+Is, yeah.
+
+Khan, Taufique   34:28
+Could we still check easy then date of death and easy? Or we have to check LexisNexis?
+
+Fowler, Cheryl   34:32
+Well, no, because we did that. We were never notified that they were deceased.
+
+Khan, Taufique   34:37
+OK, OK.
+
+Fowler, Cheryl   34:38
+So we don't have notification that they're deceased, but they are, according to next it says, yeah.
+
+Khan, Taufique   34:42
+What they are?
+Is that where the date of death goes 1st every time?
+Like if they've who finds out or how do we find out that's where it goes?
+
+Fowler, Cheryl   34:51
+Well, yeah. I think like social, Social Security admin, they report to Nexus LEXIS.
+So you know, everybody's going to go to the Social Security admin for, you know, when someone passes, when someone passes away because somehow that's getting notified whether that through the medical examiner, death certificates, things like that.
+
+Khan, Taufique   34:58
+OK. OK. OK.
+That's where we go first, huh?
+OK.
+First, yeah, OK.
+
+Fowler, Cheryl   35:10
+So it's pretty accurate. A lot of family don't know to contact empower. You know, sometimes they just don't know. We don't get notified.
+
+Khan, Taufique   35:13
+Got it.
+Yeah.
+
+Presley, Rob   35:19
+Yeah, I'm sure they have a long a long a long To Do List.
+
+Khan, Taufique   35:20
+Right.
+
+Presley, Rob   35:22
+And then, yeah, hard.
+
+Khan, Taufique   35:23
+Yeah, it's the last thing that I wanna look up.
+
+Presley, Rob   35:25
+Yeah, Hartford.
+Hartford, to be comprehensive, necessarily. So do do you have just AI? Don't know.
+Like a ballpark.
+Figure for like a percentage of times that this takes place.
+Is this like is this scenario you know 4% or 22%, I assume somewhere in the middle?
+
+Fowler, Cheryl   35:43
+No, it's definitely 4 less, but Amy, just a big guess on how many times you've done it.
+
+White, Amy   35:48
+Yeah, I would.
+Maybe 10 or 15 in the year that we've been been doing this.
+
+Presley, Rob   35:58
+OK.
+
+White, Amy   36:00
+So I mean I put that it may be you know like you said 3 or 4%.
+
+Presley, Rob   36:00
+I.
+OK.
+I I think I think one of the ways you might wanna look at this to to to, you know, to mitigate some of the scope. I don't wanna give you guys.
+I think you know with with our bots we're looking at.
+I feel like I'm opening up a textbook here because it feels like I'm quoting some sort of corporate crapola, but like, you know, if we can handle 80% of your volume and the complex cases if they comprise 20%, we send them back to you to handle.
+
+Fowler, Cheryl   36:26
+Mm hmm.
+
+Presley, Rob   36:30
+Manually, I mean we can reduce your workload by 80%, right?
+
+Fowler, Cheryl   36:31
+Mm, HM.
+Yeah.
+
+Presley, Rob   36:34
+I I think.
+The other side of that is we don't want to spend 80% of our time programming for what takes place 20.
+
+Khan, Taufique   36:40
+I mean, 4% of 4% of the stuff.
+
+Fowler, Cheryl   36:42
+Yep, Yep, that makes sense.
+
+Presley, Rob   36:43
+Yeah. Yeah, so.
+
+Fowler, Cheryl   36:44
+Yeah. So that may be a exception that we it kicks out for us to manually review.
+
+Presley, Rob   36:48
+Yeah. I'm. I'm. Yep, Yep.
+And I'm thinking part of the Evsi report.
+There may be.
+There should be a way for them to be able to implement logic that may bring back an indicator or something that says, hey, you know this original distribution was two years ago when the beneficiary is over at age 65 based on the date of death or the.
+Data, not date of death, date of birth that we have on file.
+And then perhaps we put in AI.
+Don't know what the hell it is, you know, in the column we put an end, you know, on the end of bot says we will. We don't want any ends.
+We're only going to go to wise.
+
+Fowler, Cheryl   37:17
+Mm hmm.
+
+Presley, Rob   37:19
+You know, so something along those lines I think is a way for us to handle it programmatically.
+
+Fowler, Cheryl   37:20
+Gotcha.
+
+Khan, Taufique   37:23
+Yeah. Yep, I will.
+
+Fowler, Cheryl   37:24
+OK, OK. Yep.
+
+Khan, Taufique   37:25
+I can definitely call that out so that that right?
+Cheryl, that's the reason why I wanted to get like your callouts on these kind of little one offs is we can definitely keep it where OK like Rob said we can handle 80% of what you guys are doing on a manual process every day and then that.
+
+Fowler, Cheryl   37:31
+OK.
+
+Khan, Taufique   37:41
+20% say OK.
+Here's the ones that the bot didn't want to do.
+Here are your outliers.
+And here's back to you for the manual stuff.
+And then that and then we can explore, you know, a phase two or phase three.
+You know, say OK, we got 80% of your stuff done and then maybe next year we decide, hey, let's, you know, start looking at these one offs and see if we can build off of what we just did.
+You know, so we start broad 1st and handle what we gain the bulk of it. The meat of your, your manual stuff and then you know, we'll go from there.
+
+Fowler, Cheryl   38:11
+Sounds good.
+Thank you.
+
+Khan, Taufique   38:13
+Alright, alright.
+So Amy, it sounds like that was kind of one off. We weren't expecting that, but but alright, let's do this then for tomorrow. If you could maybe go through these, make sure there's no special little pop ups or or maybe find if these these four right here 3.
+Don't work well for day. The segregation and the the money part.
+Step 2:00 and 3:00.
+Then maybe we'll find one that.
+Does and we can see the click path and the.
+You know, actual moving of the money and processing and and closing out of the request.
+
+White, Amy   38:46
+Welcome.
+
+Khan, Taufique   38:47
+So just kinda go through it, make sure there's no special pop ups or special handling stuff, and if we need to find a different example we can do that and we'll see that one tomorrow then.
+
+White, Amy   38:57
+Sounds good.
+
+Khan, Taufique   38:58
+All right.
+
+Presley, Rob   38:59
+I I do have a kind of a random question and I'm gonna phrase it poorly.
+So I'll I'll. I'll just caveat up front.
+So the reason I had to drop off the call was to to pick up a call with with Dean Carey, who's my boss who was talking with Shawna Shaffer. And I'm not sure if you all work with Shawn on the government side, but she made reference to this.
+Particular business case and and the process itself. And then I thought it was kind of ironic as we were on the phone just discussing that so.
+There is.
+Is I'm I'm I'm wondering if you have a balance in let's say like a $10 balance, whether it's in a fund or or not?
+But let's a $10 balance in the.
+Account a right?
+Like that's the the decedent, let's say, right?
+So we've identified that this person we should process a disbursement and send them to $10, OK.
+When when you do that?
+My understanding is that the actual process within easy itself is obviously on a day lag with the report that you're that that that ebsi would tee up.
+Umm, so there's an accrual that would take place the day after the disbursement goes out and would continue on a monthly basis. Does that make sense?
+
+Khan, Taufique   40:25
+Like there's always, there will always be something a day behind.
+Like there's always a day behind of gains or loss.
+
+Presley, Rob   40:28
+There's always going to be a. Yeah, there's always going to be a a perceived.
+There's always going to be a perceived balance of which to accrue income on.
+Is that true?
+
+Khan, Taufique   40:38
+Select.
+Like the? Yeah, I get what you're saying.
+
+Hampson, Dennis   40:42
+I don't.
+
+Khan, Taufique   40:42
+Does it end?
+Like, does it ever end?
+
+Hampson, Dennis   40:43
+I don't think that.
+
+Presley, Rob   40:43
+Yeah. Does it ever? Yeah.
+
+White, Amy   40:44
+Well, I, I mean I see the same people come through, you know, three and four times sometimes, right.
+And you'll see a larger balance. Then it just keeps progressively smaller until.
+
+Khan, Taufique   40:55
+Should just say until like the day there's zero in the account and you make a full withdrawal.
+
+Presley, Rob   40:57
+Yeah.
+
+Khan, Taufique   40:59
+That's the day the accrual stops.
+Like, does that ever does that ever put that in the in the fine print somewhere like see these people like five years later?
+
+Hampson, Dennis   41:07
+So.
+Rob, do you know if if Shawna's question revolved around a specific investment option or just accounts in general?
+
+Khan, Taufique   41:16
+Mm hmm.
+
+Presley, Rob   41:18
+I.
+I.
+I.
+I don't.
+I was.
+I do believe that it's I I want to say. It's accounts in general. The example that Dean used was, you know, transferring a balance from one fund to another fund.
+But I think the way that he explained it to me, I mean like, I guess the the the bottom line is the one day delay.
+
+Khan, Taufique   41:35
+It would never end like it.
+Just keep going.
+
+Presley, Rob   41:36
+Yeah.
+
+Hampson, Dennis   41:37
+Yeah, I mean, so I I think what Sean is probably referring to is this is the state of Illinois has a specific investment option that if there's an account balance any at any point during the month, then it carries over into the next month unless it's processed on.
+The last day of the month.
+
+Presley, Rob   41:59
+OK.
+
+Hampson, Dennis   41:59
+And I mean there, there could be others and I'm not sure if that's specifically what she's referring to, but I know that she has worked with us in the past on that particular plan.
+In general, we we don't see that scenario happen on on accounts where where there's a lot of residuals 'cause if if we process something today we process 100% of the account after everything is settled for the market trades today.
+And.
+The only time this particular situation comes up that we're talking about today is if an investment option that they had pays a dividend and then that puts money back in the account.
+And the expiration time frame for dividends is 12 months.
+I've never seen a fund pay a dividend past 12 month period.
+
+Fowler, Cheryl   42:44
+Mm hmm.
+
+Hampson, Dennis   42:49
+So typically the 12 months is the time frame where we would see a dividend pop into an account.
+
+Presley, Rob   42:51
+I.
+OK.
+I'm going to draw on my on a on a past life, but if I'm invested in a fund that accrues income on a daily basis and the payout comes through on Friday the 31st.
+The report that you guys are receiving is going to show theoretically like I mean the the accrued income through the 30th and then a participant would receive given the one day delay they would receive.
+A.
+You know essentially 1.
+Additional days of accrued income.
+I think I'm talking over my skeezer Dennis, but does that.
+
+Hampson, Dennis   43:31
+Yeah. No, I I, yeah, I I see what you're saying and I think that's gonna be limited to the.
+
+Presley, Rob   43:31
+Do you see what I'm saying?
+
+Hampson, Dennis   43:40
+The guaranteed.
+Investment options.
+The stable value fund.
+
+Presley, Rob   43:45
+Yeah. And that's and now that you say now I apologize to interrupt you, but like, that's we're on the same page that that's the example that that, that Dean made reference to was was stable value would would those be.
+
+Hampson, Dennis   43:45
+Those, yeah.
+OK.
+
+Presley, Rob   43:58
+I mean, I assume that they would be incorporated into this into this list as well, yeah?
+
+Hampson, Dennis   44:00
+Yeah, it it.
+Yeah, it's certainly possible that that a a beneficiary or decedent can have money in a stable value fund.
+So so it's possible what you're saying, yeah.
+
+Khan, Taufique   44:08
+It happens, yeah.
+
+Presley, Rob   44:11
+OK well I reach I I pinged.
+Shauna said she was available, but good old teams.
+So she's she's she's. She stepped away.
+So I thought maybe I can bring her around real quick, but maybe.
+Yeah, I I I I probably have some more questions on that. Just to make sure, right.
+Clearly, you guys, Donna, be in the business and we don't either of you know, issuing a check, you know, to to, to rob Presley today. And then he accrued a few more cents and we issue another check the next month and it just kind of goes on and.
+On I can't believe that that would be the case, though. To me, that seems like we would have. You guys would have discovered this some time ago and said why the hell am I sending rob a check every month if he's dead, you know.
+
+Hampson, Dennis   44:50
+Yeah. I mean, I think it probably will happen occasionally, but I don't think it happens as frequently as as Shawn is making it out to.
+
+Khan, Taufique   44:57
+And Cheryl, you said the the report that you guys get, it's on a biweekly report.
+
+Fowler, Cheryl   45:02
+It is, but because of capacity reason, we don't work it BI weekly. So we we pretty much pull it monthly and we work it to as many of the items on it.
+
+Khan, Taufique   45:06
+OK.
+Hmm.
+
+Fowler, Cheryl   45:12
+You you'll see when I send you.
+It's like 10,000 items. So we work as much of it as we can and then the next month we'll pull it.
+
+Khan, Taufique   45:15
+OK.
+Yeah.
+
+Fowler, Cheryl   45:20
+But yeah, right now it is set up to come to us by weekly.
+
+Khan, Taufique   45:21
+And that's that's kind of what I wanted to look into, really one of my biggest things is I want to look at this report to see how much of it applies to as many of these thousands of participants that it applies to and see, OK, can we run?
+This report, or this bot or batch this time to clear as many of them as we can here and then on an ongoing basis you know have the batch run either weekly or monthly or however.
+Much the frequency we want it to run.
+
+Fowler, Cheryl   45:49
+Mm hmm.
+
+Khan, Taufique   45:51
+So that stuff will definitely dig into and explore as I look into this and see what the best way to go about this would be.
+
+Fowler, Cheryl   45:51
+Yeah.
+
+Khan, Taufique   45:58
+And yeah, I'll be in touch.
+
+Fowler, Cheryl   46:02
+Alright.
+
+Khan, Taufique   46:03
+But yeah, call tomorrow.
+Let's see the steps.
+
+Fowler, Cheryl   46:05
+OK.
+
+Khan, Taufique   46:06
+Really it's 2-3 more steps that I wanna see that you know have your process from start to finish.
+We saw the first step. First day, one kind of step of getting this report, kind of.
+Squared away with the event ID and the date, but then the next one is segregation and.
+What's the last step called segregation and distribution? Yes. OK.
+
+Fowler, Cheryl   46:28
+And the distribution.
+
+Khan, Taufique   46:32
+So we'll do that tomorrow.
+Have those ready for me? If you could try to avoid the ones that have these little special handlings, but will definitely call them out.
+So we can.
+We can reference them later when we're with automation.
+All right, all right.
+
+Fowler, Cheryl   46:47
+Sounds good.
+
+Khan, Taufique   46:48
+Well, thank you everybody. We'll speak tomorrow.
+
+Fowler, Cheryl   46:50
+Thank you, Amy.
+
+White, Amy   46:51
+Oh, you're welcome.
+
+Khan, Taufique   46:51
+Thanks, Amy and Rita, thank you both.
+
+Fowler, Cheryl   46:53
+Yes, thank you, Rita.
+Alright, have a great day everyone.
+
+Khan, Taufique   46:55
+All right. All right. Bye, guys.
+
+Presley, Rob   46:55
+Thanks.
+
+Fowler, Cheryl   46:56
+Bye bye.
+
+Khan, Taufique   46:57
+Thanks.
+
+White, Amy   46:58
+
+
+
+
+Goodbye.
+
+Khan, Taufique stopped transcription
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day 2 Process - BSS Deceased Participant Trailing Dividend Project-20250129_140200-Meeting Recording
+January 30, 2025, 7:02PM
+40m 14s
+
+Khan, Taufique started transcription
+
+Fowler, Cheryl   0:03
+The I don't know if you. Ah, great job. OK, so.
+
+Khan, Taufique   0:03
+I just clicked on it.
+There we go.
+I was like, oh, we're starting to get into it.
+
+Wright, Trish   0:07
+Oh, sure. Now I have to behave.
+
+Khan, Taufique   0:08
+Hold on.
+Let me save it.
+
+Fowler, Cheryl   0:10
+So now Trish is going to take us through the transfer of the the trailins.
+
+Khan, Taufique   0:10
+Yeah.
+OK.
+
+Fowler, Cheryl   0:15
+And then, Amy, you'll be prepared to take the Part 3. The distributions, right? Yep, exactly.
+OK. All right. It's all yours, Trish.
+
+Wright, Trish   0:24
+OK, so I will share my screen first.
+
+Khan, Taufique   0:28
+Awesome.
+
+Wright, Trish   0:28
+Here is our nice little report.
+Let me know when you can see it.
+
+Khan, Taufique   0:33
+There it is.
+
+Wright, Trish   0:34
+So I'm gonna go over the ones in green. If you've seen enough. By the time I'm done, one or two, just say the word.
+
+Khan, Taufique   0:43
+OK.
+
+Wright, Trish   0:43
+Otherwise I will do all three of them.
+OK.
+So the first one is in ISO 2.
+
+Khan, Taufique   0:50
+And just to make sure.
+
+Wright, Trish   0:51
+So.
+
+Khan, Taufique   0:52
+So, Cheryl, Amy, this is and Trisha, this is taking off right where we left off the steps from yesterday, right?
+
+Fowler, Cheryl   1:02
+Yes, it's.
+
+Khan, Taufique   1:02
+Like it's the basically. So this the first thing that I'm seeing on the the click path for day two was management reviews senior according accordingly and then closes the senior.
+
+Fowler, Cheryl   1:15
+Right.
+
+Khan, Taufique   1:15
+That I feel like that's kinda, is that still the first step for day two things.
+
+Fowler, Cheryl   1:19
+Yeah. So pretty much after Amy does her research like she did yesterday. She's reviewing the the item for each row, identifying if it's a redisial and and if we need to transfer the funds.
+
+Khan, Taufique   1:24
+Yeah.
+Mm hmm.
+Mm hmm.
+
+Fowler, Cheryl   1:33
+So she's putting the Y in column U&V.
+
+Khan, Taufique   1:34
+Yeah.
+
+Fowler, Cheryl   1:36
+She's updating our reports to that.
+Then when she done, she kind of posts in the chat, my tab is clear.
+
+Khan, Taufique   1:43
+OK.
+
+Fowler, Cheryl   1:43
+Then that's when Rita will grab the cases that Amy has completed research on.
+
+Khan, Taufique   1:49
+Mm hmm.
+
+Fowler, Cheryl   1:49
+And add them to the segregation tab for Trish to now review and do the transfer.
+
+Khan, Taufique   1:57
+OK.
+So the the actual closing of the Sr. then that's kind of the last step, right?
+
+Fowler, Cheryl   2:02
+That's what.
+Last step of the first part of step one or day one.
+
+Khan, Taufique   2:06
+Day one stuff, OK.
+So that stuff's already so the Sr. should already be closed when Trish is starting to do this.
+
+Fowler, Cheryl   2:13
+Well, no, it's it's open until Trish.
+
+Wright, Trish   2:13
+No, after I'm done.
+
+Fowler, Cheryl   2:15
+Sorry it is open until after Trish is done. 'cause. Trish is gonna send that Sr. bike to us, so.
+
+Khan, Taufique   2:17
+OK, all right. Makes sense.
+I got you all right.
+
+Wright, Trish   2:22
+I am.
+
+Khan, Taufique   2:23
+I'm gonna just make a note on my end.
+
+Fowler, Cheryl   2:24
+Yeah.
+
+Khan, Taufique   2:25
+So the the reason.
+
+Fowler, Cheryl   2:26
+Sure.
+
+Khan, Taufique   2:26
+I asked.
+Is the the business case the click path?
+That was kind of embedded in there.
+It's got like the closing the Sr. is like the first step on there, so I'm gonna just kind of move that around and just make a note saying that's last.
+
+Fowler, Cheryl   2:32
+Mm hmm.
+Hmm.
+
+Khan, Taufique   2:40
+All right then.
+This is just for me to like further.
+This is more for the developers because they're they're gonna ask once I submit this to them.
+Them, and they're gonna say, well, why does it say the first step on day two is closing the senior?
+Like, where do we need to put that?
+So that's why I asked.
+But thank you for confirming.
+Let me just put this note on my end. OK. All right, Trish. Sorry, go ahead.
+I was doing the same thing to Amy yesterday, Trish, where she was going through the process and I was like, OK, hold on question and I'd have to interrupt her.
+
+Wright, Trish   3:06
+Don't be sorry.
+
+Khan, Taufique   3:11
+So I apologize ahead of time, but it's all yours.
+
+Wright, Trish   3:14
+I am a very, very patient person, so don't apologize.
+
+Khan, Taufique   3:16
+All right.
+
+Wright, Trish   3:18
+So the first thing that I do is I look at this and I see it's going to be a bene 100% Benny.
+
+Khan, Taufique   3:19
+Thank you.
+
+Wright, Trish   3:25
+So it's just the one person.
+So I'm going to go and check the Benny account and make sure that it's active 'cause. If it's not, I can't do the transfer, so I'll have to reactivate it.
+0405026104.
+And of course it is terminated.
+So I'm going to check it's the plan number 06101.
+So I'm gonna activate that by going into Chippa.
+
+Khan, Taufique   3:55
+Yeah.
+
+Wright, Trish   3:59
+I'm going to.
+Put a here for active.
+And then FDR for first deposit received.
+And save.
+And then I go over to the original participants account.
+And I see that they're also terminate.
+Oh, they're not terminated.
+It's just a different account. Number always throws me, so we got $4.05.
+They are active so I don't need to go into the account, so I'm going to log an event.
+
+Khan, Taufique   4:43
+Mm hmm.
+
+Wright, Trish   4:48
+This is the SSN.
+And of course I put that wrong. Hold on here.
+583959175.
+
+Khan, Taufique   5:04
+Does it say if it's a takeover on the the spreadsheet when like Amy's done?
+Is there a column that says where or what it is?
+Or is it just tied to like the event?
+
+Wright, Trish   5:17
+It's just tied to the event.
+
+Khan, Taufique   5:19
+OK.
+
+Wright, Trish   5:24
+Now why is that?
+0583959.
+That's not right either.
+583959175.
+Oh, OK.
+Never mind.
+When you're doing the plan number and I've been working on other stuff all day where I have to put the whole thing, you don't put the dash.
+
+Khan, Taufique   5:59
+Uh huh.
+
+Wright, Trish   6:00
+So you just save it like that, then copy the event ID.
+
+Khan, Taufique   6:00
+OK.
+OK.
+
+Wright, Trish   6:08
+And I always put that right in there.
+New transfer Eid for seg.
+
+Khan, Taufique   6:14
+And it's a new ID, right?
+
+Wright, Trish   6:14
+And.
+
+Khan, Taufique   6:16
+Like it's a.
+
+Wright, Trish   6:16
+It is.
+
+Khan, Taufique   6:17
+It's a different one. Yeah. OK.
+
+Wright, Trish   6:18
+Yeah, it's this one that I've just created.
+
+Khan, Taufique   6:22
+OK, Amy creates 1 to get it kind of submitted for day two stuff and then Trish's step creates a new event ID once it's actually.
+
+Wright, Trish   6:23
+So then.
+
+Khan, Taufique   6:35
+Sub segregated or distributed or segregated?
+
+Wright, Trish   6:38
+Right. Segregated.
+
+Khan, Taufique   6:40
+Yeah. All right.
+
+Wright, Trish   6:41
+So then I F3 out of there.
+And then I go into the To Do List.
+
+Khan, Taufique   6:48
+Mm hmm.
+
+Wright, Trish   6:48
+And I copy in our event ID that I just created.
+
+Khan, Taufique   6:54
+Hmm.
+
+Wright, Trish   6:54
+Hit F5.
+Enter to go into the transfer screen.
+We always backdate by one day.
+All suspense should be cleared.
+That's fine.
+We're doing it from the 06101 account.
+You can just OK pass the restriction code.
+
+Khan, Taufique   7:19
+Does every plan get these pop ups or every event get these or this is just a certain certain transaction?
+
+Wright, Trish   7:27
+No, they're all. They all get different types of pop ups. You can have managed account pop ups you can have.
+
+Khan, Taufique   7:33
+OK.
+
+Wright, Trish   7:40
+Pop ups that say there's gonna be a fee associated with this fund.
+With this one that restriction.
+We could make sure that that wasn't on there.
+We'd have to remove the restriction and then go in and put it back on.
+For trailing, we don't usually bother with that.
+
+Khan, Taufique   8:00
+The reason?
+I ask.
+Is Cheryl. If there's. So. If it's these pop ups are specific to either certain plans or events or whatever money types we'll need to call those out only because when the when the bot or the automation actually starts taking place, they're going to want to know, you know how.
+Many pop ups do.
+They need to click through.
+Is it an important one that has another action to it?
+Is there something on the processing distribution section?
+Segregation side that.
+All right, we get this pop up.
+Here's another step that we have to do on our end.
+Or is it just as simple as just clicking OK through them all and it doesn't matter?
+We're still processing the way we do it.
+Is there?
+
+Wright, Trish   8:45
+I can.
+
+Khan, Taufique   8:45
+Are there certain ones that have actions to them?
+
+Wright, Trish   8:45
+I can.
+I can verify that as you run into them, we found when we did the segregation bot that, you know, occasionally a new one will pop up that we have to take a look at and and let you know either way.
+But we did eventually get them all cleared.
+
+Khan, Taufique   9:12
+OK.
+
+Wright, Trish   9:12
+So far, for the ones that you've seen here today, you can just click OK through all of them.
+
+Khan, Taufique   9:18
+OK.
+Just kinda like if you had to throw a percentage on it, like if the pop ups that do happen will say is it 8090% of them that we can just click OK through or is that OK?
+
+Wright, Trish   9:29
+Yes.
+
+Khan, Taufique   9:31
+All right, so I can just say if you guys approve it, once I start typing up these requirements for automation, Cheryl, I could just say if there are any pop ups on this GQ 19.
+Trfp page when we're submitting for Day 2.
+Two items we can just click OK all the way through and if there is a bot failure or there is some like say there's an extra pop up that we didn't account for or there's something that's blocking it, like Trish was saying. There's one of these new ones.
+Are the you know 1020% ones that were not including we could just leave that out for either business review or manual processing or you know, we can add it for like maybe if we want to do like phase two.
+Automation to all right, actually dig into what those pop ups are and address them like that.
+But the quickest and easiest would be to just say OK click all the way to click OK all the way through and just get past the pop ups.
+But you know.
+
+Wright, Trish   10:30
+Yeah, for.
+
+Khan, Taufique   10:34
+Unless there's an action that needs to take place and then we send it back to business and like an audit log for, hey, this one got flagged or the bot didn't finish this and you know, you guys need to review it just to make sure.
+
+Wright, Trish   10:46
+Yeah. Anything that may come up that's related to SDB funds or.
+I'm I'm trying to think.
+I think that would be the only one that would really hold us up on a trailing transfer.
+I would just not bypass that.
+
+Khan, Taufique   11:06
+OK.
+And that's what we'll need to call stuff like that if there's, like the sdbs the what was it Illinois plan or? I think that was a separate thing. Cheryl, where? Illinois on the last day of every month. But call outs just like that. Where? OK, if it's an.
+Sdb plan how do we flag that?
+Or is it a pop up that comes up on this screen? You know things like that is what we'll definitely need to call out.
+And address. So let me make a note.
+Sdb, Trish. Any any other ones that you guys can think of?
+Stuff like that.
+
+Wright, Trish   11:39
+Yeah, nothing off the top of my head for a trailing.
+It's rare, and I mean typically an SDB issue would be caught at Amy's end of it when she goes in to do the initial review, she'll see if it's an SDB fund, and that'll all be taken care of before it comes to me.
+
+Khan, Taufique   11:53
+Mm hmm.
+
+Wright, Trish   11:58
+So it shouldn't be an issue. Just in that rare instance that it maybe got missed.
+
+Khan, Taufique   11:58
+OK.
+Yeah.
+Yeah. Do me a favor, everybody, if you can on the call right now when you're going through your day-to-day process and you know, going through your tabs and going through your spreadsheets, if you could do me a favor, just make a note for yourself if you.
+Guys do see one that are these kind of one offs or special handling things like that.
+Just make a note and kind of call them out when we talk again.
+Because I do want to list those.
+For our automation team because I want to get to like the bulk of your guys processing.
+And manual steps.
+You know, if we can do 80% of these for you and automate them and then that 20% you know we can handle on a case to case by case basis, then you know I think that's definitely a win.
+So that's really what I want to get to is the automation part is the bulk of it, OK.
+How much of these processes can we get in with a bot and you know, clear those out. But if you guys are going through your day-to-day process and you got and you see those sdbs or you know anything?
+Else that is kind of special and needs extra clicks or different handling. Please make a note of those and call those out and I can get those listed.
+So then our automation team and robotics can kinda give them a heads up and ease their mind because it's going to come up and they will definitely ask. And if the bot breaks or during testing, we'll definitely do a lot of testing. But it'll definitely come up so.
+If we can call it ahead of time, the better for them.
+All right.
+Just a quick note on.
+
+Wright, Trish   13:33
+Do you have the ability to?
+Have a a little chat with the team that did the segregation bot.
+
+Khan, Taufique   13:45
+I definitely can.
+We can pull them in and kinda see what was built already.
+I think Harrison might know about that, Cheryl.
+Were you on that one too?
+
+Fowler, Cheryl   14:00
+No, but we can probably find out Dennis or Cheryl in might have some history on who helped build that.
+
+Wright, Trish   14:06
+I think a new helped enerata yeah.
+
+Fowler, Cheryl   14:09
+A new OK.
+
+Khan, Taufique   14:11
+What does that bot do?
+
+Bense, Cherielyn   14:11
+Yet.
+
+Wright, Trish   14:13
+It does essentially an entire segregation from start to finish, but they incorporate this transfer process and they already have all that information of the.
+
+Khan, Taufique   14:19
+Mm hmm.
+
+Wright, Trish   14:28
+Pop ups that they're bypassing, which will be the same thing that you will have for this same process.
+
+Khan, Taufique   14:30
+OK.
+Yes, if you can share whoever has those contacts. I kind of want to know, like if we're just building off of that, you know, we have Amy's day one steps that are new. If there's a segregation bot that's already in place and we can build off of.
+That for the next few steps then.
+Yeah, we'll definitely, definitely look into it.
+
+Wright, Trish   14:57
+Yeah, the transfer process will be exactly the same.
+
+Khan, Taufique   15:01
+OK.
+Yeah, that's great. Thank you.
+
+Wright, Trish   15:03
+Yeah.
+
+Khan, Taufique   15:03
+Yeah, send me.
+Send me. Who was on that or who the contact was for that one. And we can kinda get the scripts. And is there a report that you guys get for that bot or audit log?
+
+Wright, Trish   15:17
+Yes.
+
+Khan, Taufique   15:18
+'Cause, that'll probably be the best one of the things that if there's a if there's a report or if there's an audit log or both. Yeah, make a note for yourself.
+Send me that after our call or whoever has it. I can look into that. Cool.
+
+Wright, Trish   15:31
+Perfect. I can do that.
+And of course, you won't incorporate the creating an account and all of that stuff.
+You'll have to incorporate this reactivating accounts that I'm showing you, but the actual transfer is the same idea.
+
+Khan, Taufique   15:43
+Mm hmm.
+Awesome.
+
+Wright, Trish   15:49
+Perfect. So then what I do is when we bring up.
+
+Khan, Taufique   15:50
+Alright.
+OK after pop up.
+
+Wright, Trish   15:55
+And.
+
+Khan, Taufique   15:55
+Sorry again, Trish.
+
+Wright, Trish   15:57
+Yeah, after pops, that's OK.
+
+Khan, Taufique   15:57
+I was OK after pop up.
+Sorry, let's go.
+
+Wright, Trish   15:59
+I'm remembering where I'm at.
+
+Khan, Taufique   15:59
+What are we doing?
+
+Wright, Trish   16:01
+Here are the funds that were transferring, so you'll hit enter.
+From all funds you're gonna say yes.
+And the amount, because it's one Benny at 100%, we're just gonna tab over to the percent field and put in 100.
+100 F 12.
+We're gonna put in the beneficiary's SSN.
+Enter twice.
+That brings us to here.
+So you want to save it at this point, so F6P for process enter.
+And it says that our transfer was completed successfully.
+So you hit enter or OK F3, then I F11 twice here F-12.
+That shows me that the funds are out of the account.
+We have to go back into the account.
+And this is where we will terminate it.
+Save it with F6. We want to save our changes hit OK.
+Then we F3 all the way out, go into evdt.
+We put in that event ID that we created and did the transfer through F5F-12.
+And I always put the Sr.
+Number which is.
+15145550 the date the transfer was processed.
+And then down in the reason code for gain loss, it always Nets to 0, so nzf 6.
+F3 and that's the whole first one done there.
+
+Khan, Taufique   18:11
+OK.
+All right.
+I'm gonna just take a second real quick.
+I wanna share my screen with you guys.
+I'm gonna just take this real quick, Trish. One second.
+
+Wright, Trish   18:22
+Sure.
+
+Khan, Taufique   18:23
+So Cheryl there. So looking at the business case and this embedded word Doc pull gives us this.
+Click path for the day one and two processes. So day one was.
+I thought Amy's part of going through the first ones, checking the Sr. and setting it up for segregation. Now when I went to day two items it kind of started at.
+The Sr. and like the disbursement payout process, so everything that.
+Trish just showed was still technically in the day one process.
+And that's gonna. I'm gonna send this to you and your team. If you guys could go through this one more time. And if we need to change the headings if it's something as simple as that, fine.
+
+Fowler, Cheryl   19:13
+Thank.
+Mm hmm.
+Yeah.
+
+Khan, Taufique   19:27
+But I just.
+
+Fowler, Cheryl   19:27
+Mm hmm.
+
+Khan, Taufique   19:27
+I'd like you guys to go through this and make sure like OK day one or we don't even have to do day one or two, we can just say step one, you know, Step 2, step three, things like that.
+If we don't wanna break it up because the automation will be.
+All of it in one day, so.
+
+Fowler, Cheryl   19:41
+Yeah.
+
+Khan, Taufique   19:42
+Just go through this if you could make sure the headings are right and if the day one and day two stuff we can get rid of that even and just stay.
+Just say you know, next step 'cause. That's what was throwing me off when we first got out. 'cause. I was like, OK, what is the day 2?
+First step is the Sr.
+So I had to scroll back a little bit.
+So if you could, I'm gonna send this to everybody. If you guys don't have it and just go through it, just kind of make sure the steps are still correct and if we need to change the headings, do that please and let me know.
+
+Fowler, Cheryl   20:09
+Yeah.
+
+Khan, Taufique   20:11
+So basis.
+
+Fowler, Cheryl   20:12
+I'll I'll handle that for you and and Trish and Amy.
+
+Khan, Taufique   20:13
+OK.
+
+Fowler, Cheryl   20:15
+I'll reach out if I have questions.
+
+Wright, Trish   20:18
+Sounds good.
+
+Khan, Taufique   20:18
+So, Trish, we we just finished, technically the segregation process and now it'll be the disbursement payout process, right?
+
+White, Amy   20:19
+Yep, that works.
+
+Wright, Trish   20:30
+Right.
+
+Khan, Taufique   20:31
+OK.
+Alright, let's. Let's see that.
+
+Wright, Trish   20:35
+I just sent you the bot logs to it.
+Let me know if that's not what you're looking for.
+
+Khan, Taufique   20:41
+That will do. Yeah, that works.
+I'll take a look at this and it's really just seeing where it's coming from and and who built it out before, but I can.
+I can dig into that and see where's another one in there.
+
+Wright, Trish   21:06
+We don't take those screenshots and stuff, but.
+
+Khan, Taufique   21:09
+Yeah, no, this is.
+This definitely helps, so yeah.
+I'll look into it.
+I can try to reverse the.
+Event and see who kind of built it out and which team which automation team built that so OK.
+So we got the bot statuses.
+Trish, is there a?
+There wasn't a like a report that comes to you guys, is there like Excel or something?
+Or I guess when?
+
+Wright, Trish   21:39
+Umm.
+
+Khan, Taufique   21:39
+When was this? The segregation bot completed.
+
+Wright, Trish   21:44
+I don't know when it was completed.
+That would be quite a long time ago now.
+
+Khan, Taufique   21:48
+Or when it went live.
+Yeah, it looks a little different. I don't.
+This is really different but.
+I'll I'll look into it.
+I'll bring it up.
+Let me just make a note here.
+
+Wright, Trish   22:05
+Those are the statuses.
+I don't think I get.
+I'll keep looking 'cause I have them all going to a different folder because they just.
+Overwhelm my inbox everyday otherwise.
+
+Khan, Taufique   22:20
+Yeah.
+OK.
+Alright, I'll follow up on that. See what?
+See who built it.
+Which team created it?
+How it's running and I'll dig into all that, but let's let's see the last step, if you could, the. So we just saw the segregation and we just need to see the disbursement payout process, right.
+
+White, Amy   22:52
+OK.
+Yep, I can share my screen and get going on that.
+
+Khan, Taufique   22:54
+Alright.
+Stuart.
+
+White, Amy   22:58
+OK.
+Alright, you see it?
+
+Khan, Taufique   23:04
+See you.
+
+White, Amy   23:05
+All right, so let me get my ISO twos pulled up.
+OK.
+So what I'm gonna do?
+And I saw Trish did a check to make sure it was zeroed out.
+Typically I'd go into the deceased participant and make sure that it's at 0, but I definitely saw that on her screen, so I'm gonna go ahead and go into.
+The beneficiaries account.
+And you can see she's got a balance now.
+So what I'm gonna go do is pull up that event Idi could place on that spreadsheet yesterday, indicating the full withdrawal.
+2133 So it's this one.
+So at this point I'm just going to go ahead on my second screen here and create the event ID.
+OK. And do that by going into a log events.
+And I hit W for withdrawal and then I enter in the Bene Social Security number.
+And hit tab.
+
+Khan, Taufique   24:56
+All right, so yeah, see this. So on that click path, Cheryl, that we saw like, so this is where the day two process on the actual word doc starts.
+So everything that Amy you just did, like checking in the disbursement summary and all of that, is that just like a check for yourself and the actual disbursement payout process is on this EVNT screen, right?
+Or cable.
+
+White, Amy   25:23
+Right. So basically the only reason I pulled this screen up is because I have to duplicate what's happened.
+
+Khan, Taufique   25:24
+OK.
+Yeah.
+
+White, Amy   25:31
+Right. So I just got to be able to see it so well, yeah.
+
+Khan, Taufique   25:33
+OK.
+Got it, got it, got it. Got it.
+Alright, cool.
+
+White, Amy   25:40
+So once I see the plan I DS popped in.
+Here I hit F6 and it creates the event ID for me.
+So now my spreadsheet.
+I'm just going to enter that here.
+
+Khan, Taufique   25:55
+And so is that a?
+Is that a second or a third event?
+ID that's being populated.
+That the third one that we've seen or second one second one we've seen, OK.
+
+White, Amy   26:04
+That would be a second. That would be a second.
+So Trisha's is the first one created and then this is the second.
+
+Khan, Taufique   26:12
+Yeah.
+OK.
+
+White, Amy   26:18
+All right. So once I've got that in there, I'm just gonna F3.
+
+Khan, Taufique   26:18
+OK.
+
+White, Amy   26:24
+And go back in and this time go into To Do List.
+
+Khan, Taufique   26:28
+Mm hmm.
+
+White, Amy   26:29
+And I'm gonna plug in that event ID number I just created and put on my spreadsheet 1374.
+Hitting F5 now I'm hitting enter.
+
+Khan, Taufique   26:43
+Mm hmm.
+
+White, Amy   26:45
+Going into cash and then we always date these a day in the future.
+So I'm going to put in the 30th.
+This is kind of where I start watching my screen on the left so.
+
+Khan, Taufique   26:57
+Mm hmm.
+
+White, Amy   26:59
+This is when we click through OK.
+Disbursement reason is death.
+Tax reason NSP rule Ira it's going to be full.
+
+Khan, Taufique   27:14
+And I just FYI, Cheryl, so the the click path that's in the business case doesn't have what Amy's showing right now.
+It just goes straight after she presses F5 and enter. It just goes back into.
+The DDOLS screen and just shows the event with the event or the event number event ID with the withdrawal type and the next step stuff.
+But it's they, all this that she's doing right now isn't.
+Isn't in that click path, so we'll need to.
+We'll need to have this in there for sure.
+
+Fowler, Cheryl   27:51
+OK.
+
+Khan, Taufique   27:52
+Alright.
+
+Fowler, Cheryl   27:52
+Got it.
+
+White, Amy   27:55
+All right, so at this point, I don't have to click bulletin 'cause. It's grayed out. So I'm gonna hit save disbursement.
+
+Khan, Taufique   28:02
+Mm hmm.
+
+White, Amy   28:05
+And wait, OK. And we click OK through this.
+And safe disbursement.
+All right.
+And this is a rollover, so it's going to be two steps here.
+So First off, we're going to enter our Social Security number.
+Hit enter OK and OK.
+And then since it's a rollover, I'm just hitting OK here as well.
+
+Khan, Taufique   28:40
+Is it always 2 pop ups or could it be just one?
+Ever.
+
+White, Amy   28:44
+I believe it's always 2.
+
+Khan, Taufique   28:47
+OK, cool.
+
+White, Amy   28:49
+Now I'm just arrowing down.
+And doing an R and then I go in here and type in 100.
+Then I want to drop these down to beneficiary and rollover.
+Now I'm going to go into my mailing tab.
+OK so.
+This step I'm on this screen here so.
+Charles schw.
+AB.
+And.
+All right, that's the one I want.
+And I'm just basically mimicking what I see here, so I'm going to type in this.
+After SP MV117.
+Explain.
+Here it is.
+Now I'm going to look at my narrative.
+And I'm just going to copy that.
+And then here I've got.
+To.
+Add an additional part to the narrative here, indicating that it's a trailing and it gives the Sr. number.
+
+Khan, Taufique   30:24
+Is it for the narrative?
+Is it always that same format like the the name or the account?
+Oh, it can be different.
+It's always different or can be different.
+
+White, Amy   30:33
+Yeah, depend.
+Yeah, depending on how they change the narratives throughout the year, it could be different.
+
+Khan, Taufique   30:40
+Mm hmm.
+
+White, Amy   30:41
+But that trailing Sr. number at the end will all. You could always keep that the same.
+
+Khan, Taufique   30:47
+Alright.
+OK.
+
+White, Amy   30:51
+So at this point I'm just going to go and check in here at my stub address and then go into stub and it's going to be the primary address and it does match.
+So we're going to hit, OK? And it's West Springfield, so I actually need to update here.
+OK.
+So now I'm just pressing OK.
+And at this point I go into handling charge.
+And.
+For trailings, we never do ups or ACH, so I just always exclude the charge.
+Then it makes you review the narrative.
+Just looking at it looks good.
+So now I'm gonna save that disbursement.
+And then here gonna click yes and these can be different based on the plan.
+This solicited recommendation is always know though.
+Take this down.
+So now I'm going to head up accept.
+And I click through this and it's just basically saying that my effective date is tomorrow.
+Then these are you're just going to say disbursement through here.
+Say disbursement.
+
+Khan, Taufique   32:15
+There's 22 clicks, 22 saves.
+
+White, Amy   32:16
+Opposed.
+
+Khan, Taufique   32:19
+Like when you click on save it, it goes back to the OR it goes to the screen that you need it to go to and then you click save again and then it gets you here OK.
+
+White, Amy   32:28
+Exactly. Yep.
+
+Khan, Taufique   32:30
+OK. Gotcha.
+
+White, Amy   32:31
+And then I'll click OK here.
+And then you'll see my the screen, we call it the D.
+Some screen pops up and then I just.
+
+Khan, Taufique   32:41
+Mm hmm.
+
+White, Amy   32:41
+I won't do my QC checks, but that's pretty much it.
+
+Khan, Taufique   32:46
+OK, alright.
+Let me look at this one more time, OK.
+Cheryl, so basically everything Amy just showed us after cable and the To Do List and after she pressed F5 and enter on that cable To Do List screen, none of that was in the click path in the business case.
+I've got a note here on my end.
+
+Fowler, Cheryl   33:12
+I'm.
+
+Khan, Taufique   33:14
+Sorry. Yeah, go ahead.
+
+Fowler, Cheryl   33:14
+Yeah. No, I was just about to say I I was.
+I'm just surprised at that because I know once Amy and Trish added their procedures, I know Cheryl and reviewed.
+
+Khan, Taufique   33:21
+Yeah.
+
+Fowler, Cheryl   33:26
+Maybe I added the wrong procedures to the business case, but I'll I'll double check and I'll I'll get it updated.
+
+Khan, Taufique   33:31
+It just feels like it.
+Yeah, it feels like it it you, there was room to add or I feel like there's a space.
+There's like an empty space on page 13 of 15, right after that To Do List step and then it just jumps to the Dole's screen which I don't think it had. I saw at all for Amy's step after she did the To Do List stuff so.
+
+Fowler, Cheryl   33:54
+Yeah.
+
+Khan, Taufique   33:55
+Yeah.
+Macon, do you?
+I guess you have it, Cheryl.
+But if you need me to send the one I I can send you mine but.
+
+Fowler, Cheryl   33:58
+Yeah.
+
+Khan, Taufique   34:01
+It's yeah. From there then, if you guys can or if you can, Cheryl and team or whoever needs to be involved. Just let's do that then here's what I'll do.
+I'm gonna go through our previous recording because that one seemed to.
+I mean, at least the day one steps are the first segregation part of it in the Sr. seemed to flow pretty consistent.
+So I'm gonna get some stuff down on paper.
+And it's called a requirements document that we submit to our automation team.
+So I'm gonna start on that. Get some pens to paper and then Cheryl, if you and team could just go through that click path and make it however you wanna make it, just make sure it flows the way that it's supposed to.
+
+Fowler, Cheryl   34:41
+Mm hmm.
+
+Khan, Taufique   34:48
+Make sure the clicks are right.
+
+Fowler, Cheryl   34:48
+Yep.
+
+Khan, Taufique   34:49
+The screens are correct. The more you put in that document, the better and we won't have to go back and forth with automation with like, hey, this came up or.
+Hey there was this pop up here that you didn't call out.
+Stuff like that.
+So the more you put in there, the better.
+Just make sure it flows the way it's supposed to with you know which screens you need to be in, what fields we need to type in, and what the bot needs to actually do.
+So that is a take away for you, Cheryl and team.
+I will get started on what we need to submit to automation and then yeah, we'll let's touch base again.
+I will set up another call, let's say.
+What do you think, Cheryl?
+Just sometime middle end of next week or you wanna push it out a little bit?
+We could a 10th or next next week or the following week.
+What do you think?
+
+Fowler, Cheryl   35:43
+Let's do the week of the 10th, please. Yep.
+
+Khan, Taufique   35:45
+OK.
+You got it.
+I will send a follow up meeting that week and yeah, we'll, we'll talk then.
+
+Wright, Trish   35:53
+And I did follow up with another team member that deals handles our bot stuff more.
+
+Khan, Taufique   35:54
+Alright.
+
+Fowler, Cheryl   35:54
+Thank.
+
+Wright, Trish   36:00
+And no, we don't get an Excel report or anything.
+What I sent you is what we get.
+
+Khan, Taufique   36:04
+OK.
+Got it.
+Would you, Trish?
+Would you ask him which team or which department actually created the bot?
+Was it because right now the automation teams that we use are ebsi or the Rnba team? And RPA, which is our robotics team with Rob Presley and then Ebsi or RnB as with Nancy Glabody?
+So just ask him who, if we need to get him in because I'm just trying to explore, to see if we're gonna, we should build off of.
+That if the steps are the same, or if our new teams will incorporate the the code or the script into our new one that touches all three of the steps.
+
+Wright, Trish   36:49
+I don't think our team is gonna have an answer for that.
+
+Khan, Taufique   36:49
+That'll be a question.
+
+Wright, Trish   36:52
+That might be a question for a new unless Dennis knows. Dennis, do you know?
+
+Khan, Taufique   36:53
+OK.
+
+Hampson, Dennis   36:58
+I don't know off hand I can look through my emails.
+I know there's been teams that we've reached out to when something goes wrong with the bot so I can see if I can find that information.
+
+Khan, Taufique   37:07
+Send. Yeah, send that one to me. And then from there I should be able to connect the dots.
+
+Wright, Trish   37:07
+OK.
+
+Khan, Taufique   37:12
+But I just wanna you know, if we don't, if we can save a script, if it's the same exact steps for the segregation stuff, then we can definitely build off of it. If it's already in place.
+So they don't have to start over, but, well, I'll. I'll follow up with that one.
+I'll see what we make a note here, OK?
+
+White, Amy   37:30
+I was alone.
+I I wanted to bring up too, because I do see as I'm looking at.
+
+Khan, Taufique   37:32
+Yeah.
+
+White, Amy   37:38
+Distributions that are processed on an account.
+I do see it comes through, it says trailing.
+And it has today's date for like an effective date.
+
+Khan, Taufique   37:51
+K.
+
+White, Amy   37:51
+And so we it feels like we do have like a trailing bot that's doing it, but maybe it's only if it happens within a certain time frame the trailing.
+
+Khan, Taufique   37:56
+Mm hmm.
+
+White, Amy   38:01
+Between when we did the first disbursement in the second.
+
+Khan, Taufique   38:01
+OK.
+And that's stuff.
+Yeah, that's exactly what I'll dig into. Is like the frequency, what it actually does.
+
+White, Amy   38:14
+OK.
+
+Khan, Taufique   38:14
+Yeah, I'll. I'll dig into that a little bit.
+A little bit later, but let me just get the I'll get the stuff together from the first call and then also dig in to see what the current it's called it.
+What is it called?
+Just a.
+It's called a segregation bot.
+Or was there like a job ID for that one?
+Dennis, do you remember?
+Or if you could look through your e-mail, see if there was like a some number job ID, something like that.
+
+Hampson, Dennis   38:37
+Yeah.
+Yep.
+Yeah, I'll. I'll see what I can find for you.
+
+Wright, Trish   38:43
+I've got one here that I'm about to forward.
+
+Khan, Taufique   38:44
+Awesome.
+OK.
+Awesome.
+
+Wright, Trish   38:51
+Sent.
+
+Khan, Taufique   38:51
+OK.
+Thank you, Trish.
+Alright, so that's that's what we'll do. Take away, Cheryl.
+Just make sure if you can make sure the the click path is updated or correct will touch base again the week of the 10th.
+And yeah, I'll see.
+I'll see what we can do. Looking into the current segregation bot and Trish, I just got that e-mail. Thank you.
+OK.
+
+Wright, Trish   39:17
+You're welcome.
+
+Khan, Taufique   39:17
+This is great.
+This is awesome.
+I'll I'll look into that chain and see what we've got, OK.
+
+Wright, Trish   39:24
+Perfect.
+
+Khan, Taufique   39:25
+Questions, comments, concerns. Please reach out. And if I don't hear from you, we'll we'll talk the week of the 10th.
+
+Wright, Trish   39:31
+If you need any help with any testing or or any clarifications you can reach out to me anytime.
+
+Khan, Taufique   39:36
+That is definitely going to be coming in the future, Trish, so I'm going to hold you to that once once we get it submitted with automation, they'll definitely and we'll we'll touch base with them.
+
+Wright, Trish   39:42
+Absolutely.
+
+Khan, Taufique   39:48
+I'll get you guys and the automation teams together when we start doing testing.
+Well, they'll even show you like a demo of what it's actually doing in the background. And and we'll get some like test and dummy participant data in like the UAT environment. And we'll run through a lot of testing before.
+Before it actually goes live.
+So yeah.
+
+Wright, Trish   40:07
+Sounds great.
+
+Khan, Taufique   40:08
+All right.
+Thank you everybody.
+
+Wright, Trish   40:09
+OK.
+Thank you. Thank you.
+
+Khan, Taufique   40:10
+Talk soon.
+
+Fowler, Cheryl   40:11
+Thank you.
+
+White, Amy   40:11
+Thank you.
+
+Khan, Taufique   40:11
+Thanks, bye.
+
+Fowler, Cheryl   40:12
+Have a good day.
+
+White, Amy   40:12
+Bye bye.
+
+Fowler, Cheryl   40:13
+Bye bye.
+
+Khan, Taufique   40:13
+Bye.
+
+Khan, Taufique stopped transcription
+
+		
