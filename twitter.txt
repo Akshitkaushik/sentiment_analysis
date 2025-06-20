@@ -1,12 +1,10 @@
-Subject: Click Path and Step One Ownership Clarification
+Hello Khan,
 
-Hello Kaushik,
+As you mentioned, the bot checks the SSN extension from the EBSI report when the enrollment is made in EASY.
 
-Hope you're doing well.
+I have a question regarding this:
+As you know, in this process, we are using an API where we pass the Individual ID, DB name, and Group ID in the request body.
 
-Could you please confirm if the shared click path is updated? In the Day 1 video, Step One was discussed—updating the Excel with Event ID, Date of Death, Residual, and Needs Transfer values.
+Could you please confirm where exactly we need to pass the SSN extension in the API body? If it's required, can you please check this with the team and let me know the exact steps or structure needed for it?
 
-You mentioned the EBSI team might handle this—just wanted to clarify if Step One is owned by EBSI or the RPA team. Also, please let me know when we can expect the BSS process walkthrough.
-
-Thanks,
-[Your Name]
+Thanks in advance for your support.
