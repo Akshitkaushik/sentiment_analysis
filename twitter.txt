@@ -1,10 +1,1 @@
-Hello Khan,
-
-As you mentioned, the bot checks the SSN extension from the EBSI report when the enrollment is made in EASY.
-
-I have a question regarding this:
-As you know, in this process, we are using an API where we pass the Individual ID, DB name, and Group ID in the request body.
-
-Could you please confirm where exactly we need to pass the SSN extension in the API body? If it's required, can you please check this with the team and let me know the exact steps or structure needed for it?
-
-Thanks in advance for your support.
+As discussed, I made a slight change in the Cirrus code based on the updated UI in UAT. Since we’re not sure if these UI changes will reflect in PROD, I’m holding off on moving the code for now. I have the updated version ready, and if any issues arise, I’ll move it to PROD accordingly.
