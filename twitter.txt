@@ -1,23 +1,15 @@
-uccessfully completed end-to-end automation of the MTR process, involving API integration, and delivered the project ahead of schedule.
+Completed end-to-end automation of the MTR process with API integration ahead of schedule.
 
-Faced and resolved API access and credential issues by collaborating with multiple internal teams.
+Resolved API access and credential issues by collaborating with internal teams.
 
-Worked on multiple enhancement requests, including:
+Delivered enhancement requests for Loan ACH Empower and Loan ACH Branding.
 
-Loan ACH Empower
+Implemented Money In Wires automation for PNC and US Bank bots.
 
-Loan ACH Branding
+Updated Talcott DMF bot with new requirements and redeployed with updated dataset.
 
-Money In Wires for both PNC and US Bank bots.
+Performed complete end-to-end and regression testing to ensure bot stability.
 
-Updated the Talcott DMF bot as per new business requirements:
+Demonstrated proactive problem-solving and alignment with Empower’s values.
 
-Modified the dataset.
-
-Redeployed the bot successfully.
-
-Performed thorough end-to-end testing and regression testing for all deployments to ensure stability and performance.
-
-Proactively contributed to team success by meeting deadlines, solving technical challenges, and aligning with Empower’s values.
-
-Additionally, focused on learning new technologies like Python to enhance my development and automation skills.
+Continued learning by exploring new technologies such as Python.
