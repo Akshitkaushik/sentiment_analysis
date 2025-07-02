@@ -1,17 +1,22 @@
-I will focus on completing upcoming automation projects such as BSS Deceased and Bulletin Posting before the deadline.
+I have been actively working towards strengthening my automation and development skills.
 
-These projects are currently in the requirement phase, and I am attending meetings with the business team to understand the process and prepare documentation.
+Over the last few months, I have improved my expertise in Automation Anywhere, Power Automate, and REST API integration.
 
-I aim to automate more complex processes using REST API integrations and advanced logic.
+I have started learning Python, Gen AI, ChatGPT, and n8n to align with future industry trends.
 
-I will support the maintenance and enhancement of existing bots to improve efficiency and ensure long-term stability.
+I am also focusing on understanding document processing and cross-platform automation to support more complex workflows.
 
-I am actively learning and exploring Gen AI and document understanding to apply in future automation initiatives.
+There have been no major changes in career aspirations, but I am aiming for roles with more responsibility and cross-functional exposure.
 
-I plan to enhance my expertise in Power Automate, n8n, ChatGPT, and other AI-driven automation tools.
+To continue progressing, I would benefit from more opportunities to work on end-to-end solution design and involvement in technical decision-making.
 
-I seek more exposure to cross-functional processes, system architecture, and security compliance especially while working with third-party tools.
+Support in the form of training sessions, technical mentorship, and access to sandbox environments would help me grow further.
 
-I may require support in the form of timely access to business credentials, process documentation, and collaboration with SMEs.
+✅ Additional comments not covered above
+I appreciate the continuous opportunities and support provided by the team, which has helped me enhance my skills.
 
-My overall goal is to grow technically and strategically while contributing meaningfully to Empower’s automation roadmap.
+I am open to taking ownership of more challenging projects and contributing to process improvement initiatives.
+
+I look forward to collaborating with different teams and learning more about system architecture and security best practices.
+
+I remain committed to delivering high-quality work and aligning with Empower's long-term goals.
