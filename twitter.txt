@@ -1,15 +1,17 @@
-Completed end-to-end automation of the MTR process with API integration ahead of schedule.
+I will focus on completing upcoming automation projects such as BSS Deceased and Bulletin Posting before the deadline.
 
-Resolved API access and credential issues by collaborating with internal teams.
+These projects are currently in the requirement phase, and I am attending meetings with the business team to understand the process and prepare documentation.
 
-Delivered enhancement requests for Loan ACH Empower and Loan ACH Branding.
+I aim to automate more complex processes using REST API integrations and advanced logic.
 
-Implemented Money In Wires automation for PNC and US Bank bots.
+I will support the maintenance and enhancement of existing bots to improve efficiency and ensure long-term stability.
 
-Updated Talcott DMF bot with new requirements and redeployed with updated dataset.
+I am actively learning and exploring Gen AI and document understanding to apply in future automation initiatives.
 
-Performed complete end-to-end and regression testing to ensure bot stability.
+I plan to enhance my expertise in Power Automate, n8n, ChatGPT, and other AI-driven automation tools.
 
-Demonstrated proactive problem-solving and alignment with Empower’s values.
+I seek more exposure to cross-functional processes, system architecture, and security compliance especially while working with third-party tools.
 
-Continued learning by exploring new technologies such as Python.
+I may require support in the form of timely access to business credentials, process documentation, and collaboration with SMEs.
+
+My overall goal is to grow technically and strategically while contributing meaningfully to Empower’s automation roadmap.
