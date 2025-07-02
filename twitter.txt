@@ -1,1 +1,23 @@
-As discussed, I made a slight change in the Cirrus code based on the updated UI in UAT. Since we’re not sure if these UI changes will reflect in PROD, I’m holding off on moving the code for now. I have the updated version ready, and if any issues arise, I’ll move it to PROD accordingly.
+uccessfully completed end-to-end automation of the MTR process, involving API integration, and delivered the project ahead of schedule.
+
+Faced and resolved API access and credential issues by collaborating with multiple internal teams.
+
+Worked on multiple enhancement requests, including:
+
+Loan ACH Empower
+
+Loan ACH Branding
+
+Money In Wires for both PNC and US Bank bots.
+
+Updated the Talcott DMF bot as per new business requirements:
+
+Modified the dataset.
+
+Redeployed the bot successfully.
+
+Performed thorough end-to-end testing and regression testing for all deployments to ensure stability and performance.
+
+Proactively contributed to team success by meeting deadlines, solving technical challenges, and aligning with Empower’s values.
+
+Additionally, focused on learning new technologies like Python to enhance my development and automation skills.
