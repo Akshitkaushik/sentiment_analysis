@@ -1,7 +1,11 @@
-I have triggered the bot using the shared input files. I’ve also attached the email and the audit file for your reference.
+Hi Khan,
 
-Kindly review them and share your feedback. Once I receive your approval, I will proceed to schedule the bot on a monthly basis.
+I believe this might still be a record issue, although I’m not entirely sure. We can validate it together to confirm.
 
-Thank you!
+Could you please set up a quick call with me today at any convenient time? During the call, we can go through the issue, as the error message shows:
+
+“No account to enroll were provided for the user” – This typically means that the bot didn’t receive any valid account details to process for enrollment, possibly due to missing or incorrect input data.
+
+Looking forward to your availability so we can resolve this.
 
 Best regards,
