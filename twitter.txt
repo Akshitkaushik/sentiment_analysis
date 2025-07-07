@@ -1,11 +1,7 @@
-Hi Jyothi Laxmi,
+I have triggered the bot using the shared input files. I’ve also attached the email and the audit file for your reference.
 
-Thank you for the update. I’m also ready to trigger the bot — I just need the correct input files to proceed. I’ve checked my network drive and noticed multiple files are available. Could you please confirm which specific file or month’s data we should be using?
+Kindly review them and share your feedback. Once I receive your approval, I will proceed to schedule the bot on a monthly basis.
 
-Do we need to trigger only the June month data, or should we include April, May, and June data as well? Also, kindly let me know if all this data is included in a single file or if there are separate files for each month.
-
-I would appreciate it if you could share the updated input file with me in this email thread for reference.
-
-Looking forward to your response.
+Thank you!
 
 Best regards,
