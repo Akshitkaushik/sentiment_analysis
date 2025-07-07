@@ -1,14 +1,1 @@
-Hi Khan,
-
-Thanks for the validation.
-
-This issue seems a bit unusual. I’ve double-checked my code and input data, and everything looks fine, but the error still persists.
-
-Could you please set up a quick call with me? It would be great if Tom could also join. I’m following the shared RPA steps — reading from the input file and passing the individual number, plan number, and database to the API — but still getting the same error.
-
-If it's easier, you can also share one failure record with Tom and ask him to test it in Postman. If the response works there, we can review it together during the call.
-
-Appreciate your support.
-
-Best regards,
-[Your Name]
+That said, I would also appreciate it if you could set up a quick call with me — and if possible, include Tom in the discussion as well. Since I’ve been following the shared RPA steps (reading data from the input file and passing the individual number, plan number, and database to the API), and the error still appears, it would be helpful to validate this from Tom’s side too — especially considering he may have access to the ElasticSearch logs.
