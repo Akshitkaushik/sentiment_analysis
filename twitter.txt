@@ -1,24 +1,14 @@
-import requests
+Hi Khan,
 
-# Define the URL
-url = "https://example.com/token"  # Replace with your actual URL
+I believe this might still be a record issue, although I’m not entirely sure. Could you please validate the failure record one more time?
 
+As the error message indicates:
 
-# Define the headers
-headers = {
-    "Content-Type": "application/x-www-form-urlencoded"
-}
+“No account to enroll were provided for the user” – This typically means the bot didn’t receive any valid account details to process the enrollment, possibly due to missing or incorrect input data.
 
-# Define the payload (data to be sent in the request)
-data = {
-    "grant_type": "client_credentials",
-    "client_id": "akshit",
-    "client_secret": "kuahsik"
-}
+I’ve already checked my code and re-ran the failure records individually, but I’m still getting the same error. Kindly validate these records in EASY once again. If needed, please feel free to set up a call with the team so we can review this together.
 
-response = requests.post(url, headers=headers, data=data)
+Looking forward to your availability so we can resolve this.
 
-
-# Print the response
-print("Status Code:", response.status_code)
-print("Response:", response.text)
+Best regards,
+[Your Name]
