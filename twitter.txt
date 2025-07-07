@@ -1,14 +1,14 @@
 Hi Khan,
 
-I believe this might still be a record issue, although I’m not entirely sure. Could you please validate the failure record one more time?
+Thanks for the validation.
 
-As the error message indicates:
+This issue seems a bit unusual. I’ve double-checked my code and input data, and everything looks fine, but the error still persists.
 
-“No account to enroll were provided for the user” – This typically means the bot didn’t receive any valid account details to process the enrollment, possibly due to missing or incorrect input data.
+Could you please set up a quick call with me? It would be great if Tom could also join. I’m following the shared RPA steps — reading from the input file and passing the individual number, plan number, and database to the API — but still getting the same error.
 
-I’ve already checked my code and re-ran the failure records individually, but I’m still getting the same error. Kindly validate these records in EASY once again. If needed, please feel free to set up a call with the team so we can review this together.
+If it's easier, you can also share one failure record with Tom and ask him to test it in Postman. If the response works there, we can review it together during the call.
 
-Looking forward to your availability so we can resolve this.
+Appreciate your support.
 
 Best regards,
 [Your Name]
