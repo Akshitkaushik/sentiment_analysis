@@ -1,1 +1,11 @@
-That said, I would also appreciate it if you could set up a quick call with me — and if possible, include Tom in the discussion as well. Since I’ve been following the shared RPA steps (reading data from the input file and passing the individual number, plan number, and database to the API), and the error still appears, it would be helpful to validate this from Tom’s side too — especially considering he may have access to the ElasticSearch logs.
+Thanks for this, Harish.
+
+I can definitely check with Harsh, but the concern is — if we test the same API in Postman, we’ll be using the exact same endpoint and request body that Automation Anywhere is using. So Postman will return the same error response we’re currently seeing.
+
+On the other hand, Tom has access to additional API endpoints and ElasticSearch database logs. He used to perform this task manually via Postman before the automation, so he might be able to identify whether this error is data-related or due to something else.
+
+Let’s wait for Taufique and Tom’s input as well. Just to add, I also tested the same API through a Python script, and I’m still getting the same error.
+
+At this point, based on my understanding, the issue might be with the input data — possibly something is missing — and we may need further clarification from the business team on that part.
+
+Best regards,
