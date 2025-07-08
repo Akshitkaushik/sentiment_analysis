@@ -1,11 +1,5 @@
-Thanks for this, Harish.
+I hope you’ve seen Taufique’s email regarding the MTR process. Since Tom has retired, I wanted to check if there’s a replacement for him, so I can follow up accordingly.
 
-I can definitely check with Harsh, but the concern is — if we test the same API in Postman, we’ll be using the exact same endpoint and request body that Automation Anywhere is using. So Postman will return the same error response we’re currently seeing.
+We’re currently facing some issues with the MTR API process. Previously, Tom had shared certain API endpoints, and I’m now encountering errors with some records. I’d like to validate whether those records are still working on your end, possibly through Postman or any internal tools.
 
-On the other hand, Tom has access to additional API endpoints and ElasticSearch database logs. He used to perform this task manually via Postman before the automation, so he might be able to identify whether this error is data-related or due to something else.
-
-Let’s wait for Taufique and Tom’s input as well. Just to add, I also tested the same API through a Python script, and I’m still getting the same error.
-
-At this point, based on my understanding, the issue might be with the input data — possibly something is missing — and we may need further clarification from the business team on that part.
-
-Best regards,
+Please let me know how to proceed or whom I can coordinate with.
