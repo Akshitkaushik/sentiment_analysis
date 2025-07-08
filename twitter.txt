@@ -1,5 +1,7 @@
-I hope you’ve seen Taufique’s email regarding the MTR process. Since Tom has retired, I wanted to check if there’s a replacement for him, so I can follow up accordingly.
+Hello Chrish,
 
-We’re currently facing some issues with the MTR API process. Previously, Tom had shared certain API endpoints, and I’m now encountering errors with some records. I’d like to validate whether those records are still working on your end, possibly through Postman or any internal tools.
+I have a small request. I understand Taufique has already validated the failure records in EASY, but if you get some time, could you please revalidate them from your end as well? Kindly review all conditions on the data — last time, a similar issue was due to missing information in the PASV or EASY database.
 
-Please let me know how to proceed or whom I can coordinate with.
+Meanwhile, I’m also checking with Neeta on the failure records.
+
+Thank you!
