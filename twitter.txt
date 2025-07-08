@@ -1,21 +1,197 @@
-Hello Pradeep,
+Fowler, Cheryl
+0 minutes 3 seconds0:03
+Fowler, Cheryl 0 minutes 3 seconds
+The capacity and um, so we wasn't sure about that in order to answer the frequency.
 
-I have a few questions regarding the bulletin posting process. Could you please discuss these with the team in the upcoming meeting?
+Khan, Taufique
+0 minutes 7 seconds0:07
+Khan, Taufique 0 minutes 7 seconds
+Good.
+Khan, Taufique 0 minutes 9 seconds
+Yeah, let's do it.
+Khan, Taufique 0 minutes 11 seconds
+Do it.
 
-What is the name of the input file the bot will receive?
+Fowler, Cheryl
+0 minutes 11 seconds0:11
+Fowler, Cheryl 0 minutes 11 seconds
+OK. All right. So you know, I, I, I, I, I'm sure you know or I think you know that we have like a 10,000 trailing backlog, right. So our initial thoughts and question was.
 
-What is the expected volume of data we will receive daily?
+Khan, Taufique
+0 minutes 23 seconds0:23
+Khan, Taufique 0 minutes 23 seconds
+Mhm.
 
-Is there any backlog data to be processed? If yes, how much can we expect?
+Fowler, Cheryl
+0 minutes 27 seconds0:27
+Fowler, Cheryl 0 minutes 27 seconds
+If we continue the biweekly frequency, is it fair to expect the bot to get through all that? You know, by the time the biweekly, the new intake report is create is created, you know, my initial thought it's going to take that bot.
 
-What is the frequency of the bot run — daily, weekly, bi-weekly, or monthly?
+Khan, Taufique
+0 minutes 30 seconds0:30
+Khan, Taufique 0 minutes 30 seconds
+Yeah.
+Khan, Taufique 0 minutes 41 seconds
+Yeah.
 
-As discussed, will we receive a new file with fresh data every day? Or do we need to filter the data based on a status column to identify new records?
+Fowler, Cheryl
+0 minutes 43 seconds0:43
+Fowler, Cheryl 0 minutes 43 seconds
+A little bit of time I my thought is before he gets through that or is it OK to create a new report in two weeks with now 7000 or you know how do we roll into with this big backlog that we have and and have that right frequency?
+Khan, Taufique 6 minutes 4 seconds
+To or or the other option is is having you or Sherrilyn or or whoever your SMEs are on this BSS trailing dividend that are doing it every day if they could record themselves doing a live participant all the way through.
 
-Please ensure that once the input file format is finalized, the column names are not changed — otherwise, the bot will fail.
+Fowler, Cheryl
+6 minutes 16 seconds6:16
+Fowler, Cheryl 6 minutes 16 seconds
+Mhm.
 
-As per the flow, after adding the data into EASY, we need to send an email. Kindly confirm the subject line and body content of the email. If possible, please share one sample/template for review, including the expected format and font style.
+Khan, Taufique
+6 minutes 24 seconds6:24
+Khan, Taufique 6 minutes 24 seconds
+Kind of calling out the clicks and just going through it and and that'll give us like a clean recording with, you know, no real questions and no kind of side conversations. And I can give that to our developer and he can go through that video and just know, OK, this is exactly what the bot needs to do. Here's the entries, here's the keystrokes.
+Khan, Taufique 6 minutes 44 seconds
+Screens, things like that. I gave him access to the recordings that we had, but they basically don't want to go through an hour long recording just to get like, you know, a set 510 minute process. So that was one thing that he wanted me to kind of bring back to the businesses, you know, if we could get like a cleaner video.
 
-In the flow, we may encounter pop-ups or alerts. If there are any known error messages or actions required (such as clicking a specific button), please ensure that all key actions and keystrokes are shared with us in detail.
+Fowler, Cheryl
+6 minutes 56 seconds6:56
+Fowler, Cheryl 6 minutes 56 seconds
+Yeah.
 
-Thank you for your support.
+Khan, Taufique
+7 minutes 4 seconds7:04
+Khan, Taufique 7 minutes 4 seconds
+Of just someone going through it and you know, straight from start to finish. Here it is. It's like, you know, however long it takes you guys. I'm sure it only takes like, you know, 5, maybe 10 minutes Max to go through meetings. So if you could get someone on your team to kind of just record themselves and go through it and call out the.
+
+Fowler, Cheryl
+7 minutes 13 seconds7:13
+Fowler, Cheryl 7 minutes 13 seconds
+Mhm, mhm.
+
+Khan, Taufique
+7 minutes 23 seconds7:23
+Khan, Taufique 7 minutes 23 seconds
+Clicks and you know what they're doing and you know I can give that to them and and that'll kind of clear that item on their list.
+
+Fowler, Cheryl
+7 minutes 31 seconds7:31
+Fowler, Cheryl 7 minutes 31 seconds
+OK, yeah, I'll get that. How soon you need it or want it? I'm always going to ask that because, you know, there's always a lot to do.
+
+Khan, Taufique
+7 minutes 35 seconds7:35
+Khan, Taufique 7 minutes 35 seconds
+I yeah, no, of course. If you could. I'm actually out starting tomorrow. I get back my my day back. I'm out next week, so I'll I'll be back on the 21st. So you know.
+
+Fowler, Cheryl
+7 minutes 43 seconds7:43
+Fowler, Cheryl 7 minutes 43 seconds
+OK.
+Fowler, Cheryl 7 minutes 48 seconds
+Oh, that gives me time, OK.
+
+Khan, Taufique
+7 minutes 50 seconds7:50
+Khan, Taufique 7 minutes 50 seconds
+A couple weeks to get that if you could, maybe if there's let's do one. If you could have someone do one of the trailing report there cause there's two, there's the the rural trades too, right? But we're we, I think we agreed that we're gonna do the rural trades. You guys are gonna handle those manual, right?
+
+Fowler, Cheryl
+8 minutes 10 seconds8:10
+Fowler, Cheryl 8 minutes 10 seconds
+Yes, Yep.
+
+Khan, Taufique
+8 minutes 11 seconds8:11
+Khan, Taufique 8 minutes 11 seconds
+OK. All right. So it's just one. Yeah. So if they could just have themselves record themselves doing like a live example all the way through from start to finish of exactly what they're clicking on, what the keystrokes are and that'll and I can. Yeah. So if I let's just say the week of the 21st, I'll set up a call.
+
+Fowler, Cheryl
+8 minutes 23 seconds8:23
+Fowler, Cheryl 8 minutes 23 seconds
+Mm-hmm. OK.
+
+Khan, Taufique
+8 minutes 31 seconds8:31
+Khan, Taufique 8 minutes 31 seconds
+All with you guys and the developer who's assigned to our project and we'll present it to him and he'll have his questions and we'll go through that and he'll start swinging hammers on building the automation.
+
+Fowler, Cheryl
+8 minutes 44 seconds8:44
+Fowler, Cheryl 8 minutes 44 seconds
+OK, I'll look to to send you the the recording, the clean recording by the 16th, Wednesday the 16th. So you'll have that. So when you get back on the 21st, you schedule a meeting, you'll have the clean recording.
+
+Khan, Taufique
+8 minutes 49 seconds8:49
+Khan, Taufique 8 minutes 49 seconds
+Yeah. Okay.
+
+Fowler, Cheryl
+8 minutes 59 seconds8:59
+Fowler, Cheryl 8 minutes 59 seconds
+Available for the meeting or what have you? OK, got it.
+
+Khan, Taufique
+9 minutes 1 second9:01
+Khan, Taufique 9 minutes 1 second
+Awesome.
+Khan, Taufique 9 minutes 3 seconds
+Sounds good.
+Khan, Taufique 9 minutes 6 seconds
+All right, so we got our frequency stuff squared away. I've got your take away for the recording. Cheryl, anything, anything else on your mind? Anything from Dennis?
+
+Fowler, Cheryl
+9 minutes 19 seconds9:19
+Fowler, Cheryl 9 minutes 19 seconds
+No, that was it. Just a question about the backlog, which again you clarified with the historical cleanup request that we can add and that we just land on a frequency whatever we desire and we can accommodate that that backlog within that frequency, so.
+
+Khan, Taufique
+9 minutes 24 seconds9:24
+Khan, Taufique 9 minutes 24 seconds
+OK.
+Khan, Taufique 9 minutes 26 seconds
+Um.
+Khan, Taufique 9 minutes 34 seconds
+Yep.
+Khan, Taufique 9 minutes 39 seconds
+You got it. All right. Thank you. I'll be in touch. I'll. I'll definitely see that when I get back, but send it to me. I'm going to be checking my my computer, my emails on while I'm out, but I'll definitely take a look at it when you send it.
+
+
+
+Hi all,
+
+Current Standing
+•	Backlog Context: What if there is a current backlog of approximately ~10,000 trailing dividends?
+•	Frequency Discussion:
+o	Cheryl raised concerns about whether a biweekly cadence is manageable for the automation bot given the backlog.
+o	Taufique clarified that the automation process can be structured in two phases:
+1.	Historical Cleanup: A one-time bot run to clear all historical data up is an option
+2.	Ongoing Frequency?: Regular biweekly automation aligned with the report generation from EBSI
+•	Plan-Specific Concerns: Some retirement plans are sensitive to delays in processing trailing dividends (e.g., avoiding carryovers into the next month), which makes biweekly processing favorable despite the volume.
+•	Manual Handling of Exceptions: Roll Trades will continue to be handled manually and are not included in the automation scope.
+
+________________________________________
+Next Steps
+1.	Determine Frequency:
+o	Cheryl will consult with Dennis and the team to finalize between biweekly vs. monthly vs. quarterly frequency and respond via email.
+o	Decision to be informed by both processing capacity and plan-specific urgency.
+2.	Clean Process Recording:
+o	Cheryl (or her team) will record a clean, start-to-finish video of a team member processing a trailing dividend, including:
+	Clicks
+	Keystrokes
+	Screen interactions
+o	This will assist developers in designing the bot’s logic more effectively.
+3.	Developer Meeting:
+o	Taufique will be out until July 21st, but plans to set up a follow-up meeting with the automation developer and the business when he returns.
+o	Goal: Review the clean recording, address developer questions, and initiate build-out.
+
+________________________________________
+Pending Items
+•	✅ Cheryl to deliver the clean recording by Wednesday, July 16th.
+•	🔲 Await final decision on report processing frequency.
+•	🔲 Schedule and conduct developer call upon return, July 21st.
+•	🔲 Historical dividend data to be processed as a separate cleanup task by the bot.
+•	🔲 Ongoing coordination on any plan-specific rules or exceptions.
+
+While Taufique is out, please reach out to @Mulvihill, Harrison if there is anything urgent.
+
+Thank you,
