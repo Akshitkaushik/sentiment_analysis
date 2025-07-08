@@ -1,7 +1,21 @@
-Hello Chrish,
+Hello Pradeep,
 
-I have a small request. I understand Taufique has already validated the failure records in EASY, but if you get some time, could you please revalidate them from your end as well? Kindly review all conditions on the data — last time, a similar issue was due to missing information in the PASV or EASY database.
+I have a few questions regarding the bulletin posting process. Could you please discuss these with the team in the upcoming meeting?
 
-Meanwhile, I’m also checking with Neeta on the failure records.
+What is the name of the input file the bot will receive?
 
-Thank you!
+What is the expected volume of data we will receive daily?
+
+Is there any backlog data to be processed? If yes, how much can we expect?
+
+What is the frequency of the bot run — daily, weekly, bi-weekly, or monthly?
+
+As discussed, will we receive a new file with fresh data every day? Or do we need to filter the data based on a status column to identify new records?
+
+Please ensure that once the input file format is finalized, the column names are not changed — otherwise, the bot will fail.
+
+As per the flow, after adding the data into EASY, we need to send an email. Kindly confirm the subject line and body content of the email. If possible, please share one sample/template for review, including the expected format and font style.
+
+In the flow, we may encounter pop-ups or alerts. If there are any known error messages or actions required (such as clicking a specific button), please ensure that all key actions and keystrokes are shared with us in detail.
+
+Thank you for your support.
