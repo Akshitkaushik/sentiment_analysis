@@ -1,2 +1,21 @@
-hello
-testi
+I would like to suggest a streamlined approach using Power Automate to manage form submissions and daily file handling efficiently.
+
+Currently, when a user fills out and submits the form, their details are automatically added as a new row in the Excel file — this is already handled via Power Automate.
+
+To further enhance this process, here's what we propose:
+
+Daily File Creation: Power Automate will create a new Excel file every day in a SharePoint folder. This file will store all the form submissions received on that specific day.
+
+Automated File Sharing: Once the file is populated with the day's data, Power Automate will automatically send it to our team for further processing.
+
+Data Review & Status Update: We will review the data, perform our necessary steps, and update each entry with a "Status" column as required.
+
+Return & Upload: After processing, we will return the updated file to you. You can then upload it to a separate SharePoint folder for record-keeping or further actions.
+
+This approach ensures:
+
+Organized data management on a day-to-day basis
+
+Clear tracking of processing status
+
+Reduced manual effort through automation
