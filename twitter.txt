@@ -1,5 +1,1 @@
-Currently, we receive the participant data directly from EBSI, and the bot simply passes that data to the API endpoint, which was shared earlier by Tom Olson.
-
-I also tried processing some of the failed records manually through the same API, and the issue still persists — which suggests the problem may not be with the bot's logic itself
-
-Just to confirm — is there any specific validation (like termed agreement date) you’d like us to handle on the RPA side?
+Could you please advise on what changes might be needed here, or if there's a specific validation we should add on our side?
