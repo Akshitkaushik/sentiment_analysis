@@ -17,4 +17,19 @@ Thank you so much for your validation and the detailed observations shared.
 
 Based on the current findings, I would kindly suggest reviewing the logic used during data preparation or extraction (particularly within the bot or RPA process). It may be helpful to ensure that only valid participants — whose agreements are appropriately terminated — are included in the data being passed to the API.
 
+
+
+Thank you for the validation and helpful observations.
+
+If I’m not mistaken, it seems that the logic related to termed participant agreement dates may need to be reviewed — specifically in the data fetching or extraction part.
+Just to clarify: would this be something the EBSI team needs to review and update on their end?
+
+I wanted to confirm this understanding before proceeding further. Please let me know your thoughts whenever convenient.
+
+
+
+
+
+
+
 This small check could help maintain consistency and prevent unintended unenrollments in similar cases moving forward.
