@@ -1,35 +1,5 @@
-I would like to suggest a streamlined approach using Power Automate to manage form submissions and daily file handling efficiently.
+Currently, we receive the participant data directly from EBSI, and the bot simply passes that data to the API endpoint, which was shared earlier by Tom Olson.
 
-Currently, when a user fills out and submits the form, their details are automatically added as a new row in the Excel file — this is already handled via Power Automate.
+I also tried processing some of the failed records manually through the same API, and the issue still persists — which suggests the problem may not be with the bot's logic itself
 
-To further enhance this process, here's what we propose:
-
-Daily File Creation: Power Automate will create a new Excel file every day in a SharePoint folder. This file will store all the form submissions received on that specific day.
-
-Automated File Sharing: Once the file is populated with the day's data, Power Automate will automatically send it to our team for further processing.
-
-Data Review & Status Update: We will review the data, perform our necessary steps, and update each entry with a "Status" column as required.
-
-Return & Upload: After processing, we will return the updated file to you. You can then upload it to a separate SharePoint folder 
-Dear Team,
-
-Thank you so much for your validation and the detailed observations shared.
-
-Based on the current findings, I would kindly suggest reviewing the logic used during data preparation or extraction (particularly within the bot or RPA process). It may be helpful to ensure that only valid participants — whose agreements are appropriately terminated — are included in the data being passed to the API.
-
-
-
-Thank you for the validation and helpful observations.
-
-If I’m not mistaken, it seems that the logic related to termed participant agreement dates may need to be reviewed — specifically in the data fetching or extraction part.
-Just to clarify: would this be something the EBSI team needs to review and update on their end?
-
-I wanted to confirm this understanding before proceeding further. Please let me know your thoughts whenever convenient.
-
-
-
-
-
-
-
-This small check could help maintain consistency and prevent unintended unenrollments in similar cases moving forward.
+Just to confirm — is there any specific validation (like termed agreement date) you’d like us to handle on the RPA side?
