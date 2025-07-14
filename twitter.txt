@@ -1,1 +1,12 @@
-Could you please advise on what changes might be needed here, or if there's a specific validation we should add on our side?
+Hi Chrish,
+
+I spoke with Jyothilaxmi last Friday about the MTR failure. Based on my testing, it seems the issue is related to the term date. If a participant's term date is after the bot run date, the API is unable to unenroll them.
+
+For example, one participant had a term date of July 8th. When I ran the bot on July 5th, it worked fine. But when I tested again after July 8th, the API failed with the same error.
+
+So I’m wondering — how is the term date determined? And should we avoid sending unenrollment requests if the term date is before or equal to the bot run date?
+
+Please let me know your thoughts.
+
+Thanks,
+Akshit
