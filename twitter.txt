@@ -4,9 +4,10 @@ I spoke with Jyothilaxmi last Friday about the MTR failure. Based on my testing,
 
 For example, one participant had a term date of July 8th. When I ran the bot on July 5th, it worked fine. But when I tested again after July 8th, the API failed with the same error.
 
-So I’m wondering — how is the term date determined? And should we avoid sending unenrollment requests if the term date is before or equal to the bot run date?
+Today, I triggered the April month file and have attached the results. Kindly review and share your feedback. If there are any failure cases in this April data, please check whether those participants have a term date later than the bot run date.
 
-Please let me know your thoughts.
+Since we’re not able to view the term date on our side, I kindly request you to check the term dates of failed records from your end.
+
+Note: Currently, the RPA bot is not handling the term date logic because the input file we receive doesn’t contain the term date, and this logic was not included in the original requirements.
 
 Thanks,
-Akshit
