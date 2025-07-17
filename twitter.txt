@@ -1,13 +1,11 @@
-Hi Chrish,
+Request for Approval – Solution Design Document
 
-I spoke with Jyothilaxmi last Friday about the MTR failure. Based on my testing, it seems the issue is related to the term date. If a participant's term date is after the bot run date, the API is unable to unenroll them.
+Dear Ma’am,
 
-For example, one participant had a term date of July 8th. When I ran the bot on July 5th, it worked fine. But when I tested again after July 8th, the API failed with the same error.
+I hope you're doing well.
 
-Today, I triggered the April month file and have attached the results. Kindly review and share your feedback. If there are any failure cases in this April data, please check whether those participants have a term date later than the bot run date.
+Please find the attached Solution Design Document for the Bulletin process. I kindly request you to review the steps mentioned and share your approval so that I can proceed with the next steps accordingly.
 
-Since we’re not able to view the term date on our side, I kindly request you to check the term dates of failed records from your end.
+Looking forward to your feedback.
 
-Note: Currently, the RPA bot is not handling the term date logic because the input file we receive doesn’t contain the term date, and this logic was not included in the original requirements.
-
-Thanks,
+Best regards,
