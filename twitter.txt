@@ -1,1 +1,5 @@
-I’m using this network drive for one of the upcoming processes. I raised a ticket and can now access the path, but I'm unable to open it in the Dev and UAT environments. Since this seems to be a Prod path, as Harish mentioned, I need to check with you regarding access for lower environments like Dev and UAT.
+To place the file in the network drive, you have two options:
+
+Use Power Automate Cloud with a Gateway – This requires installing Microsoft On-Premises Data Gateway to connect to your network drive securely.
+
+Use Power Automate Desktop – Create the flow directly on a machine that has access to the network drive, without needing a gateway.
