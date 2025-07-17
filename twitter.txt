@@ -1,11 +1,1 @@
-Request for Approval – Solution Design Document
-
-Dear Ma’am,
-
-I hope you're doing well.
-
-Please find the attached Solution Design Document for the Bulletin process. I kindly request you to review the steps mentioned and share your approval so that I can proceed with the next steps accordingly.
-
-Looking forward to your feedback.
-
-Best regards,
+I’m using this network drive for one of the upcoming processes. I raised a ticket and can now access the path, but I'm unable to open it in the Dev and UAT environments. Since this seems to be a Prod path, as Harish mentioned, I need to check with you regarding access for lower environments like Dev and UAT.
