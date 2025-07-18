@@ -1,5 +1,3 @@
-To place the file in the network drive, you have two options:
+I’m currently working on a development task and would really appreciate if my dev machine could be kept active over the weekend as well. It will help me continue the progress without interruption.
 
-Use Power Automate Cloud with a Gateway – This requires installing Microsoft On-Premises Data Gateway to connect to your network drive securely.
-
-Use Power Automate Desktop – Create the flow directly on a machine that has access to the network drive, without needing a gateway.
+Could you please enable or allow access for the weekend? Let me know if any additional steps are needed from my side.
